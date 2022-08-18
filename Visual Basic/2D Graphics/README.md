@@ -12,8 +12,28 @@ groundwork and design have been laid out, a few more 2D animations need to
 be added.
 
 ## Images
-The following images demonstrate this program.
-![Startup Screen](img-graphics/Graphics-1.png)
+1. Upon starting the program, you are greeted with a peculiar splash screen.
+The combination of grungey colors and lens flares gives off a Star Trek
+vibe.
+![Startup](img-graphics/Graphics-1.png)
+
+2. Something here
+![First](img-graphics/Graphics-2.png)
+
+3. Something else
+![Grid](img-graphics/Graphics-3.PNG)
+
+4. Something
+![Parabola](img-graphics/Graphics-4.PNG)
+
+5. Something
+![Source](img-graphics/Graphics-5.PNG)
+
+6. Something
+![Options](img-graphics/Graphics-6.PNG)
+
+7. Something
+![Paint](img-graphics/Graphics-7.PNG)
 
 ## Compatbility
 ## Executable
