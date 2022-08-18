@@ -13,14 +13,14 @@ be added.
 
 ## Images
 1. Upon starting the program, you are greeted with a peculiar splash screen.
-The combination of grungey colors and lens flares gives off a Star Trek
-vibe.
+The combination of grungey colors and lens flares gives off a *Star Trek*
+vibe. \
 ![Startup](img-graphics/Graphics-1.png)
 
-2. A simple line animation is *The Vortex*
+2. A simple line animation is *The Vortex*. Here it is done in red. \
 ![First](img-graphics/Graphics-2.PNG)
 
-3. Three\
+3. The background color can be changed. In this instance, it was changed from white to black, and the *Extreme Grid* animation is executed. Notice how even the lines' color can be altered - here it is green. \
 ![Grid](img-graphics/Graphics-3.PNG)
 
 4. Four\
