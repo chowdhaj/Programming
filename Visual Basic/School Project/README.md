@@ -1,53 +1,81 @@
 ## Synopsis
 This application is a covert Halo & Counterstrike launcher. It is designed
 to play Halo/Counterstrike in a windowed mode inside of a window that looks
-Microsoft Word or Microsoft PowerPoint. Secret keywords like "Play" and
-"Patch" are used to trigger the executable and terminate it. Upon exit,
+Microsoft Word or Microsoft PowerPoint. Secret keywords like *Play* and
+*Patch* are used to trigger the executable and terminate it. Upon exit,
 all traces of either game are wiped. The games are launched via a self-
 executing ZIP that is designed to be portable. Meaning, it does not install
-any files to the local storage. All files are temporary and the application
-ensures the deletion of permanent files like *Saved Profiles*.
+any files to local storage *(i.e. C:\ Drive)*. All files are temporary and
+the application ensures the deletion of permanent files like *Saved
+Profiles* and *Settings*. 
 
-* BMI Calculator
-* Height Converter
-* Weight Converter
+The program includes over 15 documents that can disguise one's *work*. None
+will be the wiser. No one will know that your History homework is Halo
+in disguise. Documents include:
 
-As a bonus, it can play music. Just press the music icon to get started.
-To start/stop playback, use the appropriate volume buttons. To exit the
-application entirely, press the lock button on the iPhone 4.
+* Trignometry (DOCX)
+* Shakespeare (DOCX)
+* History (DOCX)
+* Chemistry (PPT)
+* Civics (PPT)
+
+When you start the application, click on the appropriate icon to bring
+up your desired document. If you are confused, the starting page has
+crystal clear instructions.
+
+## Halo
+The Halo game that is bundled in this program is Combat Evolved (CE). It
+is the compact version. Meaning, it contains the best maps like Bloodgulch
+and Hang 'Em High. All bloatware is removed for speed, performance, and
+storage optimization. It includes all kinds of gamemodes to suit your style.
+As a bonus, it even supports LAN, which is perfect for school!
+
+## How-To
+Here is a quick breakdown of how to use this application:
+1. Select either Word or Powerpoint to load a document; click on repestive
+   icons for previews.
+2. Once the document is opened, search for bold keywords like *Play*,
+   *Patch*, and *Leave*. These words will allow you to perform various
+   tasks once clicked.
+* *Play: Launches HaloCE. Be patient because this can take upto a minute
+   on older hardware*
+* *Patch: Delete all traces of HaloCE*
+* *Leave: Exit the document and return to the landing/starter page*
+3. After playing Halo, press the *Patch* keyword to cover your tracks.
+4. Use the *Bug* button in *Extras* to report any issues. Thank you!
 
 ## Images
-1. When the program is executed, this is the starting page. 
+1. When the program is executed, this is the starting page. \
 ![Main](img-haloce/Halo-1.PNG)
 
-2. Two
+2. Two \
 ![PPT](img-haloce/Halo-2.PNG)
 
-3. Three
+3. Three \
 ![English](img-haloce/Halo-3.PNG)
 
-4. Four
+4. Four \
 ![Tutorial](img-haloce/Halo-4.PNG)
 
-5. Five
+5. Five \
 ![Work](img-haloce/Halo-5.PNG)
 
-6. Six
+6. Six \
 ![Safe](img-haloce/Halo-6.PNG)
 
-7. Seven
+7. Seven \
 ![Play](img-haloce/Halo-7.PNG)
 
-8. Eight
+8. Eight \
 ![Patch](img-haloce/Halo-8.PNG)
 
-9. Nine
+9. Nine \
 ![Leave](img-haloce/Halo-9.PNG)
 
-10. Ten
+10. Ten \
 ![Extra](img-haloce/Halo-10.PNG)
 
-11. Eleven
+11. Eleven \
 ![Counter](img-haloce/Halo-11.PNG)
 
 ## Compatbility
