@@ -1,0 +1,77 @@
+
+An unexpected exception has been detected in native code outside the VM.
+Unexpected Signal : EXCEPTION_ACCESS_VIOLATION (0xc0000005) occurred at PC=0x77D7BB9
+Function=Java_sun_awt_windows_WToolkit_printWindowsVersion+0x1CB9
+Library=C:\Program Files\Ready to Program\Support\jre142_01\bin\awt.dll
+
+Current Java thread:
+	at sun.awt.windows.WComponentPeer.nativeHandleEvent(Native Method)
+	at sun.awt.windows.WComponentPeer.handleEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+
+Dynamic libraries:
+0x00400000 - 0x00437000 	C:\Program Files\Ready to Program\Support\Bin\javasup.exe
+0x7C900000 - 0x7C9B2000 	C:\WINDOWS\system32\ntdll.dll
+0x7C800000 - 0x7C8F6000 	C:\WINDOWS\system32\kernel32.dll
+0x10000000 - 0x10029000 	C:\Program Files\Ready to Program\Support\Bin\jsdll.dll
+0x7E410000 - 0x7E4A1000 	C:\WINDOWS\system32\USER32.dll
+0x77F10000 - 0x77F59000 	C:\WINDOWS\system32\GDI32.dll
+0x763B0000 - 0x763F9000 	C:\WINDOWS\system32\comdlg32.dll
+0x77DD0000 - 0x77E6B000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x77E70000 - 0x77F03000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77FE0000 - 0x77FF1000 	C:\WINDOWS\system32\Secur32.dll
+0x5D090000 - 0x5D12A000 	C:\WINDOWS\system32\COMCTL32.dll
+0x7C9C0000 - 0x7D1D7000 	C:\WINDOWS\system32\SHELL32.dll
+0x77C10000 - 0x77C68000 	C:\WINDOWS\system32\msvcrt.dll
+0x77F60000 - 0x77FD6000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x76390000 - 0x763AD000 	C:\WINDOWS\system32\IMM32.DLL
+0x773D0000 - 0x774D3000 	C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.6028_x-ww_61e65202\comctl32.dll
+0x08000000 - 0x08136000 	C:\Program Files\Ready to Program\Support\jre142_01\bin\client\jvm.dll
+0x76B40000 - 0x76B6D000 	C:\WINDOWS\system32\WINMM.dll
+0x008F0000 - 0x008F7000 	C:\Program Files\Ready to Program\Support\jre142_01\bin\hpi.dll
+0x00910000 - 0x0091E000 	C:\Program Files\Ready to Program\Support\jre142_01\bin\verify.dll
+0x00920000 - 0x00938000 	C:\Program Files\Ready to Program\Support\jre142_01\bin\java.dll
+0x00BD0000 - 0x00BDD000 	C:\Program Files\Ready to Program\Support\jre142_01\bin\zip.dll
+0x03100000 - 0x0311C000 	C:\Program Files\Ready to Program\Support\jre142_01\bin\jdwp.dll
+0x07120000 - 0x07126000 	C:\Program Files\Ready to Program\Support\jre142_01\bin\dt_shmem.dll
+0x07740000 - 0x0784F000 	C:\Program Files\Ready to Program\Support\jre142_01\bin\awt.dll
+0x73000000 - 0x73026000 	C:\WINDOWS\system32\WINSPOOL.DRV
+0x774E0000 - 0x7761E000 	C:\WINDOWS\system32\ole32.dll
+0x5AD70000 - 0x5ADA8000 	C:\WINDOWS\system32\uxtheme.dll
+0x078C0000 - 0x07910000 	C:\Program Files\Ready to Program\Support\jre142_01\bin\fontmanager.dll
+0x73760000 - 0x737AB000 	C:\WINDOWS\system32\ddraw.dll
+0x73BC0000 - 0x73BC6000 	C:\WINDOWS\system32\DCIMAN32.dll
+0x73940000 - 0x73A10000 	C:\WINDOWS\system32\D3DIM700.DLL
+0x74720000 - 0x7476C000 	C:\WINDOWS\system32\MSCTF.dll
+0x755C0000 - 0x755EE000 	C:\WINDOWS\system32\msctfime.ime
+0x605D0000 - 0x605D9000 	C:\WINDOWS\system32\mslbui.dll
+0x76C90000 - 0x76CB8000 	C:\WINDOWS\system32\imagehlp.dll
+0x59A60000 - 0x59B01000 	C:\WINDOWS\system32\DBGHELP.dll
+0x77C00000 - 0x77C08000 	C:\WINDOWS\system32\VERSION.dll
+0x76BF0000 - 0x76BFB000 	C:\WINDOWS\system32\PSAPI.DLL
+
+Heap at VM Abort:
+Heap
+ def new generation   total 576K, used 142K [0x10030000, 0x100d0000, 0x10510000)
+  eden space 512K,  27% used [0x10030000, 0x100538e8, 0x100b0000)
+  from space 64K,   0% used [0x100b0000, 0x100b0000, 0x100c0000)
+  to   space 64K,   0% used [0x100c0000, 0x100c0000, 0x100d0000)
+ tenured generation   total 2660K, used 1458K [0x10510000, 0x107a9000, 0x14030000)
+   the space 2660K,  54% used [0x10510000, 0x1067c8b8, 0x1067ca00, 0x107a9000)
+ compacting perm gen  total 4096K, used 3038K [0x14030000, 0x14430000, 0x18030000)
+   the space 4096K,  74% used [0x14030000, 0x14327898, 0x14327a00, 0x14430000)
+
+Local Time = Wed Mar 07 09:58:55 2012
+Elapsed Time = 10
+#
+# The exception above was detected in native code outside the VM
+#
+# Java VM: Java HotSpot(TM) Client VM (1.4.2_01-b06 mixed mode)
+#
