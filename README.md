@@ -1,17 +1,15 @@
 # Programming
 Contains programs/code for the following languages:
 
-    * Java
+    - Java
+    - Haskell
+    - .NET
     
-    * Haskell
+    - Python
     
-    * .NET
+    - Bash
     
-    * Python
-    
-    * Bash
-    
-    * C/C++
+    - C/C++
 
 # Notable Stuff
     * [Mike Dane Java Tutorials](https://github.com/chowdhaj/Programming/tree/main/Java/Mike%20Dane%20Tutorials/src/mikeDaneJavaTutorial)
