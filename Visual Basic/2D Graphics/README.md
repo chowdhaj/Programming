@@ -13,20 +13,26 @@ be added.
 
 ## Images
 1. Upon starting the program, you are greeted with a peculiar splash screen.
-The combination of grungey colors and lens flares gives off a *Star Trek*
-vibe. \
+   The combination of grungey colors and lens flares gives off a *Star Trek*
+   vibe. \
 ![Startup](img-graphics/Graphics-1.png)
 
 2. A simple line animation is *The Vortex*. Here it is done in red. \
 ![First](img-graphics/Graphics-2.PNG)
 
-3. The background color can be changed. In this instance, it was changed from white to black, and the *Extreme Grid* animation is executed. Notice how even the lines' color can be altered - here it is green. \
+3. The background color can be changed. In this instance, it was changed from
+   white to black, and the *Extreme Grid* animation is executed. Notice how
+   even the lines' color can be altered - here it is green. \
 ![Grid](img-graphics/Graphics-3.PNG)
 
-4. This might be the worst color combination in the world; blue and burgundy. At least the makeshift parabolic curves look nice. If you look closely, there's a *Parabola* on each side. \
+4. This might be the worst color combination in the world; blue and burgundy.
+   At least the makeshift parabolic curves look nice. If you look closely,
+   there's a *Parabola* on each side. \
 ![Parabola](img-graphics/Graphics-4.PNG)
 
-5. The source code for each 2D line animation can be retrieved from the menu bar *(i.e. Developer Logs)*. Here we have partial source for *Quad Parabola*. \
+5. The source code for each 2D line animation can be retrieved from the menu
+   bar *(i.e. Developer Logs)*. Here we have partial source for *Quad
+   Parabola*. \
 ![Source](img-graphics/Graphics-5.PNG)
 
 6. The program is rife with 2D line animations in a multitude of colors. It demonstrates the power of arrays! \
@@ -36,5 +42,8 @@ vibe. \
 ![Paint](img-graphics/Graphics-7.PNG)
 
 ## Compatbility
+
+This application is fully compatible with **Windows 7** and **Windows 10**. Other versions are not officially supported.
+
 ## Executable
 
