@@ -1,0 +1,33 @@
+Jatin Chowdhary
+400033011
+
+Assumptions:
+    - Variable names were changed to reflect the data type. I like to give my variables 
+      a relevant name because it makes debugging easier and increases maintainability
+    - I created a method that prints Arrays. This makes it easier to debug and test
+    - The elapsed time for sorting is always 0.001. I am unsure why this is happening
+      and the TA was also unsure. However, I understand that Selection sort is O(N^2).
+    
+Notes:
+
+Classification Of Algorithms  
+	- Constant - 1 - The algorithm executes a fixed number of statements to finish the job.
+	   				   For example: Adding two numbers.
+	- Logarithmic N - Log N - The algorithm finishes in Log N time, where N is the size of
+							  the list. It is slightly slower than constant time. An example
+							  is Binary Search.
+	- Linear - N - The algorithm iterates through the entire list and time is dependent on
+	 			   the size of the list. An example is finding a particular element in a list
+	- Linearithmic - N * Log N - Examples are Merge Sort and Quick Sort
+	- Quadratic - N^2 - The algorithm has two nested loops. For example: Finding all possible
+	 				    cartesian combinations of two lists. Algorithms like selection sort
+	 				    and insertion sort have a time of N^2.
+    - Cubic - N^3 - The algorithm has 3 nested loosps.
+    - Exponential 2^N - This algorithm is really slow and usually cannot be completed for a large
+    					problem. However, there are problems in CS where exponential is the only
+    					solution
+
+RunTime
+	- Can be measured using the difference between System time.
+	- There is a method called currentTimeMillis
+	- nanoTime can also be used but causes issues on multi-cores

@@ -1,0 +1,37 @@
+Jatin Chowdhary
+400033011
+
+Assumptions:
+
+	- A toString method was added to SelectionSort. It converts
+	  the Comparable to a string, making it 'printable'. Also,
+	  this method is private so it is only accessible inside
+	  the SelectionSort class. I did this to hide it from the
+	  JUnit Testing Class.
+	- Answers to questions are inside the respective java classes
+	- I am assuming that deprecated methods are allowed to be used
+	- Most of the methods from SelectionSort.java were copied
+	  directly into BubbleSort.java. Everything worked flawlessly.
+	- The test cases for BubbleSort.java are identical to the
+	  test cases for SelectionSort.java. This is because the test
+	  cases are more than adequate and cover edge cases.
+	- The code for ShellSort.java was taken straight from the 
+	  textbook. The remaining functions were copied from 
+	  SelectionSort.java and BubbleSort.java
+	- The test cases for sorting algorithms use the AssertEquals
+	  method, even though it has been deprecated. 
+	- The input for ShellSort is assumed to be a double, and all
+	  Integers get converted into Floating point values.
+	- The Scanner and PrintWriter are closed at the end of execution,
+	  to prevent memory leaks.
+	
+(You can ignore everything after this)
+	
+Notes:
+
+	- An algorithm is a procedure that takes input and 
+	  produces output. For example: Sorting a sequence 
+	  of numbers
+	- An algorithm describes a specific computational procedure
+	  for achieving a desired IO relationship
+	- 

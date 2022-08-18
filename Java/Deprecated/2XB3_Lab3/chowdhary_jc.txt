@@ -1,0 +1,19 @@
+Jatin Chowdhary
+400033011
+
+Assumptions:
+
+- Not commenting code b/c walk through does not mention it. 
+Even though it is good practice to comment.
+Code is simple enough to be understood
+
+- All input from user will be proper and no exceptions will
+be thrown. Thus, no input sanitization required
+
+- For task 3, the formula is non-mathematical
+
+- For task 4, the template code for coth(x), sech(x), and csch(x) is not given,
+so I created my own based on the other functions
+
+- 'StdOut' is not part of the official Java library. Thus, it will be replaced 
+with 'System.out.println'

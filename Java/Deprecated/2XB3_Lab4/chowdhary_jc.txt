@@ -1,0 +1,34 @@
+Jatin Chowdhary
+400033011
+
+Assumptions & Design Decisions:
+
+	- For PotentialGene.java, the input string was converted to uppercase before 
+	  being processed by the methods in isPotentialGene.
+	- For PotentialGene.java, the individual characters were checked to see if
+	  they are 'A', or 'G' or 'C' or 'T', as these are the only valid base pairs.
+	- For PotentialGene.java, the input method was changed from accepting a single
+	  string to an array of strings. Then, this array is iterated using a For Each
+	  loop and each element is passed to the isPotentialGene function where it returns
+	  whether the DNA Sequence is accurate or not. I did this because it helps with
+	  testing multiple DNA Sequences and makes the entire process quicker.
+	- For PotentialGene.java, when printing to console, the DNA sequence is also
+	  printed, followed by a true or false to indicate whether it is a DNA sequence
+	  or not. I did this for readability.
+	
+	- For Stopwatch.java, the Java Doc comments were modified and more information
+	  was added. I did this as practice for future projects and the upcoming quiz.
+	  
+	- For Point.java, StdOut was replaced with System.out because StdOut is not
+	  available with the standard Java library. Because of this change, the functions
+	  'drawTo' and 'draw' were modified to simply print out a statement to console.
+	  
+	- For all java files, the question is at the bottom of the file, in a multi-
+	  line comment. I did this for ease of access.	
+	  
+	- A lot of testing code is commented out instead of being deleted. This was done
+	  for future reference. This code can be ignored. 
+	  
+	- For all java files, StdOut was replaced with System.out.println. This was done 
+	  because StdOut is not part of the standard Java library. And, it is not commonly
+	  used in Java code. Thus, System.out.println was used as it is better.

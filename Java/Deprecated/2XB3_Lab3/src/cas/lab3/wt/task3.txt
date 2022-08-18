@@ -1,0 +1,109 @@
+task3.txt
+
+----
+CODE
+----
+
+public static long fibonacci(int n) {
+	if (n == 0) return 0;
+	if (n == 1) return 1;
+  return fibonacci(n-1) + fibonacci(n-2);   
+}
+
+>>> fibonacci(8)
+ 
+------
+RESULT
+------
+
+  fibonacci(8)
+  	  fibonacci(7)
+  	      fibonacci(6)
+  	          fibonacci(5)
+  	              fibonacci(4)
+  	                  fibonacci(3)
+  	                      fibonacci(2)
+  	                          fibonacci(1) -> return 1
+  	                          fibonacci(0) -> return 0
+  	                      fibonacci(1) -> return 1
+  	                  fibonacci(2)
+  	                      fibonacci(1) -> return 1
+  	                      fibonacci(0) -> return 0
+  	              fibonacci(3)
+  	                  fibonacci(2)
+  	                      fibonacci(1) -> return 1
+  	                      fibonacci(0) -> return 0
+  	                  fibonacci(1) -> return 1
+  	          fibonacci(4)
+  	              fibonacci(3)
+  	                  fibonacci(2)
+  	                      fibonacci(1) -> return 1
+  	                      fibonacci(0) -> return 0
+  	                  fibonacci(1) -> return 1
+  	              fibonacci(2)
+  	                  fibonacci(1) -> return 1
+  	                  fibonacci(0) -> return 0
+  	      fibonacci(5)
+  	          fibonacci(4)
+  	              fibonacci(3)
+  	                  fibonacci(2)
+  	                      fibonacci(1) -> return 1
+  	                      fibonacci(0) -> return 0
+  	                  fibonacci(1) -> return 1
+  	              fibonacci(2)
+  	                  fibonacci(1) -> return 1
+  	                  fibonacci(0) -> return 0
+  	          fibonacci(3)
+  	              fibonacci(2)
+  	                  fibonacci(1) -> return 1
+  	                  fibonacci(0) -> return 0
+  	              fibonacci(1) -> return 1
+  	  fibonacci(6)
+  	      fibonacci(5)
+  	          fibonacci(4)
+  	              fibonacci(3)
+  	                  fibonacci(2)
+  	                      fibonacci(1) -> return 1
+  	                      fibonacci(0) -> return 0
+  	                  fibonacci(1) -> return 1
+  	              fibonacci(2)
+  	                  fibonacci(1) -> return 1
+  	                  fibonacci(0) -> return 0
+  	          fibonacci(3)
+  	              fibonacci(2)
+  	                  fibonacci(1) -> return 1
+  	                  fibonacci(0) -> return 0
+  	              fibonacci(1) -> return 1
+  	      fibonacci(4)
+  	          fibonacci(3)
+  	              fibonacci(2)
+  	                  fibonacci(1) -> return 1
+  	                  fibonacci(0) -> return 0
+  	              fibonacci(1) -> return 1
+  	          fibonacci(2)
+  	              fibonacci(1) -> return 1
+  	              fibonacci(0) -> return 0 
+  	              
+1) fibonacci(100) is incredibly inefficient. It doesn't work on my laptop, and Eclipse ends up crashing.
+
+2) In order to compute fibonacci(8), the function calls fibonacci(7) and fibonacci(6). In order to compute those, it calls
+fibonacci(6) and fibonacci(5) for fib(7) AND fib(5) and fib(4) for fib(6). This continues for all fib numbers until fib(1) or fib(0)
+is reached. 
+
+3) To calculate how many times fibonacci(n) is called, simply look at the fibonacci sequence. For example:
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+
+Since fib(8) = 21, we are only going to look at the first 9 elements:
+0, 1, 1, 2, 3, 5, 8, 13, 21
+
+Now, we reverse the sequence: 
+21, 13, 8, 5, 3, 2, 1, 1, 0
+
+The first element corresponds to how many times fib(1) is called.
+In this case it is 21.
+Therefore fibonacci(1) is called 21 times when fibonacci(8) is computed recursively
+
+The second element corresponds to how many times fib(2) is called. It is 13
+The third element corresponds to how many times fib(3) is called. It is 8
+The fourth element corresponds to how many times fib(4) is called. It is 5
+And so and so forth... This is the formula

@@ -1,0 +1,13 @@
+Jatin Chowdhary
+400033011
+
+Assumptions:
+
+	- The 'getters' for the Money class were renamed and the word 
+	  'get' was added in the beginning. This is because these methods
+	  are 'getters' and naming them with a 'get' makes it more clear.
+	  
+	- Variables were renamed to be more descriptive. For example,
+	  'aMoney' was changed to 'diffMoney'.
+	
+	- Comments were added for clarity

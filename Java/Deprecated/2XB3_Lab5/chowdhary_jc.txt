@@ -1,0 +1,25 @@
+Jatin Chowdhary
+400033011
+
+Assumptions:
+
+	- Package name renamed to 'cas.lab5.wt' because package names cannot 
+	  start with a number. Thus, the '2XB3' had to be dropped.
+	  
+	- Comments were added for clarity, even though they are not specified in
+	  the walk-through. However, adding comments is good coding practice. 
+	  Therefore, I decided to add them. 
+	  
+	- The accessor methods were renamed to 'getX' and 'getY'. This is because
+	  this the convention set by the Java industry experts. They call these
+	  getter methods. 
+	  
+	- The 'distanceTo' method was implemented differently. I calculated the
+	  power by using the Math library's 'pow' function. I did this because
+	  using libraries are efficient; why reinvent the wheel?
+	  
+	- The output text to console was aligned and formatted to make it more
+	  aesthetically pleasing. 
+	  
+	- More test cases were added to test the robustness of the programs. This
+	  is not referring to data/input.txt
