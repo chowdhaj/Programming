@@ -48,6 +48,7 @@ This application is fully compatible with **Windows 7** and **Windows 10**.
 Other versions are not officially supported.
 
 ## Executable
-The executable is too large to host on *GitHub*. The total size is ~149 MB.
-If you would like a copy, please send me a message, and I will be happy to
-send you the respective executable. Thank you!
+The executable is too large to host on *GitHub*, and I'm running out of
+space. The total size of the *EXE* is ~149 MB. If you would like a copy,
+please send me a message, and I will be happy to send you the respective
+executable. Thank you!
