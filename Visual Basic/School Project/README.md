@@ -72,25 +72,33 @@ Here is a quick breakdown of how to use this application:
 
 5. The documents allow scrolling and editing. You can easily
    alter the document to your heart's content. It makes
-   everything seem more legitimate. \
+   everything seem more legitimate. If you experience SOS,
+   then you can start typing away. Once SOSG, then you can
+   switch back to HaloCE. Genius! \
 ![Work](img-haloce/Halo-5.PNG)
 
-6. Six \
+6. In case of emergencies, you can press anywhere on the toolbar
+   to quickly crash the entire program. Upon doing so, you will
+   receive the following error message. From here, you can click
+   anywhere, and you are home free. \
 ![Safe](img-haloce/Halo-6.PNG)
 
-7. Seven \
+7. Example of using a PPT to discreetly play Halo. Pressing the
+   *Play* button will start the executable. \
 ![Play](img-haloce/Halo-7.PNG)
 
-8. Eight \
+8. In the same slide deck from before, find the *Patched* keyword
+   to delete all traces of Halo before turning off the machine. \
 ![Patch](img-haloce/Halo-8.PNG)
 
-9. Nine \
+9. Once you have covered your tracks, you can exit the program \
 ![Leave](img-haloce/Halo-9.PNG)
 
-10. Ten \
+10. Extra options available in the *Extra* tab: \
 ![Extra](img-haloce/Halo-10.PNG)
 
-11. Eleven \
+11. What the CS page looks like. It is very simple because CS is
+    "safer" than Halo in terms of detectability. \
 ![Counter](img-haloce/Halo-11.PNG)
 
 ## Compatbility
