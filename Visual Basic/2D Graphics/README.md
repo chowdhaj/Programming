@@ -17,22 +17,22 @@ The combination of grungey colors and lens flares gives off a Star Trek
 vibe.
 ![Startup](img-graphics/Graphics-1.png)
 
-2. Something here
+2. Two\
 ![First](img-graphics/Graphics-2.png)
 
-3. Something else
+3. Three\
 ![Grid](img-graphics/Graphics-3.PNG)
 
-4. Something
+4. Four\
 ![Parabola](img-graphics/Graphics-4.PNG)
 
-5. Something
+5. Five\
 ![Source](img-graphics/Graphics-5.PNG)
 
-6. Something
+6. Six\
 ![Options](img-graphics/Graphics-6.PNG)
 
-7. Something
+7. Seven\
 ![Paint](img-graphics/Graphics-7.PNG)
 
 ## Compatbility
