@@ -48,5 +48,6 @@ This application is fully compatible with **Windows 7** and **Windows 10**.
 Other versions are not officially supported.
 
 ## Executable
-You can download the executable and run it on your machine.
-[Click me!](https://github.com/chowdhaj/Programming/blob/main/Visual%20Basic/2D%20Graphics/2D%20Array/bin/Debug/2D%20ArRaYy.exe)
+The executable is too large to host on *GitHub*. The total size is ~149 MB.
+If you would like a copy, please send me a message, and I will be happy to
+send you the respective executable. Thank you!
