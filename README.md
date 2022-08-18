@@ -16,4 +16,6 @@ Contains programs/code for the following languages:
 * [Halo Patcher In .NET](https://github.com/chowdhaj/Programming/tree/main/Visual%20Basic/School%20Project)
 
 # License
-You have my permission to do whatever you want to this code. Fork it, copy it, share it, etc. the choice is all yours. Enjoy!
+You have my permission to do whatever you want to this code.
+Fork it, copy it, share it, etc. the choice is all yours.
+Enjoy!
