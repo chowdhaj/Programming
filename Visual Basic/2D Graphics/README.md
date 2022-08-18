@@ -17,8 +17,8 @@ The combination of grungey colors and lens flares gives off a Star Trek
 vibe.
 ![Startup](img-graphics/Graphics-1.png)
 
-2. Two\
-![First](img-graphics/Graphics-2.png)
+2. A simple line animation is *The Vortex*
+![First](img-graphics/Graphics-2.PNG)
 
 3. Three\
 ![Grid](img-graphics/Graphics-3.PNG)
