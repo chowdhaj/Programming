@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-07-30T17:34:30</date>
+  <millis>1501450470789</millis>
+  <sequence>0</sequence>
+  <logger>java.util.logging.Logger</logger>
+  <level>SEVERE</level>
+  <class>simplycoding.Logging</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>File Can't READ</message>
+  <exception>
+    <message>java.io.IOException: Can't Read</message>
+    <frame>
+      <class>simplycoding.Logging</class>
+      <method>main</method>
+      <line>15</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2017-07-30T17:34:30</date>
+  <millis>1501450470838</millis>
+  <sequence>1</sequence>
+  <logger>java.util.logging.Logger</logger>
+  <level>INFO</level>
+  <class>simplycoding.Loggings</class>
+  <method>test</method>
+  <thread>1</thread>
+  <message>I'm from another class</message>
+</record>
+</log>
