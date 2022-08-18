@@ -14,13 +14,16 @@ To start/stop playback, use the appropriate volume buttons. To exit the
 application entirely, press the lock button on the iPhone 4.
 
 ## Images
-1. Upon starting the program, you are greeted with a peculiar splash screen.
-   The combination of grungey colors and lens flares gives off a *Star Trek*
-   vibe. \
+1. The on-screen controls function very similar to an iPhone. Press the
+   power button to exit the application. The home button terminates the
+   app you are in. Pressing the notification bar brings down information.
+   The volume buttons control music; just like regular phones. \
 ![NAME](img-phone/iPhone-1.PNG)
 
-2. A simple line animation, which is *The Vortex*. Here it is done in red.
-   You can use the menu on the side to play any 2D animation you want. \
+2. The BMI app calculates your body mass index. Input your name, weight,
+   and height, and the app will do the rest for you. You can choose
+   between Metric or Imperial units. *Note: There is an Easter Egg here.
+   See if you can find it!* \
 ![NAME](img-phone/iPhone-2.PNG)
 
 3. The background color can be changed. In this instance, it was changed from
