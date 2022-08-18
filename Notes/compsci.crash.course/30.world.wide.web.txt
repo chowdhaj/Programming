@@ -1,0 +1,31 @@
+------------------
+The World Wide Web 
+------------------
+
+Sauce: https://www.youtube.com/watch?v=guvsH5OFizE
+
+-----
+Notes
+-----
+
+- The World Wide Web (WWW) is not the same thing as the internet
+- The WWW runs on top of the internet, just like Skype, Instagram, and Facebook
+- The Internet is the underlying plumbing that conveys the data for all these different applications; and the WWW is the biggest of them all
+- The WWW is a huge distributed application running on millions of servers worldwide, accessed using a special program called a web browser
+- The fundamental building block of the WWW (web) is a single page. This document contains content which can include links to other pages. These are called hyperlinks. Hyperclinks are clickable links that'll take you to another webpage
+- Hyperlinks form a huge web of interconnected information. With hyperlinks, you can easily flow from one topic to another
+- Before hyperlinks were invented you had to find information yourself by searching the file system
+- Hyperlinks were first conceptualized by Vannevar Bush in 1945 (MemeX)
+- Associative Indexing: Any item may be caused at will to select another immediately and automatically
+- Text containing hyperlinks are called hypertext
+- In order for pages to link to one another, each hypertext page needs a unique address. On the web, this is specified by a Uniform Resource Locater (URL)
+- When you request a site, the first thing your computer does is a DNS lookup. This takes a domain name as input and replies back with an IP Address. Then, the web browser opens a TCP connection to a computer that's running a special piece of software called a web server. The next step is to ask the web server for the hypertext page. To accomplish this, it uses the Hypertext Transfer Protocol (HTTP). Your browser sends the command 'get' to fetch the webpage. The webpage is interpreted by your web browser and then rendered to the screen 
+- The standard port number for web servers is port 80
+- HTTP has status codes. For example, status code 200 means OK. Status codes in the 400s are client errors. Error 404 means that the webpage doesn't exist
+- Hypertext Markup Language was developed to mark up a text file with hypertext elements. This is done using tags
+- The first web browser and web server was written by Sir Tim Berners-Lee
+- The earliest web search engine was JumpStation
+- A web crawler is a software that follows all the links it can find on the web. This was recorded in an index. A search algorithm was consult the index every time you wanted to find something
+- Google's rise to fame was because of its clever search algorithm that utilized backlinks. Backlinks are the number of times other sites link to a site. If a site had lots of backlinks, chances are, its quite reputable. This started as a research project in Stanford called Backrub
+- Net Neutrality is the principle that all packets on the internet should be treated equally. It doesn't matter if the packets are my email or your video, they should all transfer along at the same speed and priority
+- Throttle is when data is intentionally given less bandwidth and lower priority

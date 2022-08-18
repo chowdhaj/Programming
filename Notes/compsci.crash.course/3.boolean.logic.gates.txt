@@ -1,0 +1,21 @@
+---------------------------
+Boolean Logic & Logic Gates
+---------------------------
+
+Sauce: https://www.youtube.com/watch?v=gI-qXk7XojA
+
+-----
+Notes
+-----
+
+- With two states of electricity, important information can be represented. This representation is called Binary, which literally means "of two states"
+- Two states is what's required to represent True & False, On & Off, and 0 & 1
+- The 'on' state means that electricity is flowing (true), and the 'off' state means it is not (false)
+- Any state other than binary is less than ideal because signals can get mixed up (i.e. Interference from other devices)
+- George Boole founded Boolean Algebra
+- The three fundamental operations in Boolean Algebra are: a NOT, an AND, and an OR
+- A NOT takes a single boolean value, either true or false, and negates it, flipping true to false and false to true
+- An AND gate takes two values and returns a true or false. With an AND gate, both values must be true to return true, otherwise it returns false
+- With an OR gate, it takes two values and returns a true or false, and only one input has to be true for the output to be true
+- Another boolean operator is called XOR (exclusive OR). It's built using the other gates
+- With XOR, only one input must be true to get true, otherwise the output is false. So true XOR true returns false

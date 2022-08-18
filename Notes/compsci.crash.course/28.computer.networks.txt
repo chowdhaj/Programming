@@ -1,0 +1,45 @@
+-----------------
+Computer Networks
+-----------------
+
+Sauce: https://www.youtube.com/watch?v=3QhU9jd03a0
+
+-----
+Notes
+-----
+
+- Latency is the time it takes for a message to transfer
+- As big computers and personal computers became more common, it became increasingly useful for share data and resources, which lead to the rise of networks
+- The first computer networks appeared in the 1950s and 60s. They were generally used within an organization; like a company or research lab
+- Traveling to the other side of a building with a stack of punch cards or magnetic tape was called a Sneakernet
+- A huge benefit of networks is the ability to share resources. For example, instead of each computer having its own printer, everyone could share one attached to the network
+- It was common to have large storage drives attached to the network
+- Relatively small networks of close-by computers are called Local Area Networks (LAN)
+- A LAN can be as small as two computers in the same room or as large as a university campus with thousands of computers
+- The most famous and successful LAN technology was ethernet; developed in the early 1970s at Xerox PARC
+- Ethernet LAN is a series of computers connected to a single common ethernet cable. When a computer wents to send data, it writes the signal as an electrical signal, onto the cable
+- Ethernet requires each computer on the network to have a unique Media Access Control (MAC) address. The MAC address is put into a header that prefixes any data sent over the network
+- Every computer made today comes with a unique MAC Address for both ethernet and WiFi
+- The general term for Ethernet Technology is Carrier Sense Multiple Access (CSMA)
+- The rate at which data can be transmitted is called Bandwidth
+- Sharred carrier networks are susceptible to collisions; when two computers simultaneously send data. It's like two people trying to talk on the phone at the same time
+- When a collision is detected, the computer will wait a brief and random period before transmitting again. If it detects more collisions the wait time will exponentially increase until the carrier is silent. This is called Exponential Backoff
+- To reduce collisions and improve efficiency, the number of devices on the shared carrier needs to be reduced. The shared carrier is also called the Collision Domain. This can be done by breaking up the network into smaller parts by using a Network Switch
+- A Network Switch works by keeping a list of what MAC addresses are on what side of the network. This is how big computer networks are constructed, including the Internet. 
+- The Internet connects smaller networks together, allowing Inter-Network communication
+- Routing is the process of transferring data from one network to another (i.e. Taking the most efficient path)
+- Circuit Switching is when whole circuits are switched to route traffic to the correct destination. This is how early telephones worked
+- Message Switching is another approach to get data from one place to another. Instead of a dedicated route from A to B, messages are passed through several stops. This is similar to how the postal system works
+- Message Switching can use different routes, making communication more reliable and fault-tolerant. For example, if one node is down, the messages can be sent through another
+- The number of hops a message takes along a route is called the hop count. The hop count is stored with the message and updated along its journey
+- In order to combat big data from hogging up the network, big transmissions are split into many small pieces called packets. Each packet contains a destination address on the network, so routers know where to forward them. This is known as Internet Protocol (IP).
+- The Internet Protocol was created in the 1970s
+- Every computer connected to a network gets an IP address
+- Network routers are constantly trying to balance the load across whatever routes they know to ensure speedy and reliable delivery. This is called Congestion Control
+- Since packets can take different paths, it's possible that they can arrive out of order. In order to combat this, another protocol runs on top of IP, called TCP
+- Chopping up data into small packets and passing them along different routes is called Packet Switching. This is so efficient and fault-tolerant that it's what the whole internet runs on today
+- Packet Switching is decentralized, with no single authority or point of failure
+- Routers exchange information with each other using special protocols like the Internet Control Message Protocol (ICMP) and the Border Gateway Protocol 
+(BGP)
+- The world's first packet-switched network, and the ancestor to the modern internet was the ARPANET (ARPA = Advanced Research Projects Agency)
+- Today, smartphones, appliances, theromstats, etc. are all connected to the internet, forming an Internet Of Things

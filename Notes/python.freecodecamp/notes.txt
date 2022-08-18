@@ -1,0 +1,966 @@
+----------------------------------------
+Learn Python - Full Course for Beginners
+----------------------------------------
+Link: https://www.youtube.com/watch?v=rfscVS0vtbw
+----------------------------------------
+
+##########
+# BASICS #
+##########
+
+- Python 2 is legacy and is no longer being maintained or supported
+
+- Python 3 is the latest and greatest
+
+- The differences between Python 2 and 3 are mostly syntactical
+
+- IDE = Integrated Development Environment
+
+- IDEs help with writing, testing, and debugging code
+
+- Popular IDE for Python is PyCharm by JetBrains
+
+- Printing to the terminal/console is done by:
+
+	print("Text Goes Here")
+
+- Programming is specifying a set of instructions for the computer to execute
+
+- The console is where Python outputs information - the result of the program
+
+- Python executes the instructions/code in order; order matters a lot
+
+#############
+# VARIABLES #
+#############
+
+- Variables are used to contain data values
+
+- Variables make managing data much easier
+
+- Variables can be modified and updated
+
+- Python has many different data types
+
+- The String data type stores plain text. For example:
+
+	stringName = "John"
+
+- Numbers can be stored in variables. For example:
+	
+	userAge = 21
+
+- Decimal numbers can also be stored. For example:
+
+	waterLevel = 1.5625
+
+- Boolean values can be stored. They are either true or false values. For example:
+
+	is_male = True
+	is_female = False
+
+- True/False values are extremely important in programming
+
+###########
+# STRINGS #
+###########
+
+- Strings are, basically, plain text
+
+- Newlines in strings are created using '\n'. For example:
+
+- The backslash, also called the escape character, tells Python render the next character literally. For example:
+
+	print("You Are \"Not\" Right")
+
+- Concatenation is the process of appending two strings. For example:
+
+	my_name = "Mike"
+	print(my_name + " Ross\n")
+
+#############
+# FUNCTIONS #
+#############
+
+- A function is a block of code that performs a specific operation. Functions can be used to modify strings and get information about strings. For example:
+
+	my_school = "McMaster University"
+	print(my_school.lower())
+	caps_key = "capslock wins"
+	print(caps_key.upper())
+
+- Multiple functions can be used at the same time and one after another. For example:
+
+	my_city = "England"
+	print(my_city.upper().isupper())
+
+- The length of the string can be recieved using the 'len' function. For example:
+
+	get_length = "How Big?"
+	print(len(get_length))
+
+- Individual characters of strings can be recieved. For example:
+
+	get_character = "Xylophone"
+	print(get_character[0])
+
+- In Python, indexes on a string start with 0. Consider the string "Hello"
+
+	H e l l o
+	0 1 2 3 4
+
+- In order to print out the first character, 'H', you reference 0. For example:
+	
+	first_letter = "Hello"
+	print(first_letter[0])
+
+- For the last character, 'o', you reference 4. For example:
+
+	last_letter = "Hello"
+	print(last_letter[4])
+
+- The index function returns the location of the first instance of a character or string. For example:
+
+	sentence = "The quick brown fox jumped over the lazy dog"
+	print(sentence.index("q"))
+	print(sentence["fox"])
+
+- The replace function replaces words or characters inside strings with other ones. For example:
+
+	print(sentence.replace("fox", "cow"))
+
+###########
+# NUMBERS #
+###########
+
+- How to print numbers:
+
+	print(3)
+	print(3.14159)
+	print(-3.14159)
+
+- Mathematical operators like addition and subtraction are supported. For example:
+
+	print(6 + 9.9)
+	print(6.2 - 3.2)
+	print(2 * 2)
+	print(10 / 2)
+
+- Python follows BEDMAS. For example:
+
+	print(10 * 2 + 5)
+	print(10 * (2 + 5))
+
+- Python has the MODulus/remainder operator. For example:
+
+	print(10 % 3)
+
+- The mod operator returns the remainder after division. For example:
+
+	10 % 3 = 1 # The answer to 10 mod 3 is 1
+	3 x 3 = 9  # 3 fits into 10 with 1 left over [3 times because 3 x 3 = 9]
+	9 + 1 = 10 # 1 is the remainder
+
+- Numbers can also be stored inside variables, similar to Strings. For example:
+
+	number = 42
+	print(number)
+
+- Numbers can be converted into strings and printed alongside other strings. For example:
+
+	print(str(number))
+	print(str(number) + " is my favorite number!")
+
+########
+# MATH #
+########
+
+- Examples of math functions in Python:
+
+	print(abs(-10)) # Returns the absolute value of the number
+	print(pow(3,4)) # Returns the power of 3^4
+	print(max(15,20)) # Returns the maximum of two numbers
+	print(min(5,20)) # Returns the minimum of two numbers
+	print(round(3.3)) # Rounds the number. In this case: 3
+	print(round(3.7)) # Rounds the number. In this case: 4
+
+#############
+# IMPORTING #
+#############
+
+- More functions can be used by importing them. Add the following line to the top (usually) of your python file:
+
+	import math
+
+		Note: When you import this way, functions are used like this:
+			math.floor(42)
+			math.ceil(11)
+
+	OR
+
+	from math import *
+
+		Note: When you import this way, functions do not need the 'math' keyword. For example:
+
+			floor(32)
+			ceil(12)
+
+- More examples of math functions; from the math module/library:
+
+	print(floor(3.99)) # Floor always rounds down, no matter what
+	print(ceil(3.11)) # Ceil always rounds up, no matter what
+	print(sqrt(16)) # Takes the square root
+
+##############
+# USER INPUT #
+##############
+
+- Example of accepting user input:
+
+	input("Enter your first name: ")
+
+- User input can be stored into a variable. For example:
+
+	input_name = input("What Is Your Name? ==> ")
+	input_age = input("How Old Are You? ==> ")
+
+	print("Greetings, " + input_name + ". " + "It's a good day to be " + input_age)
+
+###########
+# CASTING #
+###########
+
+- Casting is when you convert a variable from one type to another
+
+- Strings can be converted into integers. For example:
+
+	int_num1 = input("Enter a number: ")
+	square = int(int_num1) ^ int(int_num1)
+	print(square)
+
+- Strings can be converted into decimal numbers. For example:
+
+	float_num1 = input("Enter a decimal number: ")
+	square_d = float(float_num1) * float(float_num1)
+	print(square_d)
+
+#########
+# LISTS #
+#########
+
+- When dealing with large amounts of data, you wanna make sure you can manage and organize it properly
+
+- A list is a data structure, found in Python, to store lists of information
+
+- Lists make it easier to track a bunch of different data values
+
+- Example of a list:
+
+	games = ["Call of Duty", "Battlefield", "Crysis", "Minesweeper"]
+
+- Variables can only hold one type of data
+
+- Lists can hold many different types of data. For example:
+
+	profile = ["John", "Smith", 35, True]
+
+- Printing out entire list:
+
+	print(games)
+	print(profile)
+
+- Individual elements can be accessed like this:
+
+	print(games[0])
+	print(profile[3])	
+
+- Note: Indexing starts at 0. For example:
+
+	["John", "Smith", 35, True]
+		0		1	  2		3
+
+- Elements can also be accessed from the back of the list. For example:
+
+	print(games[-4])
+	print(profile[-1])
+
+- The back of the list is -1 and the indexing decreases. For example:
+
+	["John", "Smith", 35, True]
+		-4		-3	  -2   -1
+
+- Accessing multiple elements:
+
+	print(games[0:2]) # Prints out every element from 0 to 1 -- does not print out the 2nd element
+	print(profile[2:]) # Prints out every element from the 2nd index position
+	print(games[:3]) # Prints out every element from 0 to 2 -- does not print out the 3rd element
+
+- Modifying elements in a list:
+
+	games[3] = "Chess"
+	profile[1] = "Doe"
+
+- Lists are very important when dealing with lots of data
+
+- List functions:
+
+	extend: Appends one list to the end of another
+		games.extend(profile)
+
+	append: Adds an element to end of list
+		games.append("Last Of Us")
+
+	insert: Adds an element to a specific index
+		games.insert(1, "BOTW")
+
+	remove: Remove a specific element
+		games.remove("Crysis")
+
+	clear: Removes all elements from list
+		games.clear()
+
+	pop: Removes last element from list
+		games.pop()
+
+	index: Returns an element at a specific index
+		games.index(1)
+		print(games.index(1))
+
+	count: Returns how many times a value shows up
+		games.count("WOW") # Returns 0
+
+	sort: Sorts the list
+		my_nums = [1,4,7,9,3,5,7,4,7,8,4,0,9]
+		my_nums.sort()
+		print(my_nums)
+
+	reverse: Reverses the list
+		games.reverse()
+
+	copy: Copies the list onto another list
+		diff_List = games.copy()
+		print(diff_List)
+
+##########
+# TUPLES #
+##########
+
+- A tuple is a data structure that hold two values. For example:
+
+	coordinates = (4,2)
+
+- A tuple is immutable; it cannot be changed at all. What you see is what you get
+
+- Printing a tuple:
+
+	print(coordinates)
+	print(coordinates[0])
+	print(coordinates[1])
+
+#############
+# FUNCTIONS #
+#############
+
+- Creating a function:
+
+	def say_hello():
+		print("Say Something...")
+
+- The 'def' keyword defines a function. After that is the name of the function, followed by brackets and a colon. 
+
+- Every INDENTED line below 'def' is PART OF the function. For example:
+
+	def name_of_function():
+		print("Hello") # This is part of the function
+		print("World") # Also part of the function
+	print("Nice to meet you") # NOT part of the function
+
+- Functions only run when called upon. For example:
+
+	def say_hello():
+		print("Say Something...")
+
+	say_hello() # Runs the function
+
+- Function names follow regular python naming convention. Lowercase letters and underscores to separate words
+
+##############
+# PARAMETERS #
+##############
+
+- Parameter is a piece of information that is given to a function. For example:
+
+	def greet_user(name):
+    	print("Hello "+ name)
+
+	greet_user("Mike")
+	greet_user("Steve")
+
+- You can pass as many parameters as you want. For example:
+
+	def exam_details(subject, adjective, student_name, mark):
+		print("The " + subject + " exam was " + adjective + ". " + student_name + " got a " + mark)
+
+	exam_details("chem", "bad", "Steven", "50")
+	exam_details("math", "great", "Harry", "95")
+
+- Functions are useful when a specific block of code is going to be executed over and over again
+
+##########
+# RETURN #
+##########
+
+- A return statement allows us to retrieve information from a function. It returns information back to the caller. For example:
+
+	def cube_number(cube_this_number):
+	    return cube_this_number * cube_this_number * cube_this_number
+
+	print(cube_number(5))
+
+- Parameters gives information to functions
+
+- Return gets information from functions	
+
+- Code after the 'return' keyword, that is part of the function, is not executed
+
+#################
+# IF STATEMENTS #
+#################
+
+- If Statements allow the program to respond to input. Based on the input/conditition, the program can execute different code. 
+
+- The condition that is being checked must be or result to a Boolean (True/False)
+
+- Creating If Statements:
+
+	is_male = True
+
+	if (is_male): 
+		print("You are a male")
+
+	is_male = False
+
+	if (is_male): 
+		print("You are a male") # Does not get executed
+
+- If Statements can be made more complex using the 'else' keyword. For example:
+
+	is_rainy = True
+
+	if (is_rainy):
+		print("Get Umbrella")
+	else:
+		print("Get Sunglasses") # Does not get executed
+
+- You can check multiple statements in a row using the 'and', 'or' operators, and you can negate conditions using 'not'. For example:
+
+	is_gamer = True
+	has_gaming_PC = True
+
+	if (is_gamer) and (has_gaming_PC):
+	    print("You are part of the master race")
+	else:
+	    print("You may be a gamer OR have a gaming PC")
+
+	is_gamer = False
+	has_gaming_PC = False
+
+	if (is_gamer) or (has_gaming_PC):
+	    print("You may be a gamer OR have a gaming PC")
+	else:
+	    print("You are not a gamer and you don't have a gaming PC")
+
+	is_gamer = False
+	has_gaming_PC = True
+
+	if not (is_gamer) and (has_gaming_PC):
+	    print("You are not a gamer but you have a gaming PC")
+
+- With the 'and' keyword, BOTH conditions need to be True
+
+- With the 'or' keyword, ONLY ONE of the conditions needs to be True 
+
+- 'not' negates the condition. So True becomes False and False becomes True
+
+- You can also nest If Statements. Which means to be If Statements inside an If Statement. For example:
+
+	is_gamer = True
+	has_gaming_PC = False
+
+	if (is_gamer):
+	    if (has_gaming_PC):
+	        print("PC Master Race")
+	    else:
+	        print("Consoles Are Meh")
+	else:
+	    print("You are missing out!")
+
+- You can add more conditions to check using the 'elif' keyword, which means "else if". For example: 
+
+	is_weekend = True
+	no_homework = True
+
+	if (is_weekend) and (no_homework):
+	    print("You get to sleep in")
+	elif (is_weekend) and not (no_homewok):
+	    print("You can sleep after you finish your homework")
+	elif not (is_weekend) and (no_homework):
+	    print("I guess you can relax")
+	else:
+	    print("Homework's due tomorrow, you better finish it!")
+
+###############
+# COMPARISONS #
+###############
+
+- Comparison operators are used to compare data. Examples of comparison operators:
+
+	- The equals operator is: ==
+	- The less than operator is: <
+	- The greater than operator is: >
+	- Less than or equal to: <=
+	- Greater than or equal to: >= 
+	- Not equal to operator is: !=
+
+- Example of using comparison operators on numeric data:
+
+	def max_number_3(num1, num2, num3):
+	    if (num1 >= num2) and (num1 >= num3):
+	        return num1
+	    elif (num2 >= num1) and (num2 >= num3):
+	        return num2
+	    else:
+	        return num3
+
+	print(max_number_3(30,4,5))
+
+
+##############
+# CALCULATOR #
+##############
+
+def smart_calculator(calc_num1, calc_op, calc_num2):
+
+    if (calc_op == "+"):
+        return calc_num1 + calc_num2
+    elif (calc_op == "-"):
+        return calc_num1 - calc_num2
+    elif (calc_op == "/"):
+        if (calc_num2 == 0):
+            return "Only Chuck Norris Can Divide By Zero"
+        else:
+            return calc_num1 / calc_num2
+    elif (calc_op == "*") or (calc_op == "x") or (calc_op == "X"):
+        return calc_num1 * calc_num2
+    elif (calc_op == "^"):
+        return pow(calc_num1, calc_num2)
+        # Could also do: Return calc_num1 ** calc_num2
+    elif (calc_op == "%"):
+        return calc_num1 % calc_num2
+    else:
+        print("Invalid Operator: Not Recognized")
+
+calc_num1 = float(input("Enter the first number: "))
+calc_op = input("What operator do you want to use: ")
+calc_num2 = float(input("Enter the second number: "))
+
+print("Answer: " + str(smart_calculator(calc_num1, calc_op, calc_num2)))
+
+################
+# DICTIONARIES #
+################
+
+- A dictionary is a special structure in Python that allows us to store information in key-value pairs
+
+- The key is the word that describes the value
+
+- The value is the piece of data
+
+- For example:
+
+	joy : a state of happiness or felicity.
+	key : value
+
+- The keys in a dictionary have to be unique
+
+- Creating a dictionary example:
+
+	month_conversion = {
+		"Jan" : "January",
+		"Feb" : "February",
+		"Mar" : "March",
+		"Apr" : "April",
+		"May" : "May",
+		"Jun" : "June",
+		"Jul" : "July",
+		"Aug" : "August",
+		"Sep" : "September",
+		"Oct" : "October",
+		"Nov" : "November",
+		"Dec" : "December"
+	}
+
+	print(month_conversion["Nov"])
+	print(month_conversion.get("May"))
+	print(month_conversion.get("ABC", "This is not a valid key"))
+
+
+	month_conversion_number = {
+	    1 : "January",
+	    2 : "February",
+	    3 : "March",
+	    4 : "April",
+	    5 : "May",
+	    6 : "June",
+	    7 : "July",
+	    8 : "August",
+	    9 : "September",
+	    10 : "October",
+	    11 : "November",
+	    12 : "December"
+	}
+
+	print(month_conversion_number[4])
+	print(month_conversion_number.get(5))
+	print(month_conversion_number.get(500, "Not valid"))
+
+###############
+# WHILE LOOPS #
+###############
+
+- A while loop allows us to execute a block of code multiple times
+
+- The code continues to execute until the condition becomes false
+
+- While loop example:
+
+	counter = 1
+
+	while (counter <= 10):
+	    print(counter)
+	    counter += 1 # Same as counter = counter + 1
+	print("Done With Loop")
+
+#############
+# FOR LOOPS #
+#############
+
+- A for loop is a special loop that allows us to loop over collection of items; a list or string. For example:
+
+	for l in "Python":
+    	print(l)
+
+- The first element in "Python" is assigned to 'l' and it gets printed out. Then the next element in "Python" is assigned to 'l' and it gets printed out. This repeats until the end is reached.
+
+- For loops can be used with lists. For example:
+
+	foods = ["Pizza", "Burgers", "Sub", "Fries"]	
+	for food in foods:
+    	print(food)
+
+- For loops can be used over numbers. For example:
+
+	for i in range(10):
+    	print(i)
+    # Prints every number from 0 to 9
+
+    for i in range(5,10):
+    	print(i)
+    # Prints every number from 5 to 9
+
+    foods = ["Pizza", "Burgers", "Sub", "Fries", "Timbits"]
+	for food in range(len(foods)):
+    	print(foods[food])
+    # Uses numbers and index to print lists' elements
+
+############
+# COMMENTS #
+############
+
+- A comment is a line that gets ignored by Python. 
+
+- Comments are used to write notes for ourselves and other developers
+
+- Comments are used to document what the code is doing
+
+- Comments can be used to turn code into normal text. This is called 'commenting out code' 
+
+- Example of a comment:
+
+	# This a comment and it explains what the code is doing
+	# This line prints a statement
+	print("Something Interesting")
+	#print("This won't print")
+
+- If you want comments to span multiple lines, you use 6 single quotes. For example:
+
+'''
+3 single quotes on top 
+
+I
+Can
+Write
+Anything
+
+3 single quotes on bottom
+'''
+
+##############
+# TRY-EXCEPT #
+##############
+
+- A try-except statement allows the program to try out a piece of code and not crash if given the wrong input. For example:
+
+	try:
+	    try_int = int(input("Enter A Number: "))
+	    print("Success")
+	except:
+	    print("ERROR: Not A Number")
+
+- Specific type of errors can be caught, like division by zero. For example:
+
+	try:
+	    zero_error = 10/0
+	except ZeroDivisionError as err
+	    print(err) # Prints out the error
+	    print("ERROR: Cannot Divide By Zero")
+
+- The best practice is to use specific errors
+
+- Multiple exceptions can be caught with try-except
+
+#################
+# READING FILES #
+#################
+
+- Opening files example:
+
+	open("employees.txt", "r")
+
+	# r = read only
+	# a = append information to end of file, but no modifying existing information
+	# w = write new information and change existing information
+	# r+ = read and write
+
+- Always close a file when you are done using it. It is good practice. For example:
+
+	employee_file.close()
+
+- Checking if file is readable:
+
+	employee_file.readable()
+
+- Reading a single line:
+
+	employee_file.readline()
+
+- Reading all lines:
+
+	employee_file.readlines()
+	# Puts all lines in a list
+	# Then you can reference the elements in the list. For example: 
+		employee_file.readlines()[1]
+
+- Note: When using 'readlines' remember to reset the cursor back to the start, if you wanna iterate through the entire thing. For example:
+
+	employee_file.seek(0)
+
+- For loops can be used to iterate through files. For example:
+
+	employee_file = open("employees.txt", "r")
+
+	for employee in employee_file.readlines():
+	    print(employee)
+
+	employee_file.close()
+
+#################
+# WRITING FILES #
+#################
+
+- Appending to the file adds text to the end of the file. For example: 
+
+	employee_file = open("employees.txt", "a")
+	employee_file.write("\nTom - Janitor")
+	employee_file.close()
+
+- Writing ('w') overwrites the entire file. For example:
+	
+	employee_file = open("employees.txt", "w")
+	employee_file.write("\nTom - Janitor")
+	employee_file.close()
+
+- 'w' can also be used to create a new file. For example:
+
+	employee_file = open("newFileExample.txt", "w")
+	employee_file.write("A new file was just created")
+	employee_file.close()
+
+###########
+# MODULES #
+###########
+
+- A module is a python file that can be imported to the working file and all the functions and variables in the module can be used in the working file. This is done by importing files. For example:
+
+	import tools # This is a file called tools.py
+	print(tools.roll_n_sided_dice(5))
+
+- Huge list of python modules: https://docs.python.org/3/py-modindex.html#cap-m
+
+- There are two types of modules: Built in, and external
+
+- Built in modules are included with Python, by default
+
+- External modules do not come pre-installed with Python because they are made by other people
+
+- Pip is a package manager and allows you to install, update, and remove python modules
+
+#####################
+# CLASSES & OBJECTS #
+#####################
+
+- Classes and objects make your programs more organized and powerful
+
+- Not all data can be represented using strings or numbers. For example: A person
+
+- Classes and objects allow us to create our own data types
+
+- 'self' refers to the actual object
+
+- With classes we can model real world objects and create our own data types. For example:
+
+	### STUDENT CLASS CODE  ####
+
+	# This creates the Student class
+	class Student:
+
+	    # This is the initializer method. Every class needs to have this
+	    # __init__ is initialize
+	    def __init__ (self, name, major, gpa, is_on_probation):
+	    # 'self' refers to the instantiation you create with the class
+	    # Every other parameter belongs to the Student Class
+
+	        self.name = name # Assigns the 'name' you pass to 'self.name'
+	        self.major = major
+	        self.gpa = gpa # Assigns the 'gpa' you pass to 'self.gpa'
+	        self.is_on_probation = is_on_probation
+
+	### STUDENT CLASS CODE  ####
+
+	def main():
+
+	    # Using the Student class, an instantiation, 'student1' is created
+	    student1 = Student("Mike", "Business", 3.3, False) # These are the parameters that are passed
+	    print(student1.name) # Prints the students name
+	    # student1.name fetches the 'name' in the 'student1' data type
+
+	main()
+
+##################
+# CLASS FUNCTION #
+##################
+
+- A class function can modify the objects of the class or return specific information about objects. For example:
+
+	class Student:
+
+	    def __init__(self, name, major, year, cgpa):
+	        self.name = name
+	        self.major = major
+	        self.year = year
+	        self.cgpa = cgpa
+
+	    # This function calculates if the student is on the honor roll
+	    def on_honor_roll(self):
+	        if (self.cgpa >= 3.5): # If cpga is greater than or equal to 3.5, then yes
+	            return True
+	        else:
+	            return False
+
+	def main():
+	    
+	    student_100 = Student("Tom", "Business", 3, 3.1)
+	    student_200 = Student("Jim", "Engineering", 1, 3.6)
+
+	    print (Student.on_honor_roll(student_200))
+
+	main()
+
+###############
+# INHERITANCE #
+###############
+
+- Inheritance is when one class inherits the attributes and functionality of another class. For example:
+
+	# This is the RegularChef class
+	class RegularChef():
+
+	    # This init method sets the name of the Chef
+	    def __init__(self, name):
+	        self.name = name
+
+	    # The chef makes fried chicken
+	    def make_fried_chicken(self):
+	        print("The regular chef, " + self.name + ", makes fried chicken")
+
+	    # The chef makes salad
+	    def make_salad(self):
+	        print("The regular chef, " + self.name + ", makes fried chicken")
+
+	    # The chef makes chocolate pancakes
+	    def make_signature_dish(self):
+	        print("The regular chef, " + self.name + ", makes chocolate pancakes")
+
+	# This class is for the SpecialChef
+	# It inherits from the RegularChef
+	# All attributes in RegularChef are available in SpecialChef
+	class SpecialChef(RegularChef):
+
+	    # The chef makes gourmet pizza - a new dish
+	    def make_gourmet_pizza(self):
+	        print("The special chef, " + self.name + ", makes gourmet pizza")
+
+	    # The chef makes cajun seafood pasta - a new dish        
+	    def make_cajun_seafood_pasta(self):
+	        print("The special chef, " + self.name + ", makes cajun seafood pasta")
+
+	    # The chef makes chocolate ganache
+	    # This dish is different from the regular chef
+	    # This method replaces the one loaded from RegularChef
+	    def make_signature_dish(self):
+	        print("The special chef, " + self.name + ", chocolate ganache")
+
+	def main():
+
+	    # Creates a regular chef called "John Doe"
+	    reg_chef = RegularChef("John Doe")
+	    reg_chef.make_fried_chicken() # The chef makes fried chicken
+	    reg_chef.make_salad()
+	    reg_chef.make_signature_dish() # The chef makes his signature dish - chocolate pancakes
+
+	    print()
+
+	    # Creates a special chef called "Gordan Ramsay" 
+	    sep_chef = SpecialChef("Gordan Ramsay")
+	    sep_chef.make_fried_chicken() # The chef makes fried chicken, similar to the regular chef
+	                                  # This shows that all methods in RegularChef are also in SpecialChef
+
+	    sep_chef.make_gourmet_pizza() # The chef makes gourmet pizza. This new dish is not found in RegularChef
+
+	    sep_chef.make_signature_dish() # The chef makes his signature dish, chocolate dish
+	                                   # The special chef's signature dish is different from the regular chef
+	                                   # This demonstrates method overriding
+	main()
+
+
+######################
+# PYTHON INTERPRETER #
+######################
+
+- The python interpreter is an environment we can use to execute python commands, as a means of testing
+
+- The python interpreter is great for quick tests
+
+- Do not use the interpreter for creating programs
+
+- Interpreter is typically used in the terminal/cmd

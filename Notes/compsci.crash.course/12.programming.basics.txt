@@ -1,0 +1,18 @@
+------------------
+Programming Basics
+------------------
+
+Sauce: https://www.youtube.com/watch?v=l26oaHV7D40
+
+-----
+Notes
+-----
+
+- The set of rules that govern the structure and composition of statements in a language is called syntax. All programming languages have syntax
+- An assignment statement is when you assign a value to a variable. i.e. (a = 5) --> The variable 'a' equals a value of 5
+- An IF statement allows you to selectively run code based on a condition. These expressions are called conditional statements
+- A WHILE loop, loops executes a series of statements while a condition is true
+- A FOR loop is count controlled; it repeats a specific number of times
+- To compartmentalize and hide complexity, programming languages package pieces of code into functions/methods/subroutines
+- The RETURN statement returns the value calculated at the end of a function
+- Modern programming languages come with huge bundles of pre-written functions called Libraries. These are written by expert coders, made efficient and rigorously tested, and then given to everyone

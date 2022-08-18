@@ -1,0 +1,572 @@
+EXCEPTIONS
+- An exception is a problem that occurs during program execution. They are caused by user error, programmer error, or physical resource issues. Exceptions cause abnormal termination of the program. For example, try dividing 1 by 0 and see how Java reacts to it. An exception can occur for many reasons, including, but not limited to:
+
+	- User has entered invalid data
+	- A file that needs to be opened cannot be found
+	- Network connectivity has been lost
+	- Insufficient memory and other resource problems
+
+- Exceptions can be caught using the ‘try’ and ‘catch’ keywords. These are placed around code that might generate an exception. Here is the syntax:
+
+try {
+	// Code Goes Here
+} catch (Exception e) {
+	// More Code
+}
+
+- A catch statement involves declaring the the of exception you are trying to catch. If an exception occurs in the ‘try’ block, then the code in the ‘catch’ block is executed. The example below demonstrates this.
+
+public class Test {
+	public static void main (String[] args) {
+		try {
+			int a[] = new int[2];
+			System.out.println(a[5]);
+		} catch (Exception e) {
+			System.out.println(“ERROR”);
+		}
+	}
+}
+// Outputs “ERROR”
+
+- Without the ‘try/catch’, this program will crash because a[5] does not exist. The array goes up to a maximum of 2.
+
+- Also, the (Exception e) statement in the ‘catch’ block is used to catch all possible exceptions.
+
+- Below is another good example of ‘try/catch’ code:
+
+public class Test {
+	public static void main (String[] args) {
+		int x = 420;
+		int y = 0;
+		try {
+			int z = x / y;
+			System.out.println(z);
+		} catch (Exception e) {
+			System.out.println(“ERROR - 888”);
+		}
+	}
+}
+
+
+MULTIPLE EXCEPTIONS
+- The ‘throw’ keyword allows you to manually generate exceptions from your methods. These exceptions include, but are not limited to: IndexOutOfBoundsException, IllegalArgumentException, ArithmeticException, and so on.
+
+- The example below throws an ArithmeticException when ‘int b’ is 0 - because you cannot divide by zero. Example:
+
+int div(int a, int b) throws ArithmeticException {
+	if (b == 0) {
+		throw new ArithmeticException(“Not Possible”);
+	} else {
+		return a/b;
+	}
+}
+
+- The ‘throws’ statement in the method definition defines the type of Exception(s) the method can throw. Next, the ‘throw’ keyword throws the corresponding exception, along with a custom message. If we call the ‘div’ method with a second parameter equal to 0, it will throw an ArithmeticException with the message “Not Possible”.
+
+- Multiple exceptions can be defined in the throws statement using a comma-separated list. For example:
+
+static void Example() throws ArithmeticException, IndexOutOfBoundsException, IllegalArgumentException {
+	// CODE
+}
+
+
+- A single block of code can contain catch blocks that handle different exceptions separately. Example:
+
+try {
+	// Code
+} catch (ExceptionType e1) {
+	// Code
+} catch (ExceptionType e2) {
+	// Code
+} catch (ExceptionType e3) {
+	// Code
+}
+
+- All catch blocks should be ordered from most specific to most general. Remember this well: most SPECIFIC to most GENERAL - specific to general - narrow to broad.
+
+THREADS
+- Java is a multi-threaded programming language. This means that any program you make can make optimal use of the computer’s resources by running two or more components simultaneously, with each component handling a different task. You can subdivide specific operations within a single application into individual threads that run in parallel. 
+
+- There are two ways to create a thread.
+
+1. Extend the Thread class
+A) Inherit from the ‘Thread’ class
+B) Override its ‘run()’ method
+C) Write the functionality of the thread in your ‘run()’ method.
+D) Create a new object of your class and call it’s start method.
+
+For example:
+
+class Loader extends Thread {
+	public void run() {
+		System.out.println(“Hello”);
+	}
+}
+
+class Program {
+	public static void main(String[] args) {
+		Loader load = new Loader();
+		//load.setPriority(10);
+		load.start();
+	}
+}
+
+
+// Outputs “Hello”
+
+- The ‘Loader’ class extends the ‘Thread’ class and overrides its ‘run()’ method. When ‘load’ is created and ‘start()’ is called, the ‘run()’ method statements execute on a different thread. 
+
+- Every Java thread is prioritized to help the operating system determine the order in which to schedule threads. The priorities range from 1 to 10, which each thread defaulting to 5. You can set the thread priority with the “setPriority()” method.
+
+RUNNABLE
+- The other way of creating ‘Threads’ is by implementing the ‘Runnable’ interface. For example:
+
+class Loader implements Runnable {
+	public void run() {
+		System.out.println(“Hello”);
+	}
+}
+
+class Program {
+	public static void main(String[] args) {
+		Thread met = new Thread(new Loader());
+		/* 
+		try {
+			Thread.sleep(1000);
+		} catch (Exception e) {
+			System.out.println(“Nope”);
+		}
+		*/
+		mrt.start();
+	}
+}
+
+- You can pause a ‘Thread’ for a specific period of time by using the ‘Thread.sleep(#Number_Here#)’ method. However, to use it, it must be in a try/catch block because of the possibility of no number inside the brackets.
+
+- Implementing the ‘Runnable’ interface is the preferred way to start a ‘Thread’ because it enables you to extend from another class, as well.
+
+TYPES OF EXCEPTIONS
+- There are two types of exceptions: checked and unchecked (aka runtime). The main difference is that checked exceptions are checked when compiled, while unchecked exceptions are checked at runtime. To summarize:
+
+- checked exception: Exceptions and problems are checked as you type the code. Your IDE will not let you run the code if there is a checked exception. For example: 
+
+public class Program {
+	public static void main(String[] args) {
+		Thread.sleep(420);
+	}
+}
+
+- This will not run because ‘Thread.sleep(420)’ needs to be contained within a try/catch block. The IDE will immediately underline the code and warn you to fix it. Another example of checked example is trying to assign a decimal number to int. i.e.
+
+public class Program {
+	public static void main(String[] args) {
+		int a = 420.69;
+		int b = 69.42;	
+	}
+}
+
+- unchecked (runtime) exception: These are checked after you click run and after the code has already been compiled. Your IDE will not warn you before hand, rather the  console will spit out red text outlining errors. For example, trying to divide by zero throws an ArithmeticException:
+
+public class Program {
+	public static void main(String[] args) {
+		int a = 420;
+		int b = 0;
+		System.out.println(a/b);
+	}
+}
+
+ARRAYLIST
+- The Java API provides special classes to store and manipulate groups of objects. For example, the ‘ArrayList’ class allows arrays to be automatically enlarged when their size is exceeded. This cannot be accomplished with Standard Java arrays. 
+
+- First, import the class:
+
+import java.util.ArrayList;
+
+- Second, create an ArrayList as you would with any object:
+
+ArrayList colours = new ArrayList();
+
+- Optionally, you can specify a capacity and type of objects:
+
+// Defines an ArrayList of strings with 10 as its initial size
+ArrayList<String> colours = new ArrayList<String>(10);
+
+- The ArrayList provides a number of useful methods for manipulating objects. For example:
+
+import java.util.ArrayList;
+
+public class Program {
+	public static void main(String[] args) {
+		ArrayList<String> colors = new ArrayList<String>();
+		colors.add(“Red”);
+		colors.add(“Blue”);
+		colors.add(“Green”);
+		colors.add(“Orange”);
+		System.out.println(colors);
+		colors.remove(“Orange”);
+        	System.out.println(colors);
+		System.out.println(colors.get(1));
+		System.out.println(colors.size());
+		colors.clear();
+		colors.add(“Black”);
+		System.out.println(colors);
+        	System.out.println(colors.size());
+	}
+}
+
+// [Red, Blue, Green, Orange]
+// [Red, Blue, Green]
+// Blue
+// 3
+// [Black]
+// 1
+
+- To recap, here are all the useful methods
+add(parameter): Adds new objects to ArrayList
+remove(parameter): Removes objects from ArrayList
+contains(): Returns true if the list contains the specified element
+get(int index): Returns the element at the specified position in the list
+size(): Returns the number of elements in the list
+clear(): Removes all of the elements from the list
+
+- Note: As with regular arrays, ArrayList’s start at 0.
+
+LINKEDLIST
+This is very similar in syntax to the ArrayList. You can easily change an ArrayList to a LinkedList by changing the object type. Below is the code from above, formatted to a LinkedList. For example:
+
+import java.util.LinkedList;
+
+public class Program {
+	public static void main(String[] args) {
+		LinkedList<String> c = new LinkedList<String>();
+		c.add(“Red”);
+		c.add(“Blue”);
+		c.add(“Green”);
+		c.add(“Orange”);
+		System.out.println(c);
+		c.remove(“Orange”);
+        	System.out.println(c);
+	}
+}
+
+// [Red, Blue, Green, Orange]
+// [Red, Blue, Green]
+
+- Note: You cannot specify initial capacity with a LinkedList.
+
+LINKEDLIST VS. ARRAYLIST
+- The most notable difference between the LinkedList and the ArrayList is in the way they store objects. 
+
+- The ArrayList is better for storing and accessing data, as it is ver similar to a normal Java Array.
+
+- The LinkedList is better for manipulating data, such as making numerous insertions and deletions. In addition to storing objects, the LinkedList stores the memory address (or link) of the element that follows it. Hence the name LinkedList, because each element contains a link to the neighbouring element. 
+
+- You can use the ‘enhanced for loop’ to iterate over its elements. For example:
+
+import java.util.LinkedList;
+
+public class Program {
+	public static void main(String[] args) {
+		LinkedList<String> c = new LinkedList<String>();
+		c.add(“Red”);
+		c.add(“Blue”);
+		c.add(“Green”);
+		c.add(“Orange”);
+		
+		for (String s: c) {
+			System.out.println(s);
+		}
+	}
+}
+
+/*
+Red
+Blue
+Green
+Orange
+*/
+
+- To summarize:
+1. Use an ArrayList when you need rapid access to your data.
+2. Use a LinkedList when you need to make a large number of inserts and/or deletes.
+
+WHAT IS HASHING?
+- A hash table stores information through a mechanism called hashing, in which a key’s informational content is used to determine a unique value called a hash code. So, basically, each element in the HashSet is associated with its unique hash code.
+
+HASMAP
+- Used for storing data collections as key and value pairs. One object is used as a key (index) to another object (value). The ‘put’, ‘remove’, and ‘get’ methods are used to add, delete, and access values in the HashMap. For example:
+
+import java.util.HashMap;
+
+public class Program {
+	public static void main(String[] args) {
+		HashMap<String, Integer> pts = new HashMap<String, Integer>();
+		pts.put(“Amy”, 154);
+		pts.put(“Dave”, 42);
+		pts.put(“Rob”, 733);
+		System.out.println(pts.get(“Dave”));
+	}
+}
+
+// Outputs 42
+
+- A HashMap cannot contain duplicate keys. Adding a new item with a key that already exists, overwrites the old element. The HashMap class provides the methods, ‘containsKey’ and ‘containsValue’ to determine the presence of a specified key or value. If you try to get a value that is not present in your map, it returns the value of null. A null is a special type that represents the absence of a value.
+
+SETS
+- A set is a collection that cannot contain duplicate elements. It models the mathematical set abstraction. One of the implementations of the Set is the HashSet class. Example:
+
+
+import java.util.HashSet;
+
+public class Program {
+	public static void main(String[] args) {
+		HashSet<String> set = new HashSet<String>();
+		set.add(“A”);
+		set.add(“B”);
+		set.add(“C”);
+		System.out.println(set.size() + “ “);
+		System.out.println(set);
+	}
+}
+
+// 3 [A, B, C]
+
+- The HashSet class does not automatically retain the order of the elements as they’re added. To order the elements, use a LinkedHashSet; it maintains a linked list of the set’s elements in the order in which they were inserted. 
+
+SORTING LISTS
+- To manipulate data, Java provides a ‘Collections’ class. You can sort your data using the ‘sort()’ method in the ‘Collections’ class. For example:
+
+import java.util.Collections;
+import java.util.ArrayList;
+
+public class Program {
+	public static void main(String[] args) {
+		ArrayList<String> animals = new ArrayList<String>();
+		animals.add(“Tiger”);
+		animals.add(“Cat”);
+		animals.add(“Snake”);
+		animals.add(“Dog”);
+
+		Collections.sort(animals);
+
+		System.out.println(animals);
+	}
+}
+
+// [Cat, Dog, Snake, Tiger]
+// Elements (animals) have been alphabetized
+
+- You can even call the ‘sort()’ method on different type of lists such as Integers. For example:
+
+import java.util.Collections;
+import java.util.ArrayList;
+
+public class Program {
+	public static void main(String[] args) {
+		ArrayList<Integer> num = new ArrayList<Integer>();
+		num.add(3);
+		num.add(36);
+		num.add(73);
+		num.add(40);
+		num.add(1);
+
+		Collections.sort(num);
+
+		System.out.println(num);
+
+		//Collections.reverse(num); // Un-comment this line to test the reverse method
+        	//System.out.println(num); // Un-comment this too b/c ^^^
+	}
+}
+
+// [1, 3, 36, 40, 73]
+// List has been sorted from least to greatest
+
+- Other useful methods in the ‘Collections’ class includes:
+1. max() - Returns the maximum element in the list as determined by natural ordering
+2. min() - Returns the minimum element in the list as determined by natural ordering
+3. reverse() - Reverses the sequence of the list
+4. shuffle() - Randomizes the elements in the list (Hence, shuffle)
+
+ITERATORS
+- An Iterator is an object that enables to cycle through a collection, obtain or remove elements. The iterator class provides the following methods:
+1. hasNext() - Returns true if there is at least one more element; otherwise it returns false
+2. next() - Returns the next object and advances the iterator
+3. remove() -  Removes the last object that was returned by next from the collection
+
+
+- Here is how you would use an iterator:
+
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class Program {
+	public static void main(String[] args) {
+		LinkedList<String> num = new LinkedList<String>();
+		animals.add(“Fox”);
+		animals.add(“Cat”);
+		animals.add(“Dog”);
+		animals.add(“Rabbit”);
+
+		Iterator<String> it = animal.iterator();
+		String value = it.next()
+		System.out.println(value);
+
+		//String value2 = it.next() // Moves to second element - Cat
+		//System.out.println(value2); // Prints “Cat” to console
+	}
+}
+
+// Fox
+
+- The ‘it.next()’ returns the first element in the list and then moves the iterator on to the next element. Each time you call ‘it.next()’, the iterator moves to the next element of the list.
+
+- Typically, iterators are used in loops. At each iteration of the loop, you can access the corresponding list element. For example:
+
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class Program {
+	public static void main(String[] args) {
+		LinkedList<String> num = new LinkedList<String>();
+		animals.add(“Fox”);
+		animals.add(“Cat”);
+		animals.add(“Dog”);
+		animals.add(“Rabbit”);
+
+		Iterator<String> it = animals.iterator();
+		while (it.hasNext()) {
+			String value = it.next();
+				System.out.println(value);
+		}
+	}
+}
+
+/*
+Fox
+Cat
+Dog
+Rabbit
+*/
+
+- In the example above, the ‘while loop’ determines whether the iterator has additional elements, prints the value of the element, and advances the iterator to the next element. 
+
+
+WORKING WITH FILES
+- In Java you can create a ‘File’ object and specify the path of the file in the constructor. Here’s how you would work with files in Java - the following example confirms the existence of a file:
+
+import java.io.File;
+
+public class Program {
+	public static void main(String[] args) {
+		File xxx = new File(“/Users/Chowdhaj/Desktop/input.txt”);	
+		if (xxx.exists()) {
+			System.out.println(xxx.getName() + “ exists!”);
+		} else { 
+			System.out.println(“The file does not exist”);
+		}
+				
+	}
+}
+
+READING FILES
+- Files are useful for storing and retrieving data, and there are a number of ways to read from files. One way is to use the ‘Scanner’ class. Here is the syntax:
+
+
+
+- We use a try/catch statement because there is a chance that the file may not exist. Below is how you would incorporate this code and read the file:
+
+import java.io.File;
+import java.util.Scanner;
+
+public class Program {
+	public static void main(String[] args) {
+		try {
+			File xxx = new File("/Users/Chowdhaj/Desktop/input.rtf”);
+			Scanner sc = new Scanner(xxx);
+			while (sc.hasNext()) {
+				System.out.println(sc.next());
+			}	
+			sc.close();	
+		} catch (FileNotFoundException e) {
+			System.out.println("File Not Found!");
+		}		
+
+	}
+}
+
+- The file’s contents are output-ed word by word because the ‘next()’ method returns each word separately. 
+
+- Note: It is good practice to close a file when you are done working with it. Use the ‘close()’ method to close it.
+
+- Note: It is best to use files that end in ’txt’ as Java can easily read them. Other files such as ‘rtf’ will have a confusing result when its contents are output-ed to console.
+
+WRITING FILES
+- You can write content to a file using the ‘Formatter’ class. For example:
+
+import java.util.Formatter;
+
+public class Program {
+	public static void main(String[] args) {
+		try {
+			Formatter fx = new Formatter("/Users/Chowdhaj/Desktop/input.txt”);
+		} catch (Exception e) {
+			System.out.println("File Not Found!");
+		}
+	}
+}
+
+- This creates an empty file at the specified path. If the file already exists, it will overwrite it. Also, you need to surround the code with a try/catch block, because the operation can file.
+
+- Once the file has been created, you can write content to it using the ‘Formatter’ method. For example:
+
+import java.util.Formatter;
+
+public class Program {
+	public static void main(String[] args) {
+		try {
+			Formatter fx = new Formatter("/Users/Chowdhaj/Desktop/input.txt");
+            		fx.format("%s%s%s", "1)", " John", " Smith \r\n");
+            		fx.format("%s%s%s", "2)", " Amy", " Smith");
+			fx.close();
+		} catch (Exception e) {
+			System.out.println("File Not Found!");
+		}
+	}
+}
+
+- The code above creates a new file named ‘input.txt’ with the following content:
+
+1) John Smith
+2) Amy Smith
+
+- The format ‘%s%s%s’ denotes three strings that are separated with spaces. This determines the formatting of the string. To get a better picture, look at the example below:
+
+fx.format("%s%s%s", "1)", " John", " Smith \r\n");
+fx.format("%s%s%s", "2)", " Amy", " Smith");
+
+- The output of the above block of code is:
+
+1) John Smith
+2) Amy Smith
+
+fx.format("%s%s%s%s", "1)", " John", " Donald", " Smith \r\n");
+fx.format("%s%s%s%s", "2)", " Amy", " Laura", " Smith”);
+
+- The output of the above block of code is:
+
+1) John Donald Smith
+2) Amy Laura Smith
+
+- The ‘%s’ formats the output and allows you to add another String. 
+
+- Also, notice the ‘\r\n’. This is the newline symbol and adds a new line to the output. If this did not exist, then the output would look like this:
+
+1) John Smith2) Amy Smith
+
+- And that concludes this guide, and everything you need to know about Exceptions, Lists, Threads, & Files. It’s time to apply these skills to the real world and expand your knowledge. Good luck!
+
+
+
+
+

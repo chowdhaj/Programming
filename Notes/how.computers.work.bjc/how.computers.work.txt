@@ -1,0 +1,582 @@
+===========================
+UNIT 6 - HOW COMPUTERS WORK
+===========================
+
+Link: https://bjc.edc.org/bjc-r/llab/html/topic.html?topic=nyc_bjc%2F6-how-computers-work.topic&course=bjc4nyc.html&novideo&noassignment
+
+--------------------------------------
+Lab 1 - Computer Abstraction Hierarchy
+--------------------------------------
+
+Abstraction Inside The Computer
+
+	- Higher levels are closer to what users want to be thinking about; lower levels are closer to the way machines work
+
+	- Abstractions are organized into three overarching domains (from high level of abstraction to low level of abstraction):
+
+		Software Domain: applications, programming languages, libraries, and operating systems
+		Digital Domain: architecture, components, integrated circuits, and logic gates
+		Analog Domain: transistors
+
+Software Domain
+
+	- There are four layers of abstraction in the software domain:
+
+		Applications that you write and use
+		Programming Languages that are used to write Applications
+		Libraries of useful functions that hide messy details
+		Operating Systems that interface with the hardware
+
+	- Software is an abstraction; a way of thinking about the computer without thinking about how it works
+
+Digital Domain
+
+	- The Architecture is the instructions that software can send that the hardware will understand
+
+	- The computer has Components (such as memory, processors, video cards, etc.) that implement the architecture
+
+	- The components above are built out of integrated circuits (Chips), which are the black rectangles on circuit boards
+
+	- Integrated circuits are designed around Logic Gates, the fundamental building blocks that implement Boolean functions
+
+Analog Domain
+
+	- Logic gates are the lowest abstraction level of the digital domain. They operate on ones and zeros
+
+	- Logic gates are built out of Transistors, a type of circuit component
+
+	- Transistors aren't like light switches that are either on or off, there can be in-between values (i.e. "only 23% on")
+
+	- Digital and Analog are opposites. Digital means information that is represented as ones and zeros. Analog means information that is represented by signals that vary continuously (that is, including in-between values)
+
+The Software Domain: Applications
+
+	- Application programs ("apps") are the programs that users interact with. For example: Web Browser, Email, Camera, Music Player, Radio Station, Video Player, etc.
+
+	- Computers can combine information from different sources to produce surprising results. This is called Data Mining. For example, Google can combine information from your phone with similar information from other phones to detect traffic jams and find popular restaurants
+
+	- Computers can be taught to generalize from the information they find in patterns to predict the future. This is called Machine Learning. For example, YouTube analyzes your watch and search history to reccommend videos. Spotify does something similar
+
+	- Spreadsheets are used to manage budgets and/or to make charts/tables. Spreadsheet applications made businesses take personal computers seriously
+
+The Software Domain: Programming Languages
+
+	- Special-Purpose Languages have a very narrow purpose. For example: Microsoft Word uses its own programming language called "Word Macros" to generate data and format documents
+
+	- HTML (Hypertext Markup Language) is a special purpose language used just for structuring web pages
+
+	- General-purpose languages can be used for just about anything. These languages are more or less the same; if an algorithm can be expressed in one language, it can be expressed in all of them
+
+	- Several basic features are included in nearly all G.P. languages including arithmetic operators (+, -, x, /) and Boolean operators (and, or, not)
+	
+	- The differences among G.P. languages are mostly about levels of abstraction
+
+High-Level & Low-Level Languages
+
+	- A high-level language allows you to focus on the problem rather than how computer hardware works
+
+	- Example of High-level language: Java, Python, Scratch, Haskell, Lisp, Etc.
+
+	- A low-level language has fewer abstractions, requiring you to know a lot about your computer's architecture in order to write a program
+
+	- Example of Low-level language: C, Nasm, Assembly, Etc.
+
+Why Do Programmers Use High-Level Language
+
+	- High-level languages can produce safer bug-free programs because the abstractions manage messy details that can trip up programmers
+
+	- High-level languages reduce bugs in memory use by using a technique called garbage collection that puts the computer in charge of knowing when a block of memory is no longer in use
+
+	- High-level languages make programming convenient because they offer more abstractions, such as higher order functions, which allow the programmer to write shorter, cleaner code
+
+Why Do Programmers Use Low-Level Languages
+
+	- The best reason to use low-level languages is to write operating systems like Windows, Mac OS X, Android, iOS, etc.)
+
+	- If the programs are demanding, then it is better to write the core parts in a low-level language. For example: Rendering libraries are made in low-level languages
+
+	- Legacy Code. Programmers spend most of their time maintaining code somebody else wrote years ago
+
+What Is Machine Language?
+
+	- Machine language is an ultra low-level language that is understood by computer hardware. Special programs called compilers and interpreters are used to translate human programming languages into machine language
+
+	- A compiler converts a high or low level language program (aka Source Code) into a machine language program (aka Object Code). Once compiled, the Object Code can run repeatedly without needing to be compiled again
+
+	- An interpreter is a program that takes a high or low level program as input and carries out machine language instructions as needed to run the program
+
+	- An interpreter is good for debugging a program
+
+	- A compiler is good for distributing a program
+
+Parallelism
+
+	- One reason to create new programming languages is to make it easier to write parallel programs
+
+	- Modern computers and smartphones have multicore chips with 2,4,6 or 8 processors
+
+	- Functional programming languages are well suited for parallelism because there's no danger of variables changing state
+
+	- Functional programming languages are languages in which the programmers never change the value of a variable
+
+The Software Domain: Libraries
+
+	- Programmers write libraries to help other programmers program and not think about messy details such as algorithm-time complexity
+
+	- A Library is a piece of computer code written by another programmer that you can import into your code without having to know any of the details of how it works
+
+	- An Application Program Interface (API) is the documentation of what the user of a library needs to know about its contents
+
+	- An API contains a description of the libraries purpose, inputs, and outputs
+
+Language Vs. Libraries
+
+	- When people compare different programming languages, they are really comparing libraries. For example, people think they like JavaScript because they can use it to program web pages, but that's not a property of JS. It's actually a web page library built into the browser that lets you program web pages
+
+The Software Domain: Operating Systems
+
+	- The Operating System is the software that directly manages the computer's hardware
+
+	- Operating systems are the underlying programs that your apps interact with to communicate with the computer
+
+	- Examples of Operating Systems: Linux, macOS, Windows, Android, iOS, etc.
+
+	- The OS handles basic tasks that your applications depend on, including:
+
+		- The Window System: Allows more than one window to be open on your screen
+		- The File Manager: Displays the contents of folders and lets you select files to read or manipulate
+		- Communications with external devices like your keyboard or printer
+		- Utilities such as a simple text editor or calculator
+
+	- The Kernel manages all the application processes and operating system tasks
+
+	- The Kernel deals directly with hardware (keyboard, mouse, mic, cam, HDD, memory, screen, etc.)
+
+	- The Kernel handles several important tasks such as:
+
+		- Scheduling: The Kernel has access to the time clock that's built into the hardware and lets each program run for a small amount of time (i.e. 1/10th of a second) and then switches to the next program in queue
+
+		- Security: The Kernel ensures that each program is assigned a separate location in memory and doesn't interfere with other programs. The Kernel also controls which data files a program can use based on File Protection settings that users or applications specify for each file
+
+		- Input & Output: The Kernel knows how the computer's hardware reads or writes to each device. Only the Kernel is allowed direct access to these devices
+
+	- Linux, macOS, Windows, Android, and iOS are based on variants of the Unix Kernel
+
+	- Unix was created in 1970 by Ken Thompson and Dennis Ritchie at AT&T Bell Labs
+
+	- Dennis Ritchie also created the C programming language
+
+The Digital Domain: Architecture
+
+	- The architecture is the hardware as it looks to the software
+
+	- The most important abstraction in hardware is the digital abstraction
+
+	- Below the digital abstraction, designers can work in the analog domain, in which a wire in a circuit can have any voltage value, not just two values
+
+	- The modern programmable computer had its roots in the work of Charles Babbage in the early 1800s
+
+	- Babbage's first computer was the Difference Engine. He used gears to design a complex machine that would compute and print tables of numbers (i.e. Tables of log/trig)
+
+	- Babbage's second computer was the Analytical Engine. It was based on the general idea of the Difference Engine, but could carry out instructions in a primitive programming language written on punched cards
+
+	- The Analytical Engine had an arithmetic processor (called the "mill") and a separate memory (the "store") that would hold 1000 numbers, each with up to 40 digits
+
+	- The programming language used in the AE included conditionals and looping
+
+	- Usable computers weren't possible until the invention of the transistor
+
+What's An Architecture
+
+	- The Analytical Engine was the first programmable computer achitecture
+
+	- Processors only understand one language, their own machine language. High and low level languages must be translated into ML before they can run
+
+	- The most important part of the architecture is the machine language, the set of ultra-low level instructions that the hardware understands
+
+	- Machine language is the lowest-level programming language; it is directly understood by the computer hardware
+
+	- Architecture is an abstraction, a specification of the machine language. It also tells how the processor connects to the memory
+
+	- An important part of the architecture is the number of wires that connect the processor and memory. This is called the width of the architecture, measured in bits (# of wires). A wider computer can process more data in one instruction
+
+	- Modern architectures are desgined for compilers, not for human machine language programmers
+
+	- Most computer processors use an architecture called 'x86' that was designed at Intel. The first processor using that architecture was the 8086
+
+	- An SoC is a collection of components called a "System On A Chip". These components may include a cellular modem, WiFi modem, a graphics processor, memory, GPS, etc.
+
+	- The vast majority of phones use the ARM architecture which was designed from the beginning to be a low-power architecture. The acronym stands for Advanced RISC Machine
+
+	- Processors are often designed using an idea called pipelining. All of the processor is kept busy. It fetches, decodes, and executes instructions in the same cycle
+
+	- Processor's have a small number of registers inside them; usually between 8 and 16. The 'size' (# of bits) of a data register is equal to the width of the architecture
+
+Memory
+
+	- Volatile (Random Access Memory (RAM)) memory loses the information stored in it when the device is powered off
+
+	- Non-Volatile (Read-Only Memory (ROM)) memory retains the information
+
+	- Here's how memory is used in AVR chips:
+
+		- EEPROM: Is non-volatile and used for long term data. EEPROM stands for Electrically Erasable Programming Read-Only Memory
+
+		- SRAM: Is volatile and used for storing temporary data. SRAM stands for Static Random Access Memory. All computer memory is Random Access Memory, and 'RAM' really means writable as opposed to read-only. The 'Static' part means that it doesn't require periodic refreshing. SRAM is faster and more expensive than DRAM (D = Dynamic)
+
+		- Flash: Main memory used for programs and data. Technically it is a kind of EEPROM, but more complicated. It's more complicated because changing a bit from 1 to 0 is easy, but changing it from 1 to 0 is a much slower process that involves erasing a large block of memory to all 1 bits and then rewriting the values of the bits you didn't want to change
+
+	- The bigger the memory, the slower it works
+
+	- A computer's main memory is measured in GB (gigabytes, or billions of bytes)
+
+	- Computer programs have locality of reference. This means that if a program has just made use of a particular memory location, it's probably going to use a nearby location next
+
+	- Modern computers are designed with one or more cache memories, much smaller and therefore faster, between the processor and main memory. The processor makes sure that the most recently used memory is copied into the cache
+
+	- There are different levels of cache memory (L1, L2, L3). Each level is bigger, but slower, than the predecessor. Data in the L1 cache can be accessed by the processor about as fast as its internal registers
+
+The Digital Domain: Components
+
+	- A computer consists of the processor, memory, and input/output (IO) devices
+
+	- Input devices include, but not limited to: Keyboard, mouse, and microphone
+
+	- Output devices include, but not limited to: Printer, speaker, and monitor
+
+	- Things like touchscreens and disk/optical drives are both input and output devices
+
+	- In a computer, all the other boards plug into the motherboard
+
+Computer Components 
+
+	- Scanner: An input device that converts the contents of a paper document into a digital image that can be stored in the computer
+
+	- CPU (Central Processing Unit) (AKA processor): The 'brain' of the computer where programs are run. It is one of the most expensive parts of the hardware
+
+	- RAM (Random Access Memory): The computer's high-speed short term memory. It temporarily stores data and instructions for programs that run on the computer
+
+	- Expansion Cards: Circuit boards that can be inserted to add functionality to a computer system (i.e. Network, sound, or video cards)
+
+	- Power Supply: Converts electricity from the wall into the form that the other components use
+
+	- Optical Drive: An IO device that reads/writes data from/to CDs and DVDs
+
+	- Hard Drive: An IO devicethat serves as the long-term storage memory of the computer. There are two primary kinds:
+
+		- Mechanical: Uses a mechanical arm to read and write data on a rotating disk
+
+		- Solid State: Drives that have no moving parts
+
+	- Motherboard: A circuit board that holds and connects various components of the computer and allows their communication
+
+	- Speaker: An IO device that outputs device from the computer. The MIC takes sound from the user
+
+	- Monitor: An IO device that displays information visually. Touchscreens are both input and output devices
+
+	- Keyboard: An input device on which the user can type to communicate with the computer
+
+	- Mouse: An inpu device that allows the user to interact with visual objects displayed on the screen
+
+	- External Hard Drive: An IO device that serves as an extra hard drive for backup or additional storage
+
+	- Printer: An output device that can transfer digital data onto paper
+
+The Digital Domain: Integrated Circuits
+
+	- An integrated circuit (IC) (aka chip) is a single physical device that contains millions or billions of basic electrical parts. A processor is an IC, but not all processors are ICs
+
+	- Integrated circuits combine/integrate millions or billions of very tiny electrical parts (transistors, resistors, capacitors, etc.) into a small plastic box
+
+	- In digital circuits, transistors are used as switches
+
+	- ICs are made up of metals such as tantalum, tin, tungsten, and gold
+
+	- Todays computers/laptops/phones billions of transistors
+
+The Digital Domain: Logic Gates
+
+	- Memory is made out of flip-flops. A flip-flop is a circuit that has two stable states, on and off. An input signal can tell it to turn on, turn off, or change its state. Once that happens, it stays  in its new state until it gets another signal
+
+	- Circuits are made out of logic gates
+
+	- Logic gates compute Boolean functions: and ( && ), or ( || ), not ( ! )
+
+	- Boolean functions are fundamental because their inputs and outputs can be represented with a single wire going into or out from the circuit. If you consider a voltage on a wire as meaning True, and no voltage as meaning False, then the output from a Boolean function of two inputs can still only be True or False, so only one output wire is needed
+
+	- Two switches in series, in an electric circuit can emulate the Boolean operator AND
+
+	- Two switches in parallel, in an electric circuit can emulate the Boolean operator OR
+
+	- Boolean operations are implemented in physical circuitry using logic gates
+
+	- Engineers typically draw logic gates horizontally and use special shapes to represent each gate. The shape for an AND gate is a capital 'D'. The shape for an OR gate is a spaceship. The shape for a NOT gate is a triangle with a small circle on the tip. Also, the AND/OR gate take 2 inputs and have 1 output. The NOT gate takes 1 input and has 1 output
+
+The Analog Domain: Transistors
+
+	- The transistor is the fundamental building block of electronic circuits, where they are used as on/off switches
+
+	- Within the 'cutoff' region, small changes to the input voltage do not change the output voltage at all. The output is always zero volts
+
+	- Within the 'saturation' region, small input changes hardly impact the ouput voltage. The output voltage is interpreted as one
+
+	- The flatness of the output at the two extremes is important because there will always be small changes in the input; electrical circuits have noise
+
+	- Electrical noise is caused by a variety of reasons, such as, transistors getting hot, loose connections on the board, and cosmic rays
+
+	- Transistors are versatile devices. Apart from being used as switches, they can also be used as amplifiers; a small variation in input voltage produces a large variation in ouput voltage
+
+-----------------------------------------
+Lab 2 - Data Representation & Compression
+-----------------------------------------
+
+Bits
+
+	- A bit is a single unit of data that can only have one of two values. It is usually represented as a 0 or 1
+
+	- A bit is the smallest possible unit of information in the digital domain
+
+	- If more information is needed, then more bits are used. Two bits can represent up to four different values. Each added bit doubles the number of values that can be represented
+
+	- Bits are not expensive, but what is expensive is the circuitry to let the programmer use exactly the smallest number of bits for a particular problem
+
+	- Modern computers only allow memory allocation in two sizes:
+
+		- Byte: Standardized at 8 bits
+
+		- Word: Defined by the number of wires that connect the processor to the memory; can be either 32 bits or 64 bits
+
+	- The main use of 8-bit bytes is to represent characters of text
+
+	- ASCII: American Standard Code For Information Interchange
+
+	- The widespread use of eight-bit ASCII is the main historical reason why the eight-bit byte became standard
+
+	- The Unicode character set supports about 1900 languages and includes 136,755 characters
+
+Binary Sequences
+
+	- Boolean values are one bit
+
+	- Characters are 8-bits
+
+	- Memory inside a computer is stored as 1's and 0s'. For example: 100000110001110000000011
+
+	- In many programming languages, every string ends with a null byte (i.e. '\0')
+
+	- A binary sequence (aka Bitstream) is a string of ones and zeros
+
+	- Memory prefixes and their values:
+
+		- kilo : thousand    : 1,000
+		- mega : million     : 1,000,000
+		- giga : billion     : 1,000,000,000
+		- tera : trillion    : 1,000,000,000,000
+		- peta : quadrillion : 1,000,000,000,000,000
+		- exa  : quintillion : 1,000,000,000,000,000,000
+
+	- All data stored on a computer's memory is a binary sequence (aka Bitstream)
+
+	- In order for a programming language to know how to interprit a bit sequence as an integer, picture or string of characters, there is another bit sequene somewhere that encode the data type of the bit sequence. This is typically found in the beginning of a file. This is known as meta-data. 
+
+	- Meta-data contains information about data. In the example above, the meta-data at the beginning of a file will tell the computer whether the file is a picture, string of characters or audio track. 
+
+Representing Whole Numbers
+
+	- Numbers show up everywhere in computer algorithms
+
+	- A picture is comprised of an abstraction of numbers. Each pixel contains information about its color in the form of a number. Each number is a binary sequence
+
+Fixed Width Computer Hardware
+
+	- The width of a computer is the number of bits the processor reads from memory or writes into memory at a time. That number of bits is called a word
+
+	- A word is a binary sequence of that many bits
+
+	- As of 2016, most computers are 64-bit
+
+	- A 64-bit word represents 2^64 different values. Half are used for negative numbers, one for zero, and the rest for positives. Half of 2^64 is 2^63. 2^63 is 9,223,372,036,854,775,808. This means that the largest positive number a 64-bit computer can store/process up to is 9,223,372,036,854,775,808. Anything greater results in an overflow and the programming language computes an approximation
+
+	- A multiple-word integer is called a BigNum. Not all languages have this, but the highest-level languages do
+
+Floating Point
+
+	- The way computers store numbers that are not integers is called Floating Point
+
+	- Floating point allows the computer to store very large numbers and also decimals. However, the format still has a specific number of bits. Values that exceed the limitation may result in round off errors. For example:
+
+		- The decimal representation of 1/3 is 0.3333333... It has infinitely many digits. So the closest you can come to isn't exactly 1/3, but a finite string of 0.3333333. It gets cut off because your computer doesn't have infinite memory to store the infinitely many digits
+
+	- No matter how good the hardware is, certain kinds of computations are likely to give severe errors in floating point. For example:
+
+		- Subtracting two numbers that are very close to zero. When subtracted, the answer may be zero. And if it's near enough, the value will underflow and a 0 will be reported
+
+	- Floating point errors can be very expensive and even kill people. For example:
+
+		- Ariane: This rocket tried to convert a 64-bit float point number to a 16-bit number, creating an overflow, causing the rocket to veer off course and be destroyed
+
+		- Patriot Missile Defence System: Failed to target an Iraqi Scud missile, which killed 28 people. The system failed due to a roundoff error
+
+	- The IEEE 754 floating point standard is used by every computer manufacturer
+
+	- If the result of the computation is to bigger than the range of numbers a computer can store, it prints infinity or a special code
+
+	- The code for illegal operations (i.e. 0/0) is 'NaN' (Not a number)
+
+	- At the beginning of each data type, there is an extra bit sequence(s) that tells the computer how to interpret it
+
+	- At the lowest level of software abstraction, everything in a computer is represented as a binary sequence. For example:
+
+		- A Boolean value is a single bit, 0 for False, 1 for True
+
+		- A text string is a sequence of Unicode characters codes, each of which is stored as a separate integer
+
+		- Lists and blocks are also binary sequences
+
+Binary Representation
+
+	- Computers use base two (binary) bits to write numbers. In base 2, there are only 2 digits (0 and 1), and each place is worth 2x as much as the place to the right
+
+	- Humans use base ten (decimal) digits to write numbers. In base 10, there are ten digits (0-9), and each place is worth 10x as much as the place to the right
+
+	- The word 'bit' is an abbreviation for "BInary digiT"
+
+	- A subscript can be placed on the bottom right of a number to specify which base it is written in
+
+Hexadecimal Representation
+
+	- Hexadecimal (base 16) is an efficient method of representing numbers. It is less prone to error and more convenient to use. One hex digit represents any whole number from 0 to 15
+
+	- In base 16, there are 16 digits (0-9 and A-F). Each place is worth 16x the place to its right
+
+	- The algorithms used to convert between binary and decimal are the same algorithms for converting between hexadecimal and decimal
+
+More About Hexadecimal
+
+	- Four bits (binary digits) can be packed into one hexadecimal digit because 16 is a power of two (16 = 2^4)
+
+	- A group of four bits, and one hex value, represent a value from 0-15
+
+	- To convert from binary to hexadecimal:
+
+		- Split bitstream into groups of four bits, from right to left
+
+		- Determine the value of each bit group and write the corresponding hex digit. Note, each bit group will be a value from 0-9 or A-F
+
+Hexadecimal Colors
+
+	- RGB (Red, Green, Blue), is used for displaying pixels on screens
+
+	- CMYK (Cyan, Magenta, Yellow, Black) is used for printing
+
+	- A pixel is a single dot of color on the computer screen. It's short for Picture Element
+
+	- On a screen, each pixel that makes up a picture is assigned an RGB color code that defines the intensity of red, green, and blue for that pixel
+
+	- RGB colors range from 0 to 255 (00 to FF, in hex notation)
+
+	- RGB (255, 255, 255) is white
+
+	- RGB (0, 0, 0) is black
+
+	- Another color system is called HSB (Hue, Saturation, Brightness)
+
+Data Compression
+
+	- Data compression algorithms are used to reduce file sizes (i.e. Pictures and archives)
+
+Lossless Compression
+
+	- Run-length encoding stores the length of each run of a single color. For example, instead of storing all pixels of the same color individually, the algorithm will store the color and the amount of times the pixel occurs
+
+	- Compression makes it easier to stream movies, store files, and reduces bandwidth
+
+	- Lossless compression means that no information is lost. It works by removing redundant data
+
+	- Run-length encoding is a loss compression format; it does not lose any information. The original picture can be reconstructed with every pixel exactly correct. However, run-length compression does not do wel if the picture is a photograph where every pixel maybe slightly different from its neighbouring pixels. If this is the case, it will take twice as much space to store the information. 
+
+	- Another lossless image format is PNG (Portable Network Graphics)
+
+	- The PNG algorithm is complicated and uses several different strategies depending on how color varies in each small chink of the image. Regardless, PNG is lossless
+
+Lossy Compression
+
+	- Lossy compression algorithms let file sizes be even smaller, but the original picture cannot be perfectly reconstructed; information is lost
+
+	- Lossy means that information is lost. It works by removing details that people are not likely to notice. The original image cannot be reconstructed.
+
+	- Lossy compression is typically used for images and sounds, because these can survive compression without people noticing
+
+	- The most commonly used lossy compression for pictures is called JPEG (Joint Photographic Experts Group)
+
+	- Lossy algorithms let you control the degree of precision
+
+-------------------------------------
+Lab 3 - History & Impact Of Computers
+-------------------------------------
+
+A Brief History Of Computers
+
+	- Computing history started 20,000 years ago
+
+	- A timeline of computing:
+
+		- Tally Sticks: 20,000 years ago, people cut patterns of notches into animal bones. Some experts believe that these were used to perform arithmetic computations.
+
+		- Abacus: A computing device invented 4000 years ago. Can be used to perform calculations such as squares and roots. The algorithms are executed by the user, not the device.
+
+		- Orrey: Displayed the positions of the planets in the Solar System.
+
+		- Difference Engine: Mechanical single-purose computer made of precisely milled metal gears. It would compute and print tables of numbers like log or trig functions.
+
+		- Analytical Engine: First stored-program computer that could compute various functions by manually setting the starting position of its gears. Babbage's interest was mainly in printing tables of numbers.
+
+		- First Programmer: Ada Lovelace is considered to be the first programmer. She was the first one to recognize that Babbage's computer could also be used for representing musical notes, text characters, etc. 
+
+		- Alan Turing Wins World War II: Alan Turing leads a team of mathematicians to break the Enigma code using an electronic programmable computer.
+
+		- First Mouse, Window System, Hyperlinks, Picture-In-Picture Display, Etc.: Douglas Engelbart was the first person to create the mouse, window system, hyperlinks, hypertext, picture-in-picture display, collaborative editing, video calling, and much more. Engelbart also pioneered many aspects of the modern GUI. His work is known as the mother of all demos.
+
+		- Sketchpad: Ivan Sutherland created the first object-oriented programming system. This was his thesis project; a program to help in drawing blueprints from points, line segments and arcs of circles. Also, he pioneered the ability to draw on a screen using a light pen.
+
+		- ARPANET: The first iteration of the internet. This network connected ARPA funded universities, companies, and military bases. Special gateway computers called IMPs (Interface Message Processors) acted as routers, and were used to connect the host computers to the network. The TCP/IP protocol stack was designed and tested on the ARPANET. The architects' plan was to build a network of networks - the internet.
+
+		- Internet: The internet is a network of networks based on TCP/IP. It became popularized when smaller ARPANETS were abolished and everyone connected to the net using commerical ISPs.
+
+		- The World Wide Web: First widely available hypertext (clickable links) system, implemented by physicist Tim Berners-Lee. He named it the World Wide Web. The protcol that makes the Web work is called the "HyperText Transfer Protocol" (HTTP). 
+
+		- Smartphones: The first smartphone was demonstrated in 1992, and sold in 1994. Cell phones were restricted to phone calls, and apps were only on PDAs. In the late 2000s, both devices were combined in a single processor.
+
+		- Chess Program Beats World Champion: In 1978, a chess program won a game against a human chess master, David Levy. In 1981, a program, Cray Blitz, was the first to win a tournament, beat a human chess master, and earn a chess master rating for itself. Chess programs improve with hardware and better algorithms.
+
+		- Siri: Apple's personal digital assistant for the iPhone. Understanding human speech was in development since 1952, at Bell Labs. The NSA uses software to recognize keywords in telephone calls it spies on. Recently, Microsoft (Cortana), Amazon (Alexa), and Google (Assistant) have introduced their own speech-based personal digital assistant programs.
+
+		- Pokemon GO: First widely used augmented reality game. Augmented reality is a technique in which the user sees the real world, but with additional pictures or text superimposed on it. In Pokemon GO, players walk around in order to catch Pokemon. The game uses the phone's GPS to locate the player.
+
+		- IBM Quantum Experience: A 16-qubit quantum computer available for free to use on the internet. In a quantum computer, a qubit is both zero and one at the same time. The value isn't known until the end of computation. 
+
+	- Software is the form of a program stored in the computer's memory. It makes a computer usable for more than one purpose
+
+	- Usable computers weren't possible until the transistor was small, inexpensive, and fast enough to support program abstraction
+
+Moore's Law
+
+	- Computer processor speed and memory have approximately doubled every year or two, for over 50 years
+
+	- In 1965, Gordon Moore predicted that the number of transistors that could be fit on one chip would double every year. In 1975, he revised his estimate to every two years. This is known as Moore's Law.
+
+	- Processor speed and memory have also followed Moore's Law
+
+	- Doubling hardware speed improves the size of problems that you can handle efficiently
+
+Limitations to Moore's Law
+
+	- Dense chips and faster signal processing both generate increased heat. Because of this, chip manufacturers have temporarily given up on making processors faster.
+
+	- The future of processors lies in multicore chips; chips that have multiple processors. Multicore chips perform computations in parallel and have an effective speed much greater than a single-core chip.
+
+	- New developments are far but underway for combatting Moore's Law. For example:
+
+		- Use individual electrons to represent one bit. Since electrons are smaller than atoms, this would allow dramatic increase in density
+
+		- Use light beams instead of electric currents to hold bits

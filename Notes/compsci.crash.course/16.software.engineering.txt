@@ -1,0 +1,24 @@
+--------------------
+Software Engineering
+--------------------
+
+Sauce: https://www.youtube.com/watch?v=O753uuutqH8
+
+-----
+Notes
+-----
+
+- The set of tools and practices that help engineers write code is called Software Engineering. This term was coined by Margaret Hamilton
+- The idea of packing up functional units into nested objects is called Object Oriented Programming (OOP)
+- Documentation is writing a description of what the code does
+- Good documentation helps programmers when they revisit code they haven't seen for awhile, but it's also crucial for programmers who are totally new to it
+- An Application Programming Interface (API) is how collborating programmers interact across various parts of the code. The API allows the right people to access to the right functions and data
+- OOP languages change access to functions by making them private/public. A private function can only be called by other functions inside the object. A public function can be called by other objects
+- OOP languages include, but not limited to: C++, C#, Objective-C, Python, Java, etc.
+- Integrated Development Environment (IDE) integrate many useful tools for writing, organizing, compiling, and testing code
+- Fixing a bug in a program is called debugging. IDEs can go a long way when it comes to preventing and finding errors/bugs
+- Most programmers spend 70 - 80% of their time testing and debugging, not writing new code
+- Source control (also known as version control or revision control) allows for tracking the change of code
+- Large programs that are worked on by teams are usually stored on a code repository. Pulling is the act of fetching the code, and committing is uploading the new code to the repository
+- Beta software is one that is fully complete but not 100% fully tested
+- The Alpha version of software is so rough and buggy that it's only tested internally

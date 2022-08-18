@@ -1,0 +1,38 @@
+-----------
+3D Graphics
+-----------
+
+Sauce: https://www.youtube.com/watch?v=TEAtmCYYKZA
+
+-----
+Notes
+-----
+
+- In 2D graphics, there are 2 points, X and Y. In 3D graphics, there are 3 points, X, Y, and Z
+- Graphic algorithms flatten 3D coordinates onto a 2D plane. This process is known as 3D Projection. Once all the points are converted, the dots are connected using Wireframe Rendering
+- There are several types of 3D projection:
+	1. Orthographic Projection: The parallel sides in an object appear as parallel in the projection
+	2. Perspective Projection: The parallel sides converge similar to a long road
+- For 3D graphics, triangles are used to render them. These are referred to as polygons. 3D objects are made up of a group of polygons. This is called a mesh. The denser the mesh, the smoother the curves and the finer the details. However, this means more work for the computer as it has to compute more polygons
+- Game designers have to carefully balance model fidelity vs. polygon count, because if the count goes too high, the framrate of an animation drops below what users perceive as smooth
+- Triangles are used over other shapes for rendering is because of simplicity. 3 points in a plane, unambiguously defines a plane. 2 points is a line and anything more than 3 is confusing. Triangles are perfect for simplifying 3D rendering
+- The classic algorithm for generating 3D objects is called Scanline Rendering. The algorithm starts by reading the 3 points that make up the polygon, and finding the lowest and highest y-values. It will only consider rows between these two points. It runs down the polygon and finds all squares that are within the polygon and colors them. This continues for the entire rows that the polygon occupies. The rate at which a computer fills in polygons is called the Fill-Rate
+- Anti-Aliasing softens the edges of pixels, making objects appear less jagged. It does this by changing the color of the outermost pixels that aren't fully encompassed by the polygon, based on how much is inside the polygon
+- Occlusion is when objects are hidden by other objects in a scene. There are 2 ways to handle this:
+	1. Use a sort algorithm to arrange the polygons from farthest to nearest and then render them in that order. This is called the Painter's Algorithm, because you start with the background and then work your way up to foreground elements
+	2. Z-Buffering: Maintains a Z-Buffer, which is a matrix of values that sits in memory. Each element in the matrix represents a pixel. In the beginning, every element is initialized to infinity. Then it goes through the objects/polygons and compares its distance with the one stored in the matrix. The lower number replaces the value in the matrix. 
+- Z-Fighting is when polygons with the same distance are competing to be rendered. This produces a flickering effect
+- Back-Face Culling is an optimization algorithm that only renders one side; the side facing outward. The backside isn't rendered, effectively cutting the number of polygons in the pipeline by half
+- Lighting, also known as shading, should vary over the surface of a 3D object. It's used to enhance realism
+- The Surface Normal refers to the direction the polygon faces
+- Flat Shading, the most basic lighting algorithm, uses the Surface Normal to determine how dark the polygon should be shaded
+- Advanced shading algorithms such as Gourad Shading and Phong Shading were developed to make shading more smooth. They accomplish this by varying the color across the surface in clever ways; kind of like a gradient
+- Textures refers to the look of a surface rather than its feel
+- The simplest algorithm for applying textures is texture mapping. This is done by storing the texture in memory and mapping out the polygon onto the texture, pixel for pixel. Then, it takes the average color of the pixel on the texture and fills it in the polygon
+- Rendering performs the same type of calculation, millions of times for many polygons
+- Rendering can be sped up by:
+	1. Having dedicated hardware just for rendering and performing graphical computations
+	2. Divide up a 3D scene into many parts and then render all the parts in parallel
+- Engineers developed a GPU - Graphics Processing Unit - just to render graphics
+- GPUs have their own kind of RAM, known as VRAM (Video RAM). This allows the GPU cores to access them at lighting speeds
+- A modern graphics card like a GeForce GTX 1080 Ti contains 3584 processing cores

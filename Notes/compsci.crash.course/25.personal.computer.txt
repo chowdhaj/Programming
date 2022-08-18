@@ -1,0 +1,19 @@
+--------------------------------
+The Personal Computer Revolution
+--------------------------------
+
+Sauce: https://www.youtube.com/watch?v=M5BZou6C01w
+
+-----
+Notes
+-----
+
+- By 1970s the cost of (micro)-computers fell drastically, enough so the average person can buy one
+- The first commerically successfully personal computer is the Altair 8800. It was sold in 1975
+- An interpreter runs source code as the program runs
+- The Apple I was Apple Computer's first product and went on sale in July 1976 for $666.66
+- The Apple II, TRS-80 Model I, and the Commodre Pet 2001 became known as the 1977 Trinity. They revolutioned the personal computer industry b/c everything was pre-assembled and pre-installed, making it easy for households to adopt
+- IBM built its personal computers with open architecture in mind, allowing for easy expansion and 3rd party hardware and software
+- Apple's closed architecture was the only competitor to IBM
+- Closed architecture designs typically prevent people from adding new hardware to their computers
+- In order to distinguish themselves from the competition (IBM), Apple offered the Macintosh, the first GUI personal computer

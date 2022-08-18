@@ -1,0 +1,40 @@
+--------------------
+Files & File Systems
+--------------------
+
+Sauce: https://www.youtube.com/watch?v=KN8YgJnShPM
+
+-----
+Notes
+-----
+
+- When data is organized inside a file in a particular format, it is called a file format
+- Programmers invent their own file formats, but it's best to use the standard ones like jpeg and mp3
+- The most common files are TXT files, which contain text
+- All files are made up of 1s and 0s, regardless of the file format
+- The key to interpreting TXT files is using the ASCII table. This allows you to convert the binary numbers to decimal to characters
+- A wave file, also called WAV, stores audio. It does this by storing thousands of amplitudes for every single second of audio
+- Data about data is called metadata. For example, the size of a file is metadata
+- Metadata is stored at the front of the file, ahead of actual data, in what's known as a Header
+- Bitmaps, aka BMP, store pictures
+- On a computer, pictures are made up of tiny square elements called pixels
+- Each pixel is a combination of three colors: red, green, and blue. These are called additive primary colors, and they can be mixed together to create any other color a screen
+- Just like other files, Bitmaps start with metadata in the header. It contains information like width, height, color depth, size, etc.
+- A 24-bit color depth has 8 bits for each color: red, green, and blue
+- Note: 8 bits is 1 byte. 1 byte can store from 0 to 255
+- File formats are the key to reading and understanding the data inside
+- In the early days, computers would store everything as one big file
+- The Directory File is a special file that records where other files are located. Most often, it's kept at the front of storage, block 0
+- Inside the Directory File are the names of all the other files in storage, along with metadata about these files. This metadata includes: when the file was created, when it was last modified, who the owner is, r/w permissions, where it is in storage, and how long it is
+- Everytime we modify a file, we need to update the information in the directory file
+- Maintaining the directory file is an example of a basic file system
+- The file system is the part of the operating system that manages and keeps track of stored files
+- Modern file systems store files in blocks. This leaves extra space for changes called slack space and simplifies management because all data is aligned to a common size
+- File systems store large files by storing them across multiple blocks 
+- Deleting a file erases its entry from the directory file and tells the operating system that the block is now free. At one point that block will be written with new data, but until then, the old data just sits there. The file hasn't been deleted, but the record of it has. This is how computer forensic experts recover data from computers, even if the data has been deleted
+- Files getting broken up across storage like this is called fragmentation
+- Defragmentation is when the computer copies around data so files have blocks located together in storage, and in the correct order
+- In a Flat File System, everything is stored in one directory
+- A Hierarchical File System allows multiple directories, storing files like a tree; one stump with multiple branches
+- The top-most directory is known as the Root Directory. The root directory is analagous to the tree stump from before. All other files and folders lie beneath this directory along various file paths
+- When a file is cut from one directory and pasted into another, the records are transferred from one directory file to another. The file stays in the exact same block as before

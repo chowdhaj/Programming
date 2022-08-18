@@ -1,0 +1,17 @@
+-----------
+Alan Turing
+-----------
+
+Sauce: https://www.youtube.com/watch?v=7TycxwFmdB0?
+
+-----
+Notes
+-----
+
+- Alan Turing is the father of computer science
+- A Turing machine is a theoretical computing device equipped with an infinitely long memory tape which stores symbols and a device called a read/write head which can read/write/modify symbols on the tape. There's a state variable which can hold information about the current state of the machine. There's also a set of rules that describes what the machine does, given a state and the current symbol the head is reading
+- A computer that is as powerful as a Turing machine is called Turing complete
+- Alonzo Church & Alan Turing showed that there are limits to the ability of computers no matter how much time or memory you have, there are just some problems that cannot be solved ever. This is known as the Church-Turing Thesis
+- During WW2, Turing helped the (((allies))) to break the Enigma code by decrypting the encrypted messages
+- The Turing test is used to test whether artificial intelligence is on par with human intelligence, if and only if it can decieve another human into thinking that it is a human itself
+- CAPTCHA (Complete Automated Public Turing Test) is used frequently on the internet to tell computers and humans apart

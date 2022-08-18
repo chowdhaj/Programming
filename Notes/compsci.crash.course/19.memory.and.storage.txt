@@ -1,0 +1,28 @@
+----------------
+Memory & Storage
+----------------
+
+Sauce: https://www.youtube.com/watch?v=TQCr9RV7twk
+
+-----
+Notes
+-----
+
+- In general, computer memory is non-permanent. If your computer accidently gets unplugged, any data saved in memory is lost
+- Non-permanent memory is called volatile memory. This is because it stops working once the power is turned off
+- Storage is permanent memory. Data written to your hard-drive will stay there forever until its over-written or deleted. Storage is non-volatile
+- The very first form of memory was punched paper cards. However, they were extremely limited in size and speed
+- J. Presper Eckert invented Delay Line Memory as a solution to permanent memory. However, a major drawback to delay line memory was that you could only read one bit of data from a tube at any given instant. If you wanted to read a specific bit, you'd have to wait for that bit to come back and out of the tube. This is known as Sequential or Cyclic Access Memory
+- Random Access Memory (RAM) can be accessed at any bit and at any time
+- Magnetic Core Memory replaced Delay Line Memory. Magnetic Core Memory involved magnets and a wire to change the polarity of the magnet. The direction of polarity was used to store 1 or 0
+- Memory started off at $1/bit and later dropped to 1 cent per bit; which is still not good enough by today's standards
+- Magnetic tape replaced Magnetic core memory. The concept was the same, but more efficient, as Magnetic tape could store more memory
+- Since Magnetic Tapes are inexpensive, they're still used today for archiving data. The main drawback is access speed
+- Magnetic Drum memory was a metal cylinder - called a drum - coated in a magnetic field for recording data. The drum was rotated continuously, and positioned along its length were dozens of read and write heads. To keep read/write times short, drums were rotated thousands of revolutions per minute
+- Hard Disks use the same magnetic technology as the Magnetic Drum memory
+- The world's first computer with a disk drive was IBM's Ramac 305
+- The Seek Time is how long it takes for the head to read a single bit of random data
+- Computers today employ a memory hierarchy, where you have different kinds of memory; fast + expensive, and slow + cheap. Cache is fast and expensive, and hard drives are slow but cheap
+- A floppy disk is similar to a hard disk, both use a magnet to store data, but the floppy uses a magnetic medium that's floppy
+- CDs and DVDs store data using physical divots (pit depth) that cause light to be reflected differently, which is captured by an optical sensor. A hole may indicate 1, and no hole indicates 0
+- Today, memory is being replaced by solid state memory; with no moving parts. This is because costs have significantly fallen

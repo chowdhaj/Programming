@@ -1,0 +1,24 @@
+-----------
+Compression
+-----------
+
+Sauce: https://www.youtube.com/watch?v=OtDxDvCpPL4
+
+-----
+Notes
+-----
+
+- Compression squeezes data into a smaller size
+- Run Length Encoding compresses data by reducing repeated or redundant information. This type of compression takes advantage of the fact that there are often runs of identical values in files
+- Compression that doesn't lose any data is called lossless compression. The decompressed data is identical to the original data
+- Huffman trees are another type of lossless compression. They work by categorizing data into trees, from most common to least. 
+- Examples of lossless file formats: GIF, PNG, PDF, ZIP, etc.
+- Lossy audio compressors encode different frequency bands at different precisions. This is because there are some sound frequencies that humans cannot hear, like ultrasound
+- As signal quality or bandwidth gets worse, compression algorithms remove more data, further reducing precision
+- The idea of discarding or reducing precision in a manner that aligns with human perception is called perceptual coding
+- JPEG stands for Joint Photographic Experts Group
+- JPEG compresses images by breaking them up into blocks of 8x8 pixels, and then discarding a lot of the high-frequency spatial data
+- Videos are long sequences of images, so a lot of image compression techniques apply to them
+- Temporal redundancy is used when the background stays the same, so those pixels don't need to be re-transmitted every frame of the video, just the different patches of data. This takes advantage of inter-frame similarity
+- MPEG-4 videos, a common standard, are often 20 to 200 times smaller than the original, uncompressed file
+- Compressing to much can distort the quality and sometimes cause things to go horriby wrong

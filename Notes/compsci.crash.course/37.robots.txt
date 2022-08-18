@@ -1,0 +1,28 @@
+------
+Robots
+------
+
+Sauce: https://www.youtube.com/watch?v=3XkL0qQ21Oo 
+
+-----
+Notes
+-----
+
+- Robots are already here; helping us do things harder, better, faster, and stronger
+- A robot is a machine capable of carrying out a series of actions automatically guided by computer control. For example: Industrial arms that paint cars, drones that fly, snake-like medical robots that assist surgeons, etc. A robot is a machine that live in and acts on the real world. A robot that performs tasks in the virtual world (i.e. Scraping websites) is referred to as a bot
+- The word robot was first used in a 1920 Czech play to denote artificial, humanoid characters. The word was derived from robota, the slavic word for forced laborer
+- Non-electrical and non-electronic machines are called automatons
+- The first machines controlled by computers emerged in the late 1940s. These Computer Numerical Control (CNC) machines could run programs that instructed a machine to perform a series of operations. This caused a massive boom due to the increased capability, precision, and low-cost of work
+- The Unimate was the first programmable industrial robot
+- A negative feedback control loop has three key pieces:
+	1. Sensor: Measures things in the real world, like water pressure, motor, position, air temperature, etc.
+	2. Controller: Instructs the system how to minimize error
+	3. System: Acts on the world through pumps, motors, heating elements, and other physical actuators
+- A widely used control-loop, feedback mechanism is a proportional-integral-derivative (PID) controller
+- PID controllers calculate three values:
+	1. Proportional value: Difference between desired value and actual value at the most recent instant in time
+	2. Integral value: Sum or error over a window of time
+	3. Derivative value: Rate of change between desired and actual value
+- PID controllers are everywhere. From self-driving cars to drones
+- Androids are robots that look and act like humans
+- Robots with the intelligence and capability to take human lives are called lethal autonomous weapons

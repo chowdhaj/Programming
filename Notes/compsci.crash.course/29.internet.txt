@@ -1,0 +1,49 @@
+------------
+The Internet
+------------
+
+Sauce: https://www.youtube.com/watch?v=AEaKrq3SpW8
+
+-----
+Notes
+-----
+
+- Computers are connected to a large network called the Internet. This is how you're able to stream, message, watch, search, etc.
+- Computers connect to a series of networks. For example:
+	1. Local Area Network (LAN) - Every device that's connected to your WiFi router
+	2. Wide Area Network (WAN) - A router run by your Internet Service Provider (ISP) (i.e. Verizon, Rogers, Bell, Comcast)
+- Each WAN connects to a bigger WAN. For instance, there must be a local WAN for your neighbourhood and then an even bigger WAN for your city
+- The backbone of the internet is made up of gigantic routers with super high-bandwidth connections running between them 
+- When you request information from a webpage, a packet is sent from the webpage's servers to LANs and WANs until it makes its way to the backbone of the internet. Then, it connects to WANs and LANs until it reaches your neighbourhood, then your router, and finally your device
+- You can see the route data takes to different places on the internet using the traceroute program on your computer (use Terminal)
+- The Internet is a huge distributed network that sends data around as little packets. Large data gets broken up into many packets, in order to prevent you from clogging the network
+- Internet packets have to conform to a standard called the Internet Protocol (IP)
+- An IP packet has a destination address in its header. This is the metadata that's stored in front of the data payload 
+- The User Datagram Protocol (UDP) sits on top of IP and is used to route the packets to the correct program/application. Inside of the UDP header is some extra useful information like a port number and checksum. Every application running on your computer is assigned a unique port number by your computer's operating system. When a packet arrives to your computer, the operating system will look inside the UDP header and read the port number and give the packet to the right program. UDP headers also contain a checksum, which allows the data to be verified for correctness
+- A Checksum verifies a packet by checking the sum of the data. If the checksums are identical then the packet is fine. If the checksums are different then the data is corrupted, maybe because of a power fluctuation or faulty cable
+- IP gets the packet to the right computer, but UDP gets the packet to the right program running on that computer
+- UDP doesn't offer any mechanisms to fix the data or request a new copy. The programs are alerted to the corruption, but typically just discard the packet
+- Also, UDP offers no mechanism to verify that the packet arrived at its destination. So its possible that packets are lost during transfer. This is acceptable for some programs like Skype, but not for others like Email
+- When all packets need to be successfully transferred, programs use the Transmission Control Protocol (TCP). Similar to UDP, rides inside the data payload of IP packets. This is commonly referred to as TCP/IP. Like UDP, the TCP header contain a destination port and checksum
+- TCP packets are given sequential numbers. This allows the recieving program to put them into order if they arrive at different times. So if an email's packets come in all scrambled up, your computer's operating system can put it all together correctly
+- When a data packet is recieved and passes the checksum, TCP sends back an acknowledgement (ACK). The sender will only send another packet if it gets back an ACK. If doesn't get an ACK, it'll resend the same packet again
+- The success rate of ACKs and latency time can be used to infer network congestion. TCP uses this information to adjust how aggressively it sends packets; a mechanism for congestion control
+- In a nutshell, TCP can handle out-of-order packet delivery, dropped packets, retransmission, and throttle its transmission rate according to available bandwidth
+- The biggest downside to TCP is that it doubles the messages on the network. Sometimes this is not desirable because speed is more important than accuracy. For example, online multiplayer games
+- When you connect to a website, you need two things. An IP Address and a Port
+- The Internet has a special service that maps domain names to IP addresses. It is called the Domain Name System (DNS)
+- When you visit a website, the request goes to a DNS server to lookup its IP address. If one exits, it replies with the address. This DNS server is typically provided by your ISP
+- DNS names are stored as a tree data structure, rather than a super long list
+- In a Domain Structure:
+	1. Top Level Domains (TLDs) are at the very top. These are huge categories like .com, .gov, .org, etc.
+	2. Second Level Domains. Examples include google.com and apple.com
+	3. Sub-Domain of Parent. Examples include drive.google.com and store.apple.com
+- The Domain Name Structure is huge. There are over 300 million Second Level Domains
+- The layers of the Open System Interconnection (OSI) Model looks like this (from bottom to top):
+	1. Phyiscal Layer: Electrical signals on wires or radio signals transmitted through the air in the case of wireless networks 
+	2. Data Link Layer: MAC Addresses, collision detection, exponential backoff and similar low level protocols that mediate access to the physical layer
+	3. Network Layer: Where all switching and routing technologies operate
+	4. Transport Layer: Protocols like UDP and TCP, which are responsible for point to point data transfer between computers, and also things like error detection and recovery when possible 
+	5. Session Layer: Protocols like TCP and UDP are used to open a connection, pass information back and forth, and then close the connection when finished. This is called a Session. This is exactly what happens when you do a DNS Lookup or request a webpage
+	6. Presentation Layer: File transfer, images, movies, encryption, etc.
+	7. Application Layer: Web browers, Skype, HTML decoding, streaming movies, etc. 

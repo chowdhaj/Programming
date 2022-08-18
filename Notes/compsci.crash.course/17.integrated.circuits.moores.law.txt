@@ -1,0 +1,31 @@
+---------------------------------
+Integrated Circuits & Moore's Law
+---------------------------------
+
+Sauce: https://www.youtube.com/watch?v=6-tKOHICqrI
+
+-----
+Notes
+-----
+
+- Within 50 years, software grew in complexity from machine code punched by hand onto paper tape, to object oriented programming languages, compiled in integrated development environments
+- From the 1940s to the through the 1960s every computer was built from individual parts called discrete components, which were all wired together
+- Transistorized computers marked the second generation of electronic computing; the first was vacuum tubes
+- Integrated circuit consists of all the discrete components, packaged into one component
+- Robert Noyce is widely regarded as the father of modern Integrated Circuits
+- Printed Circuit Boards (PCBs) have all the metal wires etched right into them, to connect components together
+- Photolithography uses light to transfer complex patterns to a material, like a semiconductor. It can be used to create complex circuits
+- Silicon is a semiconductor because it can sometimes conduct electricity and other times it does not
+- Photolithography is used to control where and when a silicon wafer can conduct electricity. The wafer is also used as a base to lay down complex metal circuits, so everything is integrated; hence the name Integrated Circuits (IC)
+- During photolithography, chemicals are used to etch patterns onto the silicon wafer
+- According to Moore's Law, approximately every 2 years, you can fit twice the number of transistors into the same amount of space, due to advancements in materials and manufacturing
+- The smaller the transistor, the less charge you have to move around, allowing it to switch states faster and consume less power
+- More compact circuits results in less delay in signals, resulting in faster clock speeds
+- In 1968, Robert Noyce and Gordan Moore teamed up and founded a new company, combining the words Integrated and Electronics - Intel - the largest chip maker today
+- The Intel 4004 was the first processor that shipped as an IC; referred to as a microprocessor
+- The era of integrated circuits, especially microprocessors, ushered in the 3rd generation of computing
+- Improvements to photolithography resulted in all components of a computer benefitting; RAM, GPU, SSD, etc.
+- Starting in the 1970s, very-large-scale integration, or VLSI software, has been used to automatically generate chip designs. Marking the start of the 4th generation of computers
+- Experts have been predicting the end of Moore's Law for decades, because:
+	1. We're bumping into limits on how fine we can make features on a photomask and it's resulting wafer due to the wavelengths of light used in photolithography. To combat this, scientists are developing smaller wavelengths of light that can project smaller features
+	2. When transistors get really small, where electrodes are separated by a few dozen atoms, electrons can jump the gap. This phenomenon is called quantum tunneling. If transistors leak currents, they don't make very good switches

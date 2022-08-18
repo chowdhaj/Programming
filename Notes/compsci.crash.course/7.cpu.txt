@@ -1,0 +1,28 @@
+-----------------------
+Central Processing Unit
+-----------------------
+
+Sauce: https://www.youtube.com/watch?v=FZGugFqdr60
+
+-----
+Notes
+-----
+
+- The CPU is the heart of the computer - its job is to execute programs, programs such as Microsoft Word, Safari, etc.
+- Each program is made up of instructions, b/c they instruct the computer on what to do
+- Registers are used to temporarily store and manipulate values
+- The Instruction Address Register keeps track of where you are in a program by storing the memory address of the current instruction
+- The Instruction Register stores the current instruction (i.e. The data in memory)
+- The first phase of a CPU's operation is called the fetch phase, where the first instruction is fetched
+- The second phase of a CPU is called the decode phase, where the instruction is broken into opcode and data
+- Instructions are interpreted and decoded by a control unit, which is also made out of logic gates
+- The last phase of a CPU is called the execute phase, where the instruction is carried out (i.e. Load from memory, add registers, etc.)
+- The control unit is responsible for operating the CPU, kind of like a musical conductor. It reads/writes values from/into the ALU, registers, memory, etc. 
+- The control unit has its own registers to store values after recieving them from the ALU
+- The responsibility of keeping the CPU ticking falls to a component called the clock
+- The clock triggers an electrical signal at precise and regular intervals. This signal is used by the control unit to advance the internal operation of the CPU
+- The speed at which a CPU carries out EACH STEP of the fetch-decode-execute cycle is called its clock speed. In other words, clock speed is a measure of how fast it takes a CPU to carry out one instruction. Clock speed is measured in Hertz (Hz); measured in cycles per second
+- The first single-CPU chip was the Intel 4004. It had a clock speed of 740 KHz
+- Overclocking a CPU is modifying the clock to speed up the tempo of the CPU. This can cause overheating
+- Modern CPUs can change their clock speed, based on demand. This is called dynamic frequency scaling
+- Basic mechanics found in old CPUs are still used in modern CPUs. The architecture hasn't changed much

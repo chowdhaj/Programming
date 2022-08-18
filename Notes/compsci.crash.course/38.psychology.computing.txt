@@ -1,0 +1,23 @@
+-----------------------
+Psychology Of Computing
+-----------------------
+
+Sauce: https://www.youtube.com/watch?v=DEHsvQ3Ylwg
+
+-----
+Notes
+-----
+
+- When designers create software, they employ social, cognitive, behavioral, and perceptual psychology principles
+- Usability is the degree to which a human-made artifact (i.e. Software) can be used to achieve an objective effectively and efficiently
+- People are good at ordering intensities of colors. Because of this, color intensity is a great choice for displaying data with continuous values
+- Humans are terrible at ordering colors. This makes it perfect for discrete data with no ordering
+- Humans can read, remember and process information more effectively when it's chunked; items are put together into small, meaningful groups
+- Humans can generally juggle seven items, plus-or-minus two, in short-term memory. This is why telephone numbers are broken into chunks
+- Affordances provide strong clues to operations of things. Plates are for pushing, knobs are for turning, and slots are for inserting things into
+- Knurling is texture added to objects to improve grip and show you were to best grab them
+- Synchronous communication (i.e. Video-call) is when all participants are online simultaneously
+- Asynchronous communication is when people respond whenever they can or want (i.e. SMS)
+- People exhibit higher levels of self-disclosure in computer mediated conversations as opposed to face-to-face interactions
+- Eye gazing is extremely important in persuading, teaching, and getting people's attention
+- Looking at others while talking is called Mutual Gaze

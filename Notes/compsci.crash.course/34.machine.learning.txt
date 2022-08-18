@@ -1,0 +1,36 @@
+------------------------------------------
+Machine Learning & Artificial Intelligence
+------------------------------------------
+
+Sauce: https://www.youtube.com/watch?v=z-EtmaFJieY
+
+-----
+Notes
+-----
+
+- Machine learning is algorithms that give computers the ability to learn from data, and then make predictions and decisions
+- Machine learning is a set of techniques that sits inside the goal of artificial intelligence
+- The decision process is called Classification, and the algorithm that does it, is called a Classifier
+- Features are values that usefully characterize the things we wish to classify (i.e. Mass, Span, Height, Color, Etc.)
+- Training data is required to train the machine learning classifier, so it can make good predictions
+- Machine learning algorithms find optimal ways to separate data; maximizing classifications and minimizing errors
+- Lines that chop up the Decision Space are called Decision Boundaries 
+- A table that shows where a classifier gets things right or wrong is called a Confusion Matrix
+- Dividing the decision space into boxes is represented by a Decision Tree
+- Algorithms that use many decision trees to make a decision are called forests because they contain a lot of trees
+- Support Vector Machines slice up the decision space using arbitrary lines. These lines don't have to be straight and are usually polynomials or a complicated mathematical function. It's the machine's job to find the best function to divide the data
+- Techniques like Decision Trees and Support Vector Machines are strongly rooted in statistics
+- Artificial Neural Networks are machine learning algorithms inspired by our brain. They do not rely on statistics
+- Neurons are cells that process and transmit messages using electrical and chemical signals. They take one or more input from other cells, process those signals and then emit their own signals
+- Artificial Neurons are very similar to the Neurons in our brains. Each artificial neuron takes a series of inputs, combines them, and emits a signal. 
+- Artificial Neurons accept numbers (input) and return numbers (output)
+- Neural networks have an Input Layer, Hidden Layer, and Output Layer
+- The first thing a neuron does is multiply each input by a specific weight. Then it sums the weighted inputs together. The neuron applies a bias to the result. Finally, the neuron applies an activation function and outputs the result
+- Bias and Input Weights are initally set to random values when a network is created. An algorithm changes these values accordingly, to train the neural network, using labelled data
+- The Hidden Layer doesn't have to be one layer, it can be many layers deep. Hence, the term Deep Learning
+- Due to advancements and CPU and especially GPU, Machine Learning and Deep Learning have become more feasible
+- An Machine Learning algorithm that can only classify one thing is called Weak AI or Narrow AI. It's only intelligent at specific tasks
+- An AI that is smart and well rounded as a human is called Strong AI
+- AI can process a lot of information but also learn extremely quickly over time
+- In 2016, Google's AlphaGO beat Lee Sodul at the game GO
+- AI that can learn by itself is called Reinforcement Learning. This is similar to how humans learn

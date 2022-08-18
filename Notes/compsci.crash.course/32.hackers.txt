@@ -1,0 +1,41 @@
+-------
+Hackers
+-------
+
+Sauce: https://www.youtube.com/watch?v=_GzE99AmAQU
+
+-----
+Notes
+-----
+
+- Hackers are people who use their technological knowledge to break into computer systems
+- There are two types of hackers:
+	1. White Hats: Hackers who hunt for bugs and try to close security holes in software to make systems safer and more resilient. They are often hired by companies and governments to perform security evalulations
+	2. Black Hats: Hackers with intention to steal, exploit and sell computer vulnerabilities and data
+	3. Grey Hats: Somewhere between white and black
+- Hacktivists are hackers who use their still to promote a social or political goal
+- Social engineering is the most common way hackers get into systems. This requires tricking the user into letting them in. A person is manipulated into revealing confidential information or configuring a computer system so it permits entry by attackers
+- The most common type of attack is phishing, mostly encountered as an email. An email will masquerade as your bank and ask you to login to a malicious website. Upon entering your information, everything is sent to the hackers
+- Pretexting is a social engineering attack where an attacker will impersonate someone from their IT department. Often, attackers will call a first number and then asked to be transferred to a second. This way, the phone number appears to be internal to the company
+- Emails are a common delivery mechanism for trojan horses, data (picture, video, document, etc.) that appear to be harmless, but actually contains malicious software called Malware
+- Malware can take many forms. Some malware will steal your banking data while others will encrypt your files and demand a ransom. This is known as ransomware
+- Brute forcing a password requires you to try every single combination until you gain entry
+- NAND Mirroing is used in conjunction with brute forcing to guess password. If you have physical access to the computer, you attach wires to the device's memory chip and make a perfect copy of its contents. With this setup, you can try a series of passwords until the device starts to make you wait between attempts or tries to delete data. This technique was shown to be successful on the iPhone 5C
+- Remotely hacking a system requires finding a bug and crafting an exploit. An exploit takes advantage of a bug to gain capabilities like root access
+- Buffers are a general term for a block of memory reserved for storing data such as text values that are entered into a textfield	
+- A common type of exploit is a buffer overflow. As the name suggests, it overflows the buffer and overwrites adjacent data in memory. This can either crash the program or perform something completely different by injecting new values into memory and executing it (i.e. Setting an isAdmin variable to true)
+- There are a few ways to combat buffer overflows:
+	1. Bounds Checking: Check the input of the input before copying it into memory
+	2. Address Space Layout Randomization: By randomizing memory location, attackers don't know what memory location to overwrite
+	3. Canaries: Leave unused space after buffers and watch those memory regions for changes. If they change, then an attacker is trying to compromise the system
+- Another type of attack is code injection. It's most commonly used in websites that use databases; pretty much all big websites use them
+- Databases can be compromised by sending malicious usernames with embedded SQL commands. These SQL commands can retrieve the entire database or delete it altogether
+- Code injection is combatted the same way buffer overflows are, by sanitizing input. Most username and password forms on the web don't let you include special symbols like semicolons and quotes
+- Programmers should always assume user input to be potentially dangerous and examine it carefully
+- The more prevalent or damaging a bug is, the higher the price or prestige it commands
+- A Zero Day Vulnerability is a new bug or exploit that the software developers are unaware of
+- Worms are programs that jump from computer to computer, automatically
+- If a hacker can take over a large number of computers, they can be used to form a Botnet. This can have many purposes, like sending huge volumes of spam, mining bitcoins, stealing CPU cycles, and launching DDoS attacks
+- A DDoS attack is where all the computers in the botnet send a flood of dummy messages. This can knoc services offline, either to force owners to pay a ransom or just to be evil
+- Cyber attacks happen on a daily basis and cost the global economy roughly half a trillion dollars annually
+- Many experts believe that the next war will fought electronically. This is known as Cyber Warfare

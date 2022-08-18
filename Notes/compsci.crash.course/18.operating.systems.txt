@@ -1,0 +1,26 @@
+-----------------
+Operating Systems
+-----------------
+
+Sauce: https://www.youtube.com/watch?v=26QPDBe-NB8
+
+-----
+Notes
+-----
+
+- Operating systems (OS) are just programs with special privileges that let them manage other programs
+- The OS is the typically the first piece of software to launch when a computer is started, and all other programs are launched by the OS
+- Multi-tasking is when many programs are running all at once on a single CPU. This is done through (clever) scheduling
+- With Virtual Memory, programs can assume their memory always starts at 0, keeping things simple and consistent. The actual physical location is tracked and mapped by the OS & CPU. The physical location is hidden from the program
+- Virtual memory allows programs to have flexible memory sizes, called dynamic memory allocation, that appear to be continuous to them. It simplifies everything and offers tremendous flexibility to the Operating System in running multiple programs simultaneously
+- The benefit to virtual memory is memory protection. If a program crashes, it can only corrupt its own memory. All of the other programs are safe. Memory protection also keeps you safe from viruses that try to read or corrupt sensitive information/data
+- A terminal is a keyboard and screen that connects to a big computer, but doesn't contain any processing power itself
+- Time-sharing allows multiple users to use a computer simultaneously. With time-sharing, each user is only allowed to utilize a small fraction of the computer's processor and memory
+- Dennis Ritche and Ken Thompson didn't like working on Multics, so decided to make their own OS, Unix
+- Unix separated the OS into 2 parts:
+	1. Core functionality of the OS, things like memory management, multi-tasking, and dealing with I/O -- Called the Kernel
+	2. Wide array of useful tools that came bundled with, but not part of the kernel, things like programs and libraries
+- Unix didn't have any error recovery code, allowing it to run on cheaper hardware
+- A kernel panic is when the kernel crashes and has no recourse to recover
+- Ken Thompson & Dennis Ritchie wrote the C programming language, which was the main language used on Unix machines
+- C powers Linux, the present day Unix-like system that powers almost every single server and Android phone

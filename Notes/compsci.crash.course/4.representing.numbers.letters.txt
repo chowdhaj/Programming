@@ -1,0 +1,23 @@
+------------------------------------------
+Representing Numbers & Letters With Binary
+------------------------------------------
+
+Sauce: https://www.youtube.com/watch?v=1GSjbWt0c9M
+
+-----
+Notes
+-----
+
+- In binary, a 1 or 0 is called a bit (Binary Digit)
+- 8 bits form a byte
+- Kilobyte, Megabyte, Gigabyte, Terabyte, etc. are all used to express data size/capacity
+- 1000 bytes is a Kilobyte
+- 1024 bytes is a Kibibyte (Old measurement; now replaced by Kilobyte)
+- Modern computers are either 32-bit or 64-bit. This refers to the size of the numbers it can work with
+- Negative numbers are represented using a sign bit. The sign bit refers to the first bit. If its 1, its negative, if its 0, its positive
+- Locations in memory are known as address. This is helpful for storing and retrieving values
+- Decimal numbers are represented using Floating Point Numbers; the decimal "floats" and can be moved anywhere in the number
+- Floating point numbers are represented using standards, the most common of which, the IEEE 754 standard
+- ASCII is used to encode letters, digits, symbols, etc. An ASCII table outlines all values with their character pair
+- Unicode is a universal encoding scheme that replaced all other international formats
+- Every single piece of data, whether its videos, images, games, operating systems, etc., everything can be represented using 1's and 0's

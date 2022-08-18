@@ -1,0 +1,16 @@
+---------------
+Early Computing
+---------------
+
+Sauce: https://www.youtube.com/watch?v=O5nskjZ_GoI
+
+-----
+Notes
+-----
+
+- Computers are the building blocks of today's world; they control everything
+- Earliest computing device was the abacus. Its a calculator that can add, subtract, and store numbers
+- Step Reckoner was the first device to do all four arithmetic operations (Add, Subtract, Multiply, & Divide)
+- Charles Babbage pioneered the Difference Engine, a computer to calculate polynomials
+- Babbage is considered the father of computing
+- Herman Hollerith founded the Tabulating Machine Company which later merged with other machine makers in 1924 to become IBM Co.

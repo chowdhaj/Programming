@@ -1,0 +1,31 @@
+---------------------------
+Natural Language Processing
+---------------------------
+
+Sauce: https://www.youtube.com/watch?v=fOvTtapxa9c
+
+-----
+Notes
+-----
+
+- Even though programming languages meet the requirement to be classified as languages, they have small vocabularies and follow highly structured conventions. Plus, code will only compile and run if it's 100 percent free of spelling and syntactic errors
+- Human languages are called natural languages. These contain large, diverse vocabularies, words with several different meanings, speakers with different accents, and all sorts of interesting word play. People also make linguistic faux pas when writing and speaking, like slurring words together, leaving out key details so things are ambiguous, and mispronouncing things
+- The desire for computers to understand us led to the creation of Natural Language Processing (NLP)
+- Since there are an infinite number of sentences, the first step to NLP is deconstructing sentences into bite-sized pieces
+- There are 9 fundamental types of english words: Nouns, Pronouns, Verbs, Adjectives, Adverbs, Articles, Prepositions, Conjunctions, and Interjections
+- Phrase structure rules were developed to teach computers grammar. Words are broken up into their types and put into Parse Trees
+- The phrase structure rules and similar methods that codify language, can be used by computers to generate natural langauge text
+- Parsing and generating text are fundamental components of natural language chatbots
+- An early example of a chatbot is ELIZA, created in the mid 1960s at MIT
+- Modern chatbots are based on machine learning, where gigabytes of human-to-human chats are used to train them
+- Bell labs debuted the first speech recognition system in 1952, nicknamed Audrey; the automatic digit recognizer
+- Each sound has a unique waveform, as captured by a microphone
+- A waveform is the magnitude of displacement, of a diaphragm inside of a microphone, as sound waves cause it to oscillate
+- A Spectogram plots time along the X-axis and the magnitude of the different frequencies that make up each sound
+- Waveforms are converted into Spectrograms using an algorithm called Fast Fourier Transform
+- On a spectogram, sounds have quite different arrangements and formants
+- All vowel sounds have different format frequency combinations
+- The sound pieces that make up words are called phonemes. In English, there are roughly 44
+- A Language Model contains statistics about the frequency of words
+- Speech Synthesis is giving computers the ability to output speech
+- Many people predict that speech technologies will become as widespread as screens, keyboards, trackpads, etc.

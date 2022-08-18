@@ -1,0 +1,15 @@
+-----------------------
+Instructions & Programs
+-----------------------
+
+Sauce: https://www.youtube.com/watch?v=zltgXvg6r3k
+
+-----
+Notes
+-----
+
+- A CPU (hardware) is powerful because it is programmable (software); can perform user instructions
+- Instructions are in memory (i.e. RAM), and then loaded into the CPU (registers)
+- An infinite loop is when a program runs forever
+- Instruction length is the size of the opcode (i.e. 32-bit, 64-bit, etc.)
+- In 1971, Intel released the 4004, the first CPU that put everything into a single chip. It supported 46 instructions

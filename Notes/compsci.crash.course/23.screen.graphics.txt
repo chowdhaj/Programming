@@ -1,0 +1,22 @@
+---------------------
+Screens & 2D Graphics
+---------------------
+
+Sauce: https://www.youtube.com/watch?v=7Jr0SFMQ4Rs
+
+-----
+Notes
+-----
+
+- Early computer screens were extremely low resolution and only used to keep track of values and registers
+- The most prominent type of screens in the early days was Cathod Ray Tubes (CRTs). These work by shooting electrons out of an emitter at a phosphor-coated screen. When the electrons hit the coating, it glows for a fraction of a second. There are two ways to draw graphics:
+	1. Vector Scanning: Direct the electron beam to trace out shapes, and continue repeating this process so the image persists
+	2. Raster Scanning: Follow a fixed path, scanning line by line, from top left to bottom right, and looping over and over again. The electron beam is only turned on at certain points, to create text and graphics
+- The Liquid Crystal Displays (LCDs) that are common today use raster scanning, updating the brightness of each red, green, and blue pixel, many times a second
+- Early computers didn't use pixels b/c they consumed way to much memory. A 200x200 black and white image requires 40,000 bits, more than half the RAM of early computers
+- Character generators were used to read characters out of RAM and convert them to raster graphics to be drawn onto the screen. In essence, these were the first graphic cards
+- Each character generator had Read Only Memory (ROM) that stored graphics for each character, called a dot matrix pattern. If the graphics card saw the 8-bit code for the letter "K", then it would raster scan the 2D pattern for the letter onto the screen in the right position
+- The character generator had special access to a portion of a computer's memory reserved for graphics, a region called the screen buffer. Computers wishing to render text to the screen simply manipulated the values stored in this region
+- Computer Aided Design (CAD) software is widely considered the earliest example of a complete graphical application
+- Bits in memory directly mapped to pixels on the screen are bitmapped displays. With these, totally arbitrary graphics were possible
+- Computers reserve a special region of memory for pixel data, called the frame buffer. In the early days, RAM was used, but today, computers use (Video Ram) VRAM located on the graphics card for high speed access

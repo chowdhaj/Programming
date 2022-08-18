@@ -1,0 +1,29 @@
+-------------------
+Advanced CPU Design
+-------------------
+
+Sauce: https://www.youtube.com/watch?v=rtAlC5J1U40
+
+-----
+Notes
+-----
+
+- In the early days of electronic computing, processors were typically made faster by improving the switching time inside of the transistors inside the chip; the ones that make up all the logic gates
+- Most ALUs today have divide as performable operation
+- Modern CPUs have special circuits for things like graphics operations, decoding compressed video, and encrypting files
+- Instruction sets keep getting larger and larger (thousands of different instructions), keeping the old opcodes around for backwards compatibility
+- Data is transmitted to and from RAM along sets of data wires, called a Bus; a few centimeters long
+- CPU Cache speeds up operations by containing a whole block of relevant data; computer data is often arranged and processed sequentially
+- Since the Cache is really close to the CPU, it can provide data in a single clock cycle; compared to RAM which can take several cycles
+- When data requested in the RAM is already stored in the Cache, it's called a Cache hit. If it's not, it's called a Cache miss
+- The cache can also be used like a scratch space, storing intermediate values when performing a longer, or more complicated calculation
+- Cache is always faster to save to and access, than RAM
+- Since the space on a CPU is limited, Cache is typically measured in Kilobytes, and sometimes Megabytes, while RAM is typically measured in Gigabytes
+- The cache has a special flag for each block of memory it stores, called the Dirty Bit. This indicates whether or not the corresponding block of memory has been modified. If it has, it'll copy the contents of the cache to the RAM
+- Parallelizing operations speeds up a CPU by busying-up all parts of the CPU. For instance, while a CPU is decoding instruction 1, it'll fetch instruction 2. Once it executes instruction 1, it'll decode instruction 2, and fetch instruction 3. This happens simultaneously, in the same cycle
+- Pipelined processors have to look ahead for data dependencies, and if necessary, stall their pipelines to avoid problems
+- High end processors can dynamically reorder instructions with dependencies in order to minimize stalls and keep the pipeline moving. This is called out-of-order execution
+- Advanced CPUs guess which way they are going to go, and start filling their pipeline with instructions based off that guess; a technique called speculative execution
+- Today's processors can predict branches with over 90% accuracy
+- Increasing cores also helps increase speed as more cores equal more instructions per cycle
+- FLOPS = Floating Point Math Operations Per Second

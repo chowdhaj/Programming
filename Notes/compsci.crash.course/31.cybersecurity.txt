@@ -1,0 +1,52 @@
+-------------
+Cybersecurity
+-------------
+
+Sauce: https://www.youtube.com/watch?v=bPVaOlJ6ln0
+
+-----
+Notes
+-----
+
+- Cybersecurity is used to minimize crime and harm in the virtual world - the internet
+- Cybersecurity is the set of techniques used to protect the secrecy, integrity and availablity of computer system and data against threats
+- Secrecy (aka Confidentiality) means that only authorized people should be able to access or read specific computer systems and data. Data breaches, where hackers reveal people's credit information, is an attack on secrecy
+- Integrity means that only authorized people should have the ability to use or modify systems and data. Hackers who learn your password and send e-mails masquerading as you is an integrity attack 
+- Availability means that authorized people should always have access to their systems and data. A Denial Of Service Attack (DOS), where hackers overload websites with fake requests to make it slow or unreachable for others, is an attack on availability
+- To begin, security experts try to identify the threat/enemy. At an abstract level, this is called a threat model
+- A thread model profiles attacks: their capabilities, goals, and probable means of attack, also called an attack vector
+- How a system is secured depends heavily on who it's being secured against
+- A lot of security boils down to two questions:
+	1. Who are you?
+	2. What should you have access to?
+- To differentiate between right and wrong people, authentication is used. This is the process by which a computer understands who it is interacting with 
+- There are three types of authentication:
+	1. What you know: Based on the knowledge of a secret that should be known only to the real user and the computer. For example: A username and password. This is the most common type of authentication used. However, it's not very secure because some passwords are weak and easy to guess
+	2. What you have: Based on possession of a secret token that only the real user has. For example: A physical key and lock. This requires physical presence, making it much harder for remote attacks
+	3. What you are: Based on the user. For example: Fingerprint readers, Iris Scanners, Face ID, etc. This type of authentication is deterministic; it always produces the same predictable result from a given input 
+- A brute force attack tries every single combination. There is no clever algorithm
+- A lot of websites require complex password that involve uppercase letters, symbols, and numbers. This is because it exponentially increases the number of possible password combinations, making it significantly harder to brute force
+- An 8 digit numerical pin only has a hundred million combinations. On the other hand, an 8 character password has more than 600 trillion combinations
+- Using non-dictionary words is extremely effective against dictionary attacks
+- An issue with biometric authentication is that it is probabilistic. It might not work all the time and deny access. Sometimes, it might give access to the wrong person, like your evil twin
+- Biometric authentication cannot be reset. You can't change your fingerprint or grow a new finger
+- Research has shown that it is possible to forge an iris, using a photo of the user
+- Two-factor or multi-factor authentication is more secure and reccomended. An attack can guess your password or steal your phone, but it's much harder to do both
+- Access control refers to what you can read and write once you're logged into the system. This is done using Permissions or Access Control Lists (ACL), which describes what access each user has for every file, folder and program on a computer
+- Read permissions allows a user to see the contents of a file
+- Write permissions allows a user to modify the contents
+- Execute permissions allows a user to run a file/program
+- Users should not be able to read up, or write down
+- The no read up, no write down approach is called the Bell-LaPadula model. It was developed for the U.S. Department of Defense
+- Other models for access control are the Chinese Wall Model and Biba Model
+- Authentication and access control help a computer determine who you are and what you should access
+- Malicious software designed to compromise a computer's security and steal data is called Malware
+- There is no way to guarantee the security of a program or computing system. Even if a program is secure, implementation bugs can result in vulnerabilities
+- One of the holy grails of system level security is a security kernel or a trusted computing base: A minimal set of operating system software that's close to provably secure
+- In terms of security, less code is better
+- The best way to secure systems is through Independent Verification & Validation. This works by having code audited by a crowd of security-minded developers
+- The biggest security conference is DEFCON, which is held annually in Las Vegas
+- Good developers should design programs so that when they do get compromised, the damage is limited and contained
+- Isolation is separating the programs running on a computer. This is done through sandboxing
+- Operating systems attempt to sandbox applications by giving each their own block of memory that other programs can't touch
+- Virtual Machines are simulated computers that live in their own sandbox. If the virtual machine gets compromised, the host OS is safe from harm

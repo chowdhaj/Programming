@@ -1,0 +1,611 @@
+========================
+answers.to.questions.txt
+========================
+
+--------------------
+Unit 6 Lab 1: Page 2
+--------------------
+
+1. 
+
+	Communication Programs: Facebook, Snapchat, Twitter, Instagram, etc.
+
+	Audio Programs: iTunes, VLC, Windows Media Player
+
+	Pictures: Photos (macOS), Microsoft Photos, Windows Photo Gallery
+
+	Video: VLC Media Player, Windows Media Player, Quicktime (macOS)
+
+2. 
+
+	A. Popular artists that use sampling for their songs include, but not limited to:
+
+	Kanye West - Famous
+	Jay-Z - Otis
+	The Weeknd - Often
+	Drake - Jungle
+
+	B. Autotune is a piece of software that corrects out of tune vocal performance. It makes the artist's voice sound musical
+
+	C. With software you can do all kinds of processing on pictures. For example:
+
+	- Adjust B&W, Contrast, Brightness, RGB
+	- Clone, Liquify, Draw, Cut, Copy, Paste
+	- Overlay, Burn, Sharpen
+	- Etc.
+
+--------------------
+Unit 6 Lab 1: Page 5
+--------------------
+
+1. 
+
+	a. On Windows you can find a list of running programs using Task Manager (CTRL+ALT+DEL)
+
+	On a *nix machine you can run the following command(s) in Terminal: 'top' || 'ps aux'
+	And if you wanna save the result in a text file, add a ' >> name-of-file.txt' next to the command. For example:
+
+		1) htop >> file.txt
+		2) ps aux >> file.txt
+
+	b. Of the 253 running programs, only 6 were run by me
+
+	c. For example:
+
+		USBAgent: Moniters USB activity to provide notifications
+		
+		syspolicyd: This is a System Policy Daemon that embodies the system policy controlling what may be installed, loaded, executed, or otherwise used on the system
+
+		WirelessRadioManagerd: A daemon that manages wireless radio communications
+
+		systemsoundserverd: A daemon used for core audio related purposes
+		
+		sandboxd: A sandbox daemon that performs services on behalf of the Sandbox kernel extension 
+
+			The sandbox facility allows applications to voluntarily restrict their access to operating system resources. This safety mechanism is intended to minimize potential damage incase a vulnerability is exploited (*cough*_NSA_*cough*)
+		
+		netbiosd: Responsible for interacting with NetBIOS networks. It registers and defends one or more NetBIOS name, depending on the set of configured services
+
+	d. The applications I run (i.e. Chrome, Safari, iTunes, etc.) are part of the OS. Background applications like iTunesHelper and iCloud are also part of the OS
+
+	e. For example;
+
+	nsurlstoraged: A per-user daemon that manages the user's HTTP storages
+
+	fmfd: Find My Friends Daemon
+
+	spindump_agent: Helper agent for SpinDump
+
+	spindump: Profile entire system during a time interval. This is used by various system components to create reports when an unresponsive application is force quit
+
+--------------------
+Unit 6 Lab 1: Page 7
+--------------------
+	
+2. 
+
+	i) There are two main types of touchscreens that are found in electronic devices today. These are:
+
+		Resistive: Consists of a normal glass panel that is covered with a conductive and a resistive metallic layer. These two layers are held apart by spacers, and a scratch resistant layer is placed on top of the whole thing. An electrical current runs through both layers. When you press on the screen, the two layers make contact in that exact spot. The change in electrical field is noted and the coordinates of the point are calculated by the computer. A special driver translates this into something the OS can understand. Resistive touchscreens are commonly found at ATMS, supermarkets, and electronic signature machines. Resistive touchscreens can only handle one touch at a time. Thus, ruling out gestures and multi-touch.
+
+		Capacitive: Constructed from materials like copper or indium tin oxide that store electrical charges in an electrostatic grid of tiny wires. When a user touches the monitor, some of the charge is transferred to the user, so the charge on the capacitive layer decreases. This decrease is measured in circuits located at each corner of the monitor. The computer calculates exactly where the touch event took place and transfers that information to the driver software. Since cloth does not conduct electricity, capacitive touchscreens cannot be used with gloves, unless they're fitted with conductive thread.
+
+	ii) A register is a quickly accessible location available to a computer's central processing unit (CPU). Registers usually consist of a small amount of fast storage that is used to load data from a larger memory into the register. Once loaded, it is used for arithmetic operations and manipulated/tested by machine instructions. Registers are at the top of the memory hierarchy and provide the fastest way to access data. The size of the register determines the size of the architecture (i.e. A 64-bit computer has registers that are 64 bits in length). Computers have registers b/c it is the quickest way to manipulate data and execute instructions.
+
+
+	iii) Cache is a type of memory component that stores data so that future requests for that data can be served faster. Cache is used because main memory (i.e. RAM and HDD) cannot keep up with the demands of the processor. Main memory takes to much time to load data from. Cache shortens data access times, reduces latency and improves throughput. When data is copied from main memory and into the registers, it is also copied into the cache, so that the next set of instructions/data can be fetched from the cache. A cache hit occurs when the requested data can be found in a cache, while a cache miss occurs when it cannot. 
+
+	iv)
+
+		Pros:
+
+			- More screen space
+			- Easily customizable (i.e Different languages)
+			- Reduces weight (phone = lighter)
+
+		Cons:
+
+			- Doesn't feel tactical
+			- More prone to make typos
+			- Slower typing speed
+
+
+--------------------
+Unit 6 Lab 1: Page 9
+--------------------
+
+1. 
+
+	The output will be true if both 'A' and 'B' are true. This is because: 
+		
+		A OR (A AND B)
+		= true OR (true AND true)
+		= true OR (true)
+		= true
+
+2. 	
+
+	i. The correct answer is: II only
+
+		Explanation: 
+
+			The first expression simplifies to true. Because:
+			true AND false AND (NOT(true AND false))
+			false AND (NOT(false))
+			false AND true
+			false
+
+			The second expression simplifies to false. Because:
+			(NOT(true OR false)) OR (true OR false)
+			(NOT(true)) OR (true)
+			false OR true
+			true
+
+	ii. The correct answer is: I only
+
+		Explanation:
+
+			The first logic circuit simplifies to true. Because:
+			(NOT(true AND false)) OR (true AND false)
+			(NOT(false)) OR (true)
+			true OR true
+			true
+
+			The second logic circuit simplifies to false. Because:
+			(NOT(true OR false)) AND (true OR false)
+			(NOT(true)) AND (true)
+			false AND true
+			false
+
+
+---------------------
+Unit 6 Lab 1: Page 10
+---------------------
+
+A. Research how transistors are used to implement logic gates
+
+	Transistors are used to create logic gates. The three basic logic gates are: AND, OR, and NOT. These gates are created using transistors and electrical wires, which are setup in series/parallel in clever ways to create the logic gate.
+
+	AND Logic Gate Truth Table
+
+	---------------------------------
+	|      Input	    |  Output   |
+	---------------------------------
+	| True   |   True   |   True    |
+	---------------------------------
+	| True   |	 False  |   False   |
+	---------------------------------
+	| False  |	 True 	|   False   |
+	---------------------------------
+	| False  |   False 	|   False   |
+	---------------------------------
+
+	An AND logic gate is created by placing two transistors next to each other. In order for the current from the input side (left) to reach the output side (right), it needs to go through two transistors, and both need to be turned on
+
+	OR Logic Gate Truth Table:
+
+	---------------------------------
+	|      Input	    |  Output   |
+	---------------------------------
+	| True   |   True   |   True    |
+	---------------------------------
+	| True   |	 False  |   True    |
+	---------------------------------
+	| False  |	 True 	|   True    |
+	---------------------------------
+	| False  |   False 	|   False   |
+	---------------------------------
+
+	An OR logic gate is created by placing two transistors in parallel. In order for the current from the input side (left) to reach the output side (right), it needs to go through at least one of the transistors and it needs to be turned on. If both transistors are on, the current reaches the output. If one is on, the current still reaches the output. If both transistors are off then the current never reaches the output
+
+	NOT Logic Gate Truth Table:
+
+	--------------------
+	| Input	 | Output  |
+	--------------------
+	| True   | False   |
+	--------------------
+	| False  | True    |
+	--------------------
+
+	A NOT logic gate is created by placing the output wire before the input wire and transistor. This way, if the input is on, the output is off because no current is flowing to the ouput. If the input is off then the output is on because all of the current is flowing to the ouput
+
+---------------------
+Unit 6 Lab 2: Page 1
+---------------------
+
+1. 
+
+	There are only four possible combinations of two bits
+
+	0 0
+	0 1
+	1 0
+	1 1
+
+2. 
+	
+	There are only 8 possible combinations of three bits:
+
+	0 0 0
+	0 0 1
+	0 1 0
+	0 1 1
+	1 0 0
+	1 0 1
+	1 1 0
+	1 1 1
+
+3.
+
+	There are only 16 possible combinations of four bits:
+
+	0 0 0 0
+	0 0 0 1
+	0 0 1 0
+	0 0 1 1
+	0 1 0 0
+	0 1 0 1
+	0 1 1 0
+	0 1 1 1
+	1 0 0 0
+	1 0 0 1
+	1 0 1 0
+	1 0 1 1
+	1 1 0 0
+	1 1 0 1
+	1 1 1 0
+	1 1 1 1 
+	
+4. 
+
+	Exactly 1024 values can be represented by 10 bits
+	2^10 = 1024
+
+5. 
+
+	Since there are 7 days in a week, you need 3 bits to represent them all. 2^3 = 8. Therefore 3 bits is sufficient to represent the days of the week
+
+6. 
+
+	4 bits are needed to represent one decimal digit. 2^4 = 16. One decimal digit = 10. Therefore 4 bits will suffice
+
+7.
+
+	2^10 = 1024 ~ 1,000
+	2^20        ~ 1,000,000
+	2^30        ~ 1,000,000,000
+	2^40        ~ 1,000,000,000,000
+	2^50        ~ 1,000,000,000,000,000
+	2^60        ~ 1,000,000,000,000,000,000
+
+	64 - 60 = 4
+	4 * 1,000,000,000,000,000,000 = 4,000,000,000,000,000,000
+	2^64 = 1.8446744 x 10^19      = 18,446,744,000,000,000,000
+
+8. 
+
+	26 letters + 10 digits = 36 alphanumeric characters
+
+	2^4 = 16
+	2^5 = 32
+	2^6 = 64
+	2^7 = 128
+
+	6 bits are needed to represent the 26 letters and 10 digits
+
+9. 
+
+	Unicode has 136,755 characters
+
+	2^16 = 65,536
+	2^17 = 131,072
+	2^18 = 262,144
+
+	The minimum number of bits to represent any Unicode character is 18
+	
+10.
+
+	Ans: The position of the hour hand of a clock
+
+---------------------
+Unit 6 Lab 2: Page 1
+---------------------
+
+1. 
+
+	Which of the following CANNOT be expressed using one bit?
+
+		A) The state of an ON/OFF switch
+		B) The value of a Boolean variable
+		C) The remainder when dividing a positive integer by 2
+		D) The position of the hour hand of a clock
+
+		Ans: D
+
+---------------------
+Unit 6 Lab 2: Page 2
+---------------------
+
+7. 
+
+	A particular online retail company uses 9-bit binary sequences to identify each unique product for sale. Expecting to increase the number of products it sells, the company is planning to switch to 10-bit binary sequences. Which of the statements below best describes the consequence of using 10-bit sequences instead of 9-bit sequences?
+
+		A) Ten times as many products can be identified uniquely.
+		B) Twice as many products can be identified uniquely.
+		C) Ten more products can be identified uniquely.
+		D) Two more products can be identified uniquely.
+
+		Ans: B
+
+---------------------
+Unit 6 Lab 2: Page 5
+---------------------
+
+1. 
+
+	This program is a Binary timer. It shows time passed, in seconds. The numbers on the top are in Binary, and the numbers on the bottom are in decimal. Both represent the same values, but in different bases.
+
+2. 
+
+	a. 101 (2)
+
+		2^2 + 2^0 = 5
+
+	b. 111 (2)
+
+		2^2 + 2^1 + 2^0 = 7
+
+	c. 1010011 (2)
+
+		2^6 + 2^4 + 2^1 + 2^0 = 83
+
+	d. 1000000000 (2)
+
+		2^9 = 512
+
+3. 
+
+	a. 63 = 111111
+
+	b. 64 = 1000000
+	
+	c. 65 = 1000001
+	
+	d. 129 = 10000001
+	
+	e. 128 = 10000000
+	
+	f. 127 = 1111111
+
+--------------------
+Unit 6 Lab 2: Page 6
+--------------------
+
+1. 
+
+	The hex counter requires less place values than both binary and decimal. It is much more efficient. The hex counter is the only counter, between the ones in the program, that requires alphabets/letters.
+
+2.
+
+	a. AF [16]
+
+		(15 x 16^0) + (10 x 16^1) = 175
+
+	b. 5D [16]
+
+		(13 x 16^0) + (5 x 16^1) = 93
+
+	c. 18 [16]
+
+		(8 x 16^0) + (1 x 16^1) = 24
+
+	d. 3E8 [16]
+
+		(8 x 16^0) + (14 x 16^1) + (3 x 16^2) = 1000
+
+1 2 3 4 5 6 7 8 9 A  B  C  D  E  F
+				  10 11 12 13 14 15
+
+3. 
+
+	a. 59 = 3B
+
+	b. 144 = 90
+
+	c. 229 = E5
+
+	d. 316 = 13C
+
+4. 
+
+	The problem with this algorithm is that there are only 36 unique characters between 0-9 and A-Z. The solution is to use different characters or symbols to represent bases after 36.
+
+5. 
+
+	299[10] = 605[10]
+	(6 x 7^2) + (5 x 7^0) = 294 + 5 = 299
+
+--------------------
+Unit 6 Lab 2: Page 7
+--------------------
+
+1. 
+
+	a. 111011[2]
+
+		0011 1011
+		   3    B
+
+		Ans: 3B
+
+	b. 1101111[2]
+
+		0110 1111
+		   6    F
+
+		Ans: 6F
+
+	c. 10110001[2]
+
+		1011 0001
+		   B    1
+
+		Ans: B1
+
+
+2. 
+
+	a. 18[16]
+
+		1[16] = 0001[2]
+		8[16] = 1000[2]
+
+		Ans: 00011000[2]
+
+	b. 5D[16]
+
+		5[16] = 0101[2]
+		D[16] = 1101[2]
+
+		Ans: 01011101[2]
+
+	c. F8[16]
+
+		F[16] = 1111[2]
+		8[16] = 1000[2]
+
+		Ans: 11111000[2]
+
+3. 
+
+	a. RGB (0,149,235)
+
+	000 = 00 
+	149 = 95
+	235 = EB
+
+	Ans: 0095EB
+
+	b. RGB (128,90,0)
+
+	128 = 80
+	090 = 5A
+	000 = 00
+
+	Ans: 805A00
+
+	c. RGB (163,0,84)
+
+	163 = A3
+	000 = 00
+	084 = 54
+
+	Ans: A30054
+
+4. 
+
+	I think this color will be a dark purple. It will be purple because the only colors used are red and blue; there is no green. Red and blue make purple. It will be a dark purple, because the full intensities of red and blue are not used. The closer the intensity to 0, the darker it will be. Therefore, this color is a shade of dark purple.
+
+5.
+
+	04FF61
+
+	04 =   4
+	FF = 255
+	61 =  97
+
+	I think this will create a cyan-ish color. Green and blue make cyan. However, more green is used than blue, so the color will be closer to neon green, but may resemble cyan. Also, the hint of red does not make a noticeable difference.
+
+6. 
+
+	In terms of space used, the hex codes are more efficient. The hex codes can represent any 8-bit color using 6 hex characters. The names require lots of characters and there is no easy way to calculate them. Hex codes are based on math, making it easy to jump from one color to the next using simple calculations. Hex codes are easy for the computer to understand and use. The values are easily stored in memory and can be manipulated using simple mathematical operations. On the other hand, color names are easy for humans to understand and use. Our brains are wired for speech and language. Thus, names are much easier for us to compute. Both representations have their uses. Hex, for computers, and names, for humans.
+
+7. 
+
+	We use base 10 (decimal) because it is easier for us (humans) to do math. Base 10 has 10 possible numbers and we have 10 fingers. It makes computation easier to understand and follow. This system of numbers was invented by the Hindus and Arabs to make math simpler. It has many advantages over the Roman Numerals and other bases.
+
+	Base 2 (binary) is primarily used by the computer. Everything is binary to a computer; 0 or 1, True or False, On or Off. A computer's circuitry is either a high voltage (On/1/True) or low voltage (Off/0/False). Thus, binary is the best base to use for computers. However, other bases can be used, but is a terrible idea. A computer's voltage can fluctuate due to many out of control reasons, causing improper calculations and results. The best base for a computer is base 2. It makes it easier to distinguish different voltages, and is interference proof. 
+
+	Base 16 is used as a way to abstract Base 2. Hexadecimal makes it easier for us to understand binary code because it abbreviates binary in a more readable way. It uses less characters, thus, making it less prone to errors. 
+
+	Each base has its own use. We use more than one because each base has its own use. Decimal is easy for humans to understand. Binary is extremely reliable and effective for computers. Hexadecimal is the bridge of abstraction that makes binary more readable to humans. 
+
+8. 
+
+	Abstraction is able to describe these very different things through simplification. Abstraction strips away the unnecessary details and only focuses on the core concepts. These very different things may seem different on the surface, but at the core, they are all the same. Abstract data types like Stacks and Queues seem very different on a surface level, but both use primitive data types to store values. Binary and hex use different notations and symbols, but both represent numbers. The only thing that is different is the implementation. But at its core, it is all the same.
+
+--------------------
+Unit 6 Lab 2: Page 8
+--------------------
+
+2.
+
+	a. A film student is recording a movie on his smartphone. When the recording is done, he decides to save a copy on his computer. The student then notices that the saved copy is of much lower image quality than the original. Which of the following could NOT be a possible explanation for the lower image quality?
+
+		A. The movie was saved using fewer bits per second than the original movie.
+			
+		B. The copy of the movie file was somehow corrupted in the process of saving.
+			
+		C. The movie was saved using a lossy compression technique.
+			
+		D. Whenever a file is saved from one place on a computer to another, some information is always lost.
+
+	Ans: D 
+	(B is also a sound answer)
+
+	b. A visual artist is processing a digital image and overwriting the original. Which of the following describe lossless transformations of the digital image from which the original image can be recovered? Choose two answers.
+	
+		A. Creating a grayscale copy of an image.
+			
+		B. Creating a vertically flipped copy of the image.
+			
+		C. Creating the negative of an image, where colors are reversed and dark areas appear light.
+			
+		D. Blurring the edges of an image.
+
+	Ans: B + C
+
+--------------------
+Unit 6 Lab 3: Page 1
+--------------------
+
+1. 
+
+	I think that the 'Analytical Engine' should be regarded as the first real computer. This is because it was capable of carrying out instructions in a programming language. In addition, it could be used for non-numeric data such as musical notes and text characters. 
+
+2. 
+
+	A device does not have to be programmable to be a computer. There are many pre-programmed devices out there that are computers. An example would be the Wi-Fi chipset on your smartphone. It can't be (easily) programmed, but functions as a computer. 
+
+	A device does not have to operate by itself in order to be a computer. An example of this a thermostat. It requires human input in order to change the temperature, and then regulates the temperature by itself after. 
+
+--------------------
+Unit 6 Lab 3: Page 2
+--------------------
+
+1. 
+
+	a. The machines are 42 years apart
+
+	b. You should multiply it by 2^21 to predict the size of memory in 2017
+
+	c. 3TB is more than I'd expect
+
+A.
+
+	Heat sinks have spikes and zigzags in order to increase surface area. More surface area equals more heat dissipation. This helps in effectively cooling the processor.
+
+2. 
+
+	As Gordon Moore observed in 1965, data show that computer processing speeds roughly double every two years. Technology companies use this observation, now known as "Moore’s Law,’ in their planning. From the following, identify which one best describes how technology companies can use Moore’s Law in planning.
+
+	A) They can expect to double their profits every two years.
+
+	B) They can anticipate the precise dates when the latest computing advancements will be available and therefore accurately plan their products in advance.
+
+	C) They can expect their costs to double with each increase in processor speed.
+
+	D) They can base their R&D (Research and Development) targets on expected future processing speeds.
+
+		Answer: D

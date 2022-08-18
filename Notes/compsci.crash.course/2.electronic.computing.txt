@@ -1,0 +1,22 @@
+--------------------
+Electronic Computing
+--------------------
+
+Sauce: https://youtu.be/LN0ucKNX0hc?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo
+
+-----
+Notes
+-----
+
+- One of the largest electro-mechanical computers built was the Harvard Mark I; containing 765,000 components, three million connections, and five hundred miles of wire
+- Relays were used to open and close circuits
+- Mechanical computers wore over time, increasing failure rate, and replacement
+- The term "Computer Bug" comes from scientists finding a moth in one of the Harvard Mark I's relay
+- Vacuum tubes took over mechanical relays; however, they're subject to their own limitations such as burn out
+- First large scale use of computing was the Colossus Mark I designed by Tommy Flowers
+- Alan Turning, father of computer science, created The Bombe, an electromechanical machine used to decrypt Nazi enigma code
+- The ENIAC was the first general purpose, truly programmable, electronic computer
+- The ZI, by Konrad Zuse, is the first Turing complete computer
+- Transistor is a switch that can be opened or closed by applying electrical power via a control wire (semiconductor)
+- The most common material to create transistors is Silicon; hence the term Silicon Valley
+- William Shockley moved to Silicon Valley to create Shockley Semiconductor, whose employees later founded Fairchild Semiconductor, and its employees later founded Intel and AMD

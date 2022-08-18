@@ -1,0 +1,30 @@
+---------------
+Computer Vision
+---------------
+
+Sauce: https://www.youtube.com/watch?v=-4E2-0sxVUM
+
+-----
+Notes
+-----
+
+- Vision is the highest bandwidth sense, and provides a lot of information about the state of the world and how to act on it
+- The goal of Computer Vision is to give computers the ability to extract high-level understanding from digital images and videos
+- Images on computers are stored as big grid of pixels. Each pixel is defined by a color, stored as a combination of three additive primary colors: red, green and blue. By combining different intensities of these three colors, what's called an RGB value, we can represent any color
+- A very simple approach to tracking an object is to scan the pixels, looking for a specific color. If the target color matches the pixel, then the object has been found. However, this doesn't work for extreme cases, like night time, poor lighting, and other objects that share the same color. For this reason, color marker tracking and similar algorithms are rarely used
+- Small reasons of pixels are called Patches. These are used by computer vision algorithms to find features
+- The Kernel/Filter looks for differences in neighbouring pixels to identify features. For example, if pixel color changes abruptly from light to dark, then its the edge of an object. The Filter contains the values for a pixel-wise multiplication, the sum of which is saved into the center pixel
+- The operation of applying a Kernel/Filter to a patch of pixels is called a Convolution
+- Edge enhancing Kernels are called Prewitt Operators, named after their inventor
+- There are many different types of Kernels, such as: Sharpening, Blur, Lighten, Darken, etc.
+- When a computer scans through an image, it can look for combinations of features indicative of a human face
+- Often times, Kernels/Filters are combined to enhance accuracy
+- Viola Jones Face Detection is one of the first face detection algorithms
+- The most popular algorithms today are Convolutional Neural Networks
+- An Artificial Neuron takes a series of inputs and multiplies each by a specified weight and then sums those values
+- Neural networks can create their own Kernels/Filters that can recognize features in images. They can also improve their own Kernels
+- Each layer in a Convolutional Neural Network recognizes a different feature. For example, the first layer will recognize edge features, the second layer will find corners, then the third layer will process those corners and determine the shape. This continues until the last layer puts it all together
+- Convolutional neural networks aren't required to be many layers deep, but they usually are, in order to recognize complex objects and scenes. That's why the technique is called Deep Learning
+- CNN can be used to recognize tumors in CT scans, moniter the heart for abnormalities, and recognize handwritten notes. Today, it is being used to autonomously drive cars and trucks
+- Once a face has been accurately located, different Kernels can be applied to find the nose, eyes, ears, mouth, etc. This can be used to determine if a person's eyes are open, if they're smiling, etc.
+- Computers that are aware of their surroundings are context sensitive

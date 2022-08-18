@@ -1,0 +1,26 @@
+----------------------------------------------------
+The Singularity, Skynet, and the Future of Computing
+----------------------------------------------------
+
+Sauce: https://www.youtube.com/watch?v=5TNAz1HYg18
+
+-----
+Notes
+-----
+
+- The vision of ubiquitous computing is integrating computers into daily life, putting them in your fridge, pants, bed, etc.
+- Computers today have computing power in proportion to a mouse
+- Computers might bridge the gap between computational power and the human brain by 2025
+- Computers might have more processing power than the sum of all human brains by 2050
+- The Singularity is the accelerating progress of technology and changes in the mode of human life. When AI becomes smarter than humans, we'll have reached the Singularity
+- Some experts believe this progress is going to level off and be more of an S curve than an exponential one, where as complexity increases, it becomes more difficult to make additional progress
+- Many job sectors will be rendered obsolete by computers like AIs and Robots, that can do their work better and for less pay
+- AI is gonna be even more disruptive than the industrial revolution
+- There are 4 different types of jobs:
+	1. Routine Manual: Factory workers
+	2. Non-Routine Manual: Cooks
+	3. Routine Cognitive: Bank tellers
+	4. Non-Routine Cognitive: Doctors
+- 60% of U.S. jobs are vulnerable to automation
+- Cyborgs are when humans and technology merge, enhancing our intellect and physiology
+- The next evolutionary step might be the transition from biological to digital, where you conscious is uploaded to a computer after death

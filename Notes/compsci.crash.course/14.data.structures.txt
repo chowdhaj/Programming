@@ -1,0 +1,31 @@
+---------------
+Data Structures
+---------------
+
+Sauce: https://www.youtube.com/watch?v=DuDz6B4cqVc
+
+-----
+Notes
+-----
+
+- Data structures allow data to be organized, making it easier to be retrieved and read
+- Arrays (aka Lists and Vectors) are a series of values stored in memory
+- Almost all programming languages start arrays at index 0 and use a square bracket syntax to denote array access
+- The number inside the square brackets denotes the offset. It means that the value is X number of locations away from the base address
+- Strings are just arrays of characters
+- The null character denotes the end of an array (or string) in memory
+- A matrix is an array of arrays (A multi-dimensional array)
+- Matrices can be of any size AND any number of dimensions
+- Groups of variables can be grouped together into a struct. This allows us to store several pieces of data at once, together
+- Just like arrays, structs are created at a fixed size
+- Structs can be used to create more complicated data structures such as linked list, trees, queues, stack, etc.
+- A pointer is a special variable that points to a location in memory
+- The null value, 0, indicates the end of a list
+- A Queue is data structure that goes in order, similar to a line at a back. The person at the front is served first. This is known as First In, First Out (FIFO)
+- In a Queue, Dequeue means to remove data, and enqueue means to add data
+- Stacks are similar to Queues, except that the structure is Last In, First Out (LIFO). The last data to be entered is the first data to be taken out
+- In a Stack, data is pushed onto it, and popped off it (push = add, pop = remove)
+- Trees consist of a data and two pointers. The data is the parent node, and the pointers are the leaf nodes. The top most node is called the root, and any node that hangs from other nodes are called children nodes. Nodes that have no children are called leaf nodes
+- A binary tree has two children nodes, but trees can have any number of children nodes by modifying the data structure
+- In trees, there is a one way path from the root to the leaves
+- In a Graph Data structure, all nodes are linked together; anything can point to anything

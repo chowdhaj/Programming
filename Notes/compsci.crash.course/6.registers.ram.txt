@@ -1,0 +1,19 @@
+---------------
+Registers & Ram
+---------------
+
+Sauce: https://youtu.be/fpnE6UAfbtU?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo
+
+-----
+Notes
+-----
+
+- Random Access Memory (RAM) stores information, as long as the power stays on
+- Persistent memory can survive without power
+- Gates are used to store bits of information; OR gate stores 1; AND gate stores 0. These two are combined to form the AND-OR LATCH
+- The action putting data into memory is called writing
+- Getting data out of memory is called reading
+- The write-enable line keeps the memory in a state of read-only mode, where the bit can be read, but not changed
+- A group of latches operating is called a register, which holds a single number, and the number of bits in a register is called width
+- Static Random Access Memory uses latches to store bits
+- Other types of RAM include DRAM, Flash Memory, and NVRAM

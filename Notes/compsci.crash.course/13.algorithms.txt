@@ -1,0 +1,16 @@
+----------
+Algorithms
+----------
+
+Sauce: https://www.youtube.com/watch?v=rL8X2mlNHPM
+
+-----
+Notes
+-----
+
+- The term algorithm comes from Persian polymath Al-Khwarizmi, who was one of the fathers of algebra
+- One of the most fundamental problems in computer science is sorting. Computer scientists have made 100s of sorting algorithms
+- The relationship of input size to the number of steps the algorithm takes to run characterizes the complexity of algorthms. It gives you an approximation of how fast or slow an algorithm is going to be. Computer scientists refer to this as "Big O Notation"
+- Selection sort has a speed of O(n^2), and Merge sort has a speed of O(n x log(n)). Merge Sort is much more efficient than Selection Sort
+- A graph is a network of nodes connected by lines
+- Dijkstra's Algorithm calculates the shortest distance between two nodes in a network

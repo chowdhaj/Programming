@@ -1,0 +1,17 @@
+-----------------
+Early Programming
+-----------------
+
+Sauce: https://www.youtube.com/watch?v=nwDq4adJwzM
+
+-----
+Notes
+-----
+
+- Punch cards are a cheap, reliable and fairly human-readable way to store data
+- Punch cards were first used in textile manufacturing, to create patterned clothing. Then, they were used to help tabulate the 1890 US Census
+- The Von Neumann Architecture unified the data and program into a single shared memory
+- The hallmark of the Von Neumann Architecture is a processing unit containing an ALU, data registers, instruction register, instruction address register, and memory to store both data 
+- All modern computers use the same architecture as the Von Neumann Architecture, at its core. The extra additions are just bells and whistles
+- Striping is drawing a diagonal line across a stack of punch cards, effectively numbering them. So, in case you dropped your program, you'd have some idea of how to put it back together
+- Panel programming is flipping switches to load data and instructions into the computer's limited memory

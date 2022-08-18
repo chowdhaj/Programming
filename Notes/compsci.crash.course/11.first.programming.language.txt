@@ -1,0 +1,20 @@
+-----------------
+Early Programming
+-----------------
+
+Sauce: https://www.youtube.com/watch?v=RU1u-js7db8
+
+-----
+Notes
+-----
+
+- Computer hardware can only handle raw binary instructions (1s and 0s). This language is called Machine Language OR Machine Code
+- An informal high-level description of a program is called Pseudo-Code
+- An Assembler converts text-based instructions and assembles them into corresponding binary instructions automatically. It reads assembly language and converts it to native machine code
+- Each assembly language instruction converts directly to a corresponding machine instruction - a one to one mapping
+- The phrase "patching a program" comes from applying patches of paper over the holes on punch cards
+- A Compiler transforms source code written in a programming language into a low-level language like assembly or machine code
+- A Compiler takes care of allocating memory, handling registers, and other minute detail and abstractions
+- Fortran, derived from Formula Translation, was the first widely used programming language
+- COBOL, Common Business-Oriented Language, was made to unify programming across a wide range of computers and architectures
+- The notion "Write Once, Run Anywhere" allows you to run your source code on any computer, regardless of architecture

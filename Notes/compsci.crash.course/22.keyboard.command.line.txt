@@ -1,0 +1,18 @@
+-----------------------------------
+Keyboards & Command Line Interfaces
+-----------------------------------
+
+Sauce: https://www.youtube.com/watch?v=4RPtJ9UyHS0
+
+-----
+Notes
+-----
+
+- In the early days of computing, results were printed onto to paper as computers didn't interact with humans. Once a program was started, it typicall ran until it was finished
+- Christopher Latham Sholes invented the modern typewriter in 1868. His typewriter adopted the QWERTY keyboard layout
+- Due to switching barrier and costs, we still use QWERTY keyboards almost a century and a half later
+- There are many keyboard layouts such as the French AZERTY layout or the QWERTZ layout that is common in central Europe
+- Teletypes were adapted to be used with computers. A teletype interface was invented for this
+- A command line interface is a program where you type commands for the computer to execute
+- Command line interfaces are the best way to access a computer or a server that is far away 
+- Virtual teletype or glass teletype machines became known as terminals

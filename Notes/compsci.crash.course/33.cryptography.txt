@@ -1,0 +1,31 @@
+------------
+Cryptography
+------------
+
+Sauce: https://www.youtube.com/watch?v=jhXCTbFnK8o
+
+-----
+Notes
+-----
+
+- There is no such thing as a perfectly, 100% secure, computer system because there will always be bugs
+- System architects employ a strategy called defence in depth, which uses many layers of varying security mechanisms to thwart attackers. For example, in order to get complete control of a device, you need to compromise the browser, then escape the sandbox, maneuver around ASLR, find a bug in the kernel and exploit it, patch the kernel, dodge kernel patch protection, gain persistence, and hopefully you've successfully exploited an iPhone
+- The word cryptography comes from the roots 'crypto' and 'graphy', which literally translates to secret writing
+- In order to make information secret, you use a cipher; an algorithm that converts plan text into Ciphertext 
+- The process of turning regular text into ciphertext is called encryption, and the reverse process is called decryption
+- Encryption has been used for a long time. Julius Caesar used what's now called a Caesar cipher to encrypt private correspondence. He would shift the letters in a message by three places
+- To decipher a message, you need to know both the algorithm and the key
+- The Caesar Cipher is one example of a larger class of techniques called substitution ciphers. These replace every letter in a message with something else according to a translation
+- A big drawback of substitution ciphers is that letter frequencies are preserved
+- A skilled cryptanalyst can work backwards from ciphertext statistics to figure out the plain text. For example, Alan Turing cracking the Enigma code with The Bombe
+- Another class of techniques are permutation ciphers. For example, a columnar transposition cipher
+- The most famous encrpytion is the Enigma, used by Nazis during WW2. The Enigma is a substitution cipher
+- With the advent of computers, cryptography moved from hardware to software
+- One of the earliest software ciphers to become widespread was the Data Encryption Standard (DES) developed by IBM and NSA in 1977. DES should binary keys that were 56 bits long, making 2^56 different keys
+- In 2001, the Advanced Encryption Standard (AES) was finalized and published. AES is designed to use much bigger keys, 128, 192, or 256 bits in size. This makes brute forcing infeasible
+- AES chops data up into 16-byte blocks, and then applies a series of substitutions and permutations, based on the key value, plus some other operations to obscure the message, and this process is repeated ten or more times for each block
+- One way functions are mathematical operations that are very easy to do in one direction, but hard to reverse. For example, the modulus function
+- Diffie Hellman key exchange uses a one-way function to securely exchange keys. The one-way function is modular exponentiation
+- Keys that can be used by both sender and receiver to encrypt and decrypt messages is called symmetric keys, because the key is the same on both sides. The Caesar Cipher, Enigma, and AES are all symmetric encryption
+- Asymmetric encryption is when both are keys are different. One key is public and the other key is private. One key is the encrypting key and can only encrypt, and the other is the decryption key and can only decrypt. This is used for signing and verifying that data is coming from a particular source or trusted party. This acts like a signature because only the owner can encrypt using his private key
+- The most popular Asymmetric encryption is RSA, named after its founders: Rivest, Shamir, & Adleman

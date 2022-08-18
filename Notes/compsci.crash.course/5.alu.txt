@@ -1,0 +1,22 @@
+---------------------------------
+How Computers Calculate - The ALU
+---------------------------------
+
+Sauce: https://www.youtube.com/watch?v=1I5ZMmrOfnA
+
+-----
+Notes
+-----
+
+- Performing operations are handled by the ALU (Arithmetic & Logic Unit)
+- The ALU is the mathematical brain of the computer, it does all mathematical computation in a computer
+- The most famous ALU, ever, is the Intel 74181. It was the first ALU that fit entirely inside a single chip
+- An ALU is two units in one; an arithmetic unit, and a logic unit
+- A Half Adder is used to add the first bits. It's a Half Adder b/c it only has 2 inputs, A and B, and no carry (C)
+- A Full Adder takes 3 inputs (or bits), A, B, and C, and outputs the sum and the carry (if there is a carry)
+- A Carry out bit into the last bit means the sum of the two numbers is to large to fit. This is called an Overflow
+- An Overflow occurs when the number is to big or to small to be represented. For example, if you're working with 8 bit numbers, and add 100 with 300, the result is 400, which is greater than 256. 
+- Modern computers use an adding circuit called "carry-look-ahead adder"
+- Simple ALUs don't have a circuit for multiplication and division
+- The operation code tells the ALU what operation to perform
+- ALU outputs flags (overflow, zero, negative), which are 1 bit outputs for particular states and statuses
