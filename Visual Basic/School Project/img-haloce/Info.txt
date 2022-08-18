@@ -1,0 +1,28 @@
+------------
+About App
+------------
+-Program designed to play Halo secretly and under the radar
+-Includes over 15 documents containing high quality work
+-Microsoft Word & Powerpoint replicas included, just click on their respective icons
+-Deletes all traces of Halo at exit
+-Complete guide with help included inside
+
+----------
+Gaming
+----------
+-Compacted version of Halo
+-Best maps such as Bloodgulch & Hang 'em High
+-Fully customizable gamemodes to suit your style
+-Works flawlessly over LAN; Cable & DSL
+-Can connect to online master servers to host your own lobbies
+
+----------
+How To
+----------
+-Select either Word or Powerpoint to load document, click on repestive icons for previews
+-Search for bold keywords (i.e Patch, Play, etc)
+-These words will allow you to perform tasks once clicked
+(Play = Launch Halo) & (Patch = Delete all traces)
+-Each keyword is self explanatory and resembles an action. It is imperative to know that not all documents use identical terms, but a collection of synonyms 
+-After playing Halo, press the "Patch" button to delete all traces of files left behind
+-Use the "Bug" button to submit improvements and bugs
