@@ -1,9 +1,0 @@
-Jatin Chowdhary
-400033011
-
-Assumptions
-- Although, questions are included in a separate package, even 
-though it is not required. Please ignore them.
-
-- All input will be correct and valid. The user will not
-enter invalid input
