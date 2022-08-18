@@ -51,3 +51,5 @@ Other versions are not officially supported.
 
 ## Executable
 
+You can download the executable and run it on your machine.
+[Click me!](https://github.com/chowdhaj/Programming/blob/main/Visual%20Basic/2D%20Graphics/2D%20Array/bin/Debug/2D%20ArRaYy.exe)
