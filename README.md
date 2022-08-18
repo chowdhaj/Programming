@@ -1,10 +1,16 @@
 # Programming
 Contains programs/code for the following languages:
+
     * Java
+    
     * Haskell
+    
     * .NET
+    
     * Python
+    
     * Bash
+    
     * C/C++
 
 # Notable Stuff
