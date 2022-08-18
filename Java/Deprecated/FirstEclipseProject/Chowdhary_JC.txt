@@ -1,0 +1,11 @@
+Jatin Chowdhary
+400033011
+
+Assumptions Made:
+	- Code from all tasks are kept
+	- Some print lines were commented out instead of fully removed
+	- The vector of 4 strings are spread out across 4 different lines, instead of being on one line as seen in the instruction document
+	- Some comments were added even though they were not specified. For example: Task 14 - Step 9
+	- For Task 13:
+		- A for loop was used to print out the required text
+		- A new class was created, instead of using the FirstEclipseClass.java file

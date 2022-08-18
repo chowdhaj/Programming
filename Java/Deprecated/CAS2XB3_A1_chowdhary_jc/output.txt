@@ -1,0 +1,96 @@
+Test Case: UNION
+Trial 1: 
+	{1,2,3,4,5,6,0} UNION {z,x,c,v,b}
+	 EXPECTED : {1,2,3,4,5,6,0,z,x,c,v,b}
+	 ACTUAL   : {1,2,3,4,5,6,0,b,v,c,x,z}
+Trial 2: 
+	{y,u,i,o,g} UNION {2,3,4,5,a,s,d}
+	 EXPECTED : {y,u,i,o,g,2,3,4,5,a,s,d}
+	 ACTUAL   : {y,u,i,o,g,d,s,a,5,4,3,2}
+Trial 3: 
+	{1,2,3,4,5,6,0} UNION {1,2,3,4,5,6,7,8,e,r,t}
+	 EXPECTED : {1,2,3,4,5,6,0,7,8,e,r,t}
+	 ACTUAL   : {1,2,3,4,5,6,0,t,r,e,8,7}
+
+
+Test Case: INTERSECTION
+Trial 4: 
+	{1,2,3,4,5,6,0} INTERSECTION {z,x,c,v,b}
+	 EXPECTED : {}
+	 ACTUAL   : {}
+Trial 5: 
+	{1,2,3,4,5,6,7,8,e,r,t} INTERSECTION {2,3,4,5,a,s,d}
+	 EXPECTED : {2,3,4,5}
+	 ACTUAL   : {2,3,4,5}
+Trial 6: 
+	{a,b,c,d,e,f,g,h,i,j,w} INTERSECTION {j,i,h,g,f,e,d,c,b,a,x}
+	 EXPECTED : {a,b,c,d,e,f,g,h,i,j}
+	 ACTUAL   : {a,b,c,d,e,f,g,h,i,j}
+
+
+Test Case: DIFFERENCE
+Trial 7: 
+	{1,2,3,4,5,6,0} DIFFERENCE {z,x,c,v,b}
+	 EXPECTED : {0,1,2,3,4,5,6}
+	 ACTUAL   : {1,2,3,4,5,6,0}
+Trial 8: 
+	{y,o,g,a,f,h,x,d,b,j,z} DIFFERENCE {h,d,w,e,n,u,v,s,g,x,c}
+	 EXPECTED : {y,o,a,f,b,j,z}
+	 ACTUAL   : {y,o,a,f,b,j,z}
+Trial 9: 
+	{1,2,3,4,5,6,7,8,e,r,t} DIFFERENCE {1,2,3,4,5,6,0}
+	 EXPECTED : {7,8,e,r,t}
+	 ACTUAL   : {7,8,e,r,t}
+
+Test Case: IS_EQUAL
+Trial 10: 
+	{1,2,3,4,5,6,7,8,e,r,t} IS_EQUAL {1,2,3,4,5,6,0}
+	 EXPECTED : false
+	 ACTUAL   : false
+Trial 11: 
+	{j,i,h,g,f,e,d,c,b,a,x} IS_EQUAL {z,x,c,v,b}
+	 EXPECTED : false
+	 ACTUAL   : false
+Trial 12: 
+	{a,b,c,d,e,f,g,h,i,j,w} IS_EQUAL {y,o,g,a,f,h,x,d,b,j,z}
+	 EXPECTED : false
+	 ACTUAL   : false
+
+Test Case: IS_SUBSET
+Trial 13: 
+	{1,2,3,4,5,6,7,8,e,r,t} IS_SUBSET {1,2,3,4,5,6,0}
+	 EXPECTED : false
+	 ACTUAL   : false
+Trial 14: 
+	{j,i,h,g,f,e,d,c,b,a,x} IS_SUBSET {z,x,c,v,b}
+	 EXPECTED : false
+	 ACTUAL   : false
+Trial 15: 
+	{a,b,c,d,e,f,g,h,i,j,w} IS_SUBSET {y,o,g,a,f,h,x,d,b,j,z}
+	 EXPECTED : false
+	 ACTUAL   : false
+
+Test Case: GET_COUNT
+Trial 16: 
+	{1,2,3,4,5,6,7,8,e,r,t} is 11 characters long
+	 EXPECTED : 11
+	 ACTUAL   : 11
+Trial 17: 
+	{a,b,c,d,e,f,g,h,i,j,w} is 11 characters long
+	 EXPECTED : 11
+	 ACTUAL   : 11
+Trial 18: 
+	{2,3,4,5,a,s,d} is 7 characters long
+	 EXPECTED : 7
+	 ACTUAL   : 7
+
+Test Case: TO_STRING
+Trial 19: 
+	 EXPECTED : {y,u,i,o,g}
+	 ACTUAL   : {y,u,i,o,g}
+Trial 20: 
+	 EXPECTED : {y,o,g,a,f,h,x,d,b,j,z}
+	 ACTUAL   : {y,o,g,a,f,h,x,d,b,j,z}
+Trial 21: 
+	 EXPECTED : {1,2,3,4,5,6,0}
+	 ACTUAL   : {1,2,3,4,5,6,0}

@@ -1,0 +1,17 @@
+TOTAL NUMBER OF TEST CASES = 16
+a,b,c,d,e,f,g,h,i,j,w
+j,i,h,g,f,e,d,c,b,a,x
+y,o,g,a,f,h,x,d,b,j,z
+h,d,w,e,n,u,v,s,g,x,c
+1,2,3,4,5,6,7,8,e,r,t
+1,2,3,4,5,6,7,8,9,q,w
+1,2,3,4,5,a,s,d,f,g,h
+9,8,7,6,5,4,q,w,e,r,t
+7,6,5,4,3,2,1,g,h,j,u
+q,w,e,r,t,y,u,z,x,c,v
+2,3,4,5,a,s,d,f,7,8,9
+1,2,3,4,5,6,0
+q,w,e,r,t,y
+a,s,d,f,g,1,2,3,4,5,6
+z,x,c,v,b
+y,u,i,o,g
