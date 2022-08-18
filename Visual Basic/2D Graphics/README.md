@@ -17,7 +17,8 @@ be added.
    vibe. \
 ![Startup](img-graphics/Graphics-1.png)
 
-2. A simple line animation is *The Vortex*. Here it is done in red. \
+2. A simple line animation, which is *The Vortex*. Here it is done in red.
+   You can use the menu on the side to play any 2D animation you want. \
 ![First](img-graphics/Graphics-2.PNG)
 
 3. The background color can be changed. In this instance, it was changed from
@@ -35,15 +36,18 @@ be added.
    Parabola*. \
 ![Source](img-graphics/Graphics-5.PNG)
 
-6. The program is rife with 2D line animations in a multitude of colors. It demonstrates the power of arrays! \
+6. The program is rife with 2D line animations in a multitude of colors. It
+   demonstrates the power of arrays! \
 ![Options](img-graphics/Graphics-6.PNG)
 
-7. Finally, users can paint whatever they want using the *Paint* found in the menu bar *(i.e. Animations -> Open Paint)*. \
+7. Finally, users can paint whatever they want using the *Paint* found in
+   the menu bar *(i.e. Animations -> Open Paint)*. \
 ![Paint](img-graphics/Graphics-7.PNG)
 
 ## Compatbility
 
-This application is fully compatible with **Windows 7** and **Windows 10**. Other versions are not officially supported.
+This application is fully compatible with **Windows 7** and **Windows 10**.
+Other versions are not officially supported.
 
 ## Executable
 
