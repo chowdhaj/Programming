@@ -28,12 +28,14 @@ The Halo game that is bundled in this program is Combat Evolved (CE). It
 is the compact version. Meaning, it contains the best maps like Bloodgulch
 and Hang 'Em High. All bloatware is removed for speed, performance, and
 storage optimization. It includes all kinds of gamemodes to suit your style.
-As a bonus, it even supports LAN, which is perfect for school!
+As a bonus, it even supports LAN, which is perfect for school! If you are
+new to HaloCE, please refer to the *Extra* tab for an All-In-One (AIO)
+guide on HaloCE.
 
 ## How-To
 Here is a quick breakdown of how to use this application:
-1. Select either Word or Powerpoint to load a document; click on repestive
-   icons for previews.
+1. Select either Word or Powerpoint to load a document; click on the
+   respective icons for previews.
 2. Once the document is opened, search for bold keywords like *Play*,
    *Patch*, and *Leave*. These words will allow you to perform various
    tasks once clicked.
