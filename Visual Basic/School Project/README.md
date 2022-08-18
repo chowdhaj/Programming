@@ -45,19 +45,34 @@ Here is a quick breakdown of how to use this application:
 4. Use the *Bug* button in *Extras* to report any issues. Thank you!
 
 ## Images
-1. When the program is executed, this is the starting page. \
+1. When the program is executed, this is the starting page. Use the blue
+   arrows at the buttom to flip between the introduction and
+   information page. Note that you can scroll in these boxes. The *Info*
+   tab is what you see right now, and the *Extra* tab contains things
+   such as Bug submission, User guide, etc. The Counterstrike button at
+   the bottom right allows you to switch to the CS page. More
+   information below. \
 ![Main](img-haloce/Halo-1.PNG)
 
-2. Two \
+2. Clicking on the Word or PowerPoint icons brings up an information
+   dialog box containing information about the various documents that
+   are available for covert operations. \
 ![PPT](img-haloce/Halo-2.PNG)
 
-3. Three \
+3. Clicking on the subject under the icon brings up a panel of
+   documents to choose from. In the following picture, *English*
+   has four documents available. \
 ![English](img-haloce/Halo-3.PNG)
 
-4. Four \
+4. This is an informational page that explains how to use the
+   fake window to launch and exit HaloCE. Even though the window
+   looks like WordPad, it applies 1:1 to Microsoft Word.
+   Nonetheless, it merely serves as a How-To for beginners. \
 ![Tutorial](img-haloce/Halo-4.PNG)
 
-5. Five \
+5. The documents allow scrolling and editing. You can easily
+   alter the document to your heart's content. It makes
+   everything seem more legitimate. \
 ![Work](img-haloce/Halo-5.PNG)
 
 6. Six \
