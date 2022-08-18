@@ -26,19 +26,21 @@ application entirely, press the lock button on the iPhone 4.
    See if you can find it!* \
 ![NAME](img-phone/iPhone-2.PNG)
 
-3. The background color can be changed. In this instance, it was changed from
-   white to black, and the *Extreme Grid* animation is executed. Notice how
-   even the lines' color can be altered - here it is green. \
+3. The Weight Converter app can convert weight from kilograms to pounds,
+   and pounds to kilograms. This is useful if you know your measurements
+   in one unit, but not the other. \
 ![NAME](img-phone/iPhone-3.PNG)
 
-4. This might be the worst color combination in the world; blue and burgundy.
-   At least the makeshift parabolic curves look nice. If you look closely,
-   there's a *Parabola* on each side. \
+4. The Height Converter app can convert your height from Centimetres to
+   Inches, Inches to Centimetres, Feet to Centimeters, and Feet to Inches.
+   This is super helpful, because converting between these can be
+   cumbersome.\
 ![NAME](img-phone/iPhone-4.PNG)
 
-5. The source code for each 2D line animation can be retrieved from the menu
-   bar *(i.e. Developer Logs)*. Here we have partial source for *Quad
-   Parabola*. \
+5. Swiping down from the notification bar reveals information about the
+   applications, what they do, and how it works. The design follows iOS'
+   strict skeuomorphic standards. The metal background makes everything
+   look more official. \
 ![NAME](img-phone/iPhone-5.PNG)
 
 ## Compatbility
