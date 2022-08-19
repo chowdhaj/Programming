@@ -23,6 +23,10 @@ When you start the application, click on the appropriate icon to bring
 up your desired document. If you are confused, the starting page has
 crystal clear instructions.
 
+Finally, it is called *School Project*, because we wanted the name of the
+application to be as covert as possible in the task/menu bar. If anyone
+walks by, they won't suspect a thing.
+
 ## Halo
 The Halo game that is bundled in this program is Combat Evolved (CE). It
 is the compact version. Meaning, it contains the best maps like Bloodgulch
