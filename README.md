@@ -7,6 +7,9 @@ Contains programs/code for the following languages:
 - Bash
 - C/C++
 - JavaScript
+    - React
+    - TypeScript
+    - Node.js *(Express)*
 
 # Notable Stuff
 * [Full Stack Development Journey](https://github.com/chowdhaj/Programming/tree/main/Full%20Stack)
