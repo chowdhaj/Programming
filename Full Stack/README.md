@@ -92,3 +92,5 @@ Start from the top and work your way to the bottom. Depending on your expertise,
 
 # Disclaimer
 I am not sponsored by anyone or anything. The resources provided above are excellent, and you can obtain them by any means necessary. Good luck!
+
+Minor credits to Rob Vardy for some tutorials and inspiration.
