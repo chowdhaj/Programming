@@ -6,6 +6,7 @@ Contains programs/code for the following languages:
 - Python
 - Bash
 - C/C++
+- JavaScript
 
 # Notable Stuff
 * [Mike Dane Java Tutorials](https://github.com/chowdhaj/Programming/tree/main/Java/Mike%20Dane%20Tutorials/src/mikeDaneJavaTutorial)
