@@ -8,7 +8,9 @@ Contains programs/code for the following languages:
 - C/C++
 - JavaScript
     - React
+    - Angular
     - TypeScript
+    - React Native
     - Node.js *(Express)*
 
 # Notable Stuff
