@@ -27,10 +27,12 @@ Start from the top and work your way to the bottom. Depending on your expertise,
     - [Mastering React](https://codewithmosh.com/p/mastering-react)
     - [React - The Complete Guide](https://www.udemy.com/course/react-the-complete-guide-incl-redux/?couponCode=D_0922)
     - [Angular VS. React VS. Vue ](https://www.youtube.com/watch?v=lYWYWyX04JI)
+- Books
+    - ?
 
 ## Angular
 - Synopsis
-    - Just like React, Angular is a Frontend JavaScript library. It is also bankrolled by big companies. At the very least, you should know the basics.
+    - Just like React, Angular is a Frontend JavaScript library. It is used by big companies, and was bankrolled by Google until they killed it. However, all those systems built in Angular aren't going to be converted into React overnight, and someone needs to maintain that code. Even though React is a better framework to learn, at the very least you should know the basics of Angular.
 - Resources
     - [Angular 4: Beginner to Pro](https://codewithmosh.com/p/angular-master-class)
 
