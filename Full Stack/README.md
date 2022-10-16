@@ -33,7 +33,7 @@ Start from the top and work your way to the bottom. Depending on your expertise,
     - React Native enables developers to build real native mobile apps for iOS and Android. The major benefit is that you no longer have to maintain two separate code bases. There are lots of benefits to React Native; for the full list, use Google.
 - Resources
     - [React Native - The Practical Guide](https://www.udemy.com/course/react-native-the-practical-guide/?couponCode=D_1022)
-    - ?
+    - [The Ultimate React Native Series](https://codewithmosh.com/p/the-ultimate-react-native-course)
 
 ## Angular
 - Synopsis
