@@ -34,8 +34,6 @@ Start from the top and work your way to the bottom. Depending on your expertise,
 - Resources
     - [React Native - The Practical Guide](https://www.udemy.com/course/react-native-the-practical-guide/?couponCode=D_1022)
     - ?
-- Books
-    - ?
 
 ## Angular
 - Synopsis
